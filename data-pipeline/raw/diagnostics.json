@@ -1,0 +1,1782 @@
+[
+ {
+  "name": "Standoff 2",
+  "slug": "standoff-2",
+  "subs": 200,
+  "qid": "Q105715874",
+  "enwiki": "Standoff 2",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "FIFA Online 4",
+  "slug": "fifa-online-4",
+  "subs": 136,
+  "qid": "Q53550949",
+  "enwiki": "EA Sports FC Online",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "WOT Blitz",
+  "slug": "wot-blitz",
+  "subs": 134,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Roblox",
+  "slug": "roblox",
+  "subs": 116,
+  "qid": "Q692989",
+  "enwiki": "Roblox",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Fortnite",
+  "slug": "fortnite",
+  "subs": 100,
+  "qid": "Q349375",
+  "enwiki": "Fortnite",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Free Fire",
+  "slug": "garena-free-fire",
+  "subs": 77,
+  "qid": "Q51883198",
+  "enwiki": "Free Fire (video game)",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "World of Tanks",
+  "slug": "world-of-tanks",
+  "subs": 35,
+  "qid": "Q590342",
+  "enwiki": "World of Tanks",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Football Manager 2025",
+  "slug": "football-manager-2025",
+  "subs": 30,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Overwatch",
+  "slug": "overwatch",
+  "subs": 30,
+  "qid": "Q99569678",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Heroes of Might and Magic 3",
+  "slug": "heroes-of-might-and-magic-3",
+  "subs": 27,
+  "qid": "Q220965",
+  "enwiki": "Heroes of Might and Magic III",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Brawl Stars",
+  "slug": "brawl-stars",
+  "subs": 26,
+  "qid": "Q30330493",
+  "enwiki": "Brawl Stars",
+  "reason": "нет: платформа"
+ },
+ {
+  "name": "GTA 6",
+  "slug": "gta-6",
+  "subs": 26,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Football Manager 2024",
+  "slug": "football-manager-2024",
+  "subs": 25,
+  "qid": "Q123050989",
+  "enwiki": "Football Manager 2024",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "efootball PES",
+  "slug": "efootball",
+  "subs": 23,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "StarCraft",
+  "slug": "starcraft",
+  "subs": 23,
+  "qid": "Q122860706",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Adopt me!",
+  "slug": "adopt-me",
+  "subs": 19,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Murder Mystery 2",
+  "slug": "murder-mystery-2",
+  "subs": 17,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "PUBG Mobile",
+  "slug": "pubg-mobile",
+  "subs": 16,
+  "qid": "Q63595820",
+  "enwiki": "PUBG Mobile",
+  "reason": "нет: платформа"
+ },
+ {
+  "name": "Counter-Strike 1.6",
+  "slug": "counter-strike-1-6",
+  "subs": 15,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "PUBG: New State",
+  "slug": "pubg-new-state",
+  "subs": 14,
+  "qid": "Q108585047",
+  "enwiki": "New State Mobile",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Mobile Legends: Bang Bang",
+  "slug": "mobile-legends",
+  "subs": 13,
+  "qid": "Q29564198",
+  "enwiki": "Mobile Legends: Bang Bang",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "GTA Online",
+  "slug": "gta-online",
+  "subs": 11,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "99 ночей в лесу",
+  "slug": "99-nights-in-the-forest",
+  "subs": 8,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Fishing Clash",
+  "slug": "fishing-clash",
+  "subs": 8,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Dota Underlords",
+  "slug": "dota-underlords",
+  "subs": 8,
+  "qid": "Q65952214",
+  "enwiki": "Dota Underlords",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Warcraft",
+  "slug": "warcraft",
+  "subs": 7,
+  "qid": "Q207885",
+  "enwiki": "Warcraft: Orcs & Humans",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Football Manager 2023",
+  "slug": "football-manager-2023",
+  "subs": 6,
+  "qid": "Q114236094",
+  "enwiki": "Football Manager 2023",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Muscle Legends",
+  "slug": "muscle-legends",
+  "subs": 6,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Blox Fruits",
+  "slug": "blox-fruits",
+  "subs": 6,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Raid: Shadow Legends",
+  "slug": "raid-shadow-legends",
+  "subs": 6,
+  "qid": "Q65040650",
+  "enwiki": "Raid: Shadow Legends",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Pop It Trading",
+  "slug": "pop-it-trading",
+  "subs": 5,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Выжить убийца",
+  "slug": "roblox-survive-the-killer",
+  "subs": 5,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "BeamNG.drive",
+  "slug": "beamng-drive",
+  "subs": 5,
+  "qid": "Q16987803",
+  "enwiki": "BeamNG.drive",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "AFK Arena",
+  "slug": "afk-arena",
+  "subs": 5,
+  "qid": "Q105069772",
+  "enwiki": "AFK Arena",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Rise of Empires",
+  "slug": "rise-of-empires",
+  "subs": 5,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Mass Effect 4",
+  "slug": "mass-effect-4",
+  "subs": 5,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Only Up",
+  "slug": "only-up",
+  "subs": 4,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "EA Sports FC",
+  "slug": "ea-sports-fc",
+  "subs": 4,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Rush Royale",
+  "slug": "rush-royale",
+  "subs": 4,
+  "qid": "Q122841198",
+  "enwiki": "Rush Royale",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Left To Survive",
+  "slug": "left-to-survive",
+  "subs": 4,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Pet Simulator",
+  "slug": "pet-simulator",
+  "subs": 4,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "The Last of Us",
+  "slug": "the-last-of-us",
+  "subs": 4,
+  "qid": "Q28062624",
+  "enwiki": "The Last of Us",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "FIFA Mobile",
+  "slug": "fifa-mobile",
+  "subs": 4,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Assassin's Creed: Odyssey",
+  "slug": "ac-odyssey",
+  "subs": 4,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Hamster Kombat",
+  "slug": "hamster-kombat",
+  "subs": 3,
+  "qid": "Q126393690",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Мир танков",
+  "slug": "mir-tankov",
+  "subs": 3,
+  "qid": "Q130393815",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "The Grand Mafia",
+  "slug": "the-grand-mafia",
+  "subs": 3,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Call of Duty: Warzone 2",
+  "slug": "call-of-duty-warzone-2",
+  "subs": 3,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Shadow Fight 3",
+  "slug": "shadow-fight-3",
+  "subs": 3,
+  "qid": "Q55662802",
+  "enwiki": "",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Lords Mobile",
+  "slug": "lords-mobile",
+  "subs": 3,
+  "qid": "Q34724503",
+  "enwiki": "Lords Mobile",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Ведьмак 4",
+  "slug": "witcher-4",
+  "subs": 3,
+  "qid": "Q111023388",
+  "reason": "не вышла"
+ },
+ {
+  "name": "Overwatch 2",
+  "slug": "overwatch-2",
+  "subs": 3,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Resident Evil",
+  "slug": "resident-evil",
+  "subs": 3,
+  "qid": "Q1248594",
+  "enwiki": "Resident Evil (1996 video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Warhammer",
+  "slug": "warhammer",
+  "subs": 3,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Starfield",
+  "slug": "starfield",
+  "subs": 3,
+  "qid": "Q122166907",
+  "enwiki": "",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Half-Life 3",
+  "slug": "half-life-3",
+  "subs": 3,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "The Strongest Battlegrounds",
+  "slug": "the-strongest-battlegrounds",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Rivals",
+  "slug": "rivals",
+  "subs": 2,
+  "qid": "Q122373734",
+  "enwiki": "",
+  "reason": "нет: жанр, оценка"
+ },
+ {
+  "name": "The Expanse: Osiris Reborn",
+  "slug": "the-expanse-osiris-reborn",
+  "subs": 2,
+  "qid": "Q134731888",
+  "reason": "не вышла"
+ },
+ {
+  "name": "Дурак онлайн",
+  "slug": "durak-online",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Grow a Garden",
+  "slug": "grow-a-garden",
+  "subs": 2,
+  "qid": "Q140398914",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Deadlock",
+  "slug": "deadlock",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Doomsday Last Survivors",
+  "slug": "doomsday-last-survivors",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Wolfenstein (2009)",
+  "slug": "wolfenstein-2009",
+  "subs": 2,
+  "qid": "Q1165728",
+  "enwiki": "Wolfenstein (2009 video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Life Is Strange",
+  "slug": "life-is-strange",
+  "subs": 2,
+  "qid": "Q18536861",
+  "enwiki": "Life Is Strange (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Mighty Party",
+  "slug": "mighty-party",
+  "subs": 2,
+  "qid": "Q29912136",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Call of Duty: Modern Warfare 2 (2022)",
+  "slug": "call-of-duty-modern-warfare-2-2022",
+  "subs": 2,
+  "qid": "Q486351",
+  "reason": "дубль тега"
+ },
+ {
+  "name": "Построй корабль и найди сокровище",
+  "slug": "build-a-boat-for-treasure",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Slayers Unleashed",
+  "slug": "slayers-unleashed",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Bee Swarm Simulator",
+  "slug": "bee-swarm-simulator",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Legends of Speed",
+  "slug": "legends-of-speed",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "PC Building Simulator",
+  "slug": "pc-building-simulator",
+  "subs": 2,
+  "qid": "Q52376099",
+  "enwiki": "PC Building Simulator",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "UFL",
+  "slug": "ufl",
+  "subs": 2,
+  "qid": "Q108273973",
+  "enwiki": "UFL (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Counter-Strike Global Offensive",
+  "slug": "counter-strike-global-offensive",
+  "subs": 2,
+  "qid": "Q842146",
+  "reason": "дубль тега"
+ },
+ {
+  "name": "Puzzles & Survival",
+  "slug": "puzzles-and-survival",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Клуб Романтики",
+  "slug": "club-romantiki",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Assassin's Creed 4: Black Flag",
+  "slug": "assassins-creed-4-black-flag",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Vikings: War of Clans",
+  "slug": "vikings-war-of-clans",
+  "subs": 2,
+  "qid": "Q28127282",
+  "enwiki": "Vikings: War of Clans",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Warframe",
+  "slug": "warframe",
+  "subs": 2,
+  "qid": "Q7969348",
+  "enwiki": "Warframe",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Pro Evolution Soccer 2021",
+  "slug": "pes-2021",
+  "subs": 2,
+  "qid": "Q97386481",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Escape from Tarkov",
+  "slug": "escape-from-tarkov",
+  "subs": 2,
+  "qid": "Q23038939",
+  "enwiki": "Escape from Tarkov",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "The Wolf Among Us 2",
+  "slug": "the-wolf-among-us-2",
+  "subs": 2,
+  "qid": "Q78361323",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Hitman (2016)",
+  "slug": "hitman",
+  "subs": 2,
+  "qid": "Q15630929",
+  "enwiki": "Hitman (2016 video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Teamfight Tactics",
+  "slug": "teamfight-tactics",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "The Elder Scrolls 6",
+  "slug": "the-elder-scrolls-6",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Бесконечное лето",
+  "slug": "everlasting-summer",
+  "subs": 2,
+  "qid": "Q16273544",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Star Wars: Knights of The Old Republic",
+  "slug": "star-wars-knights-of-the-old-republic",
+  "subs": 2,
+  "qid": "Q7601095",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Dota Allstars",
+  "slug": "dota-allstars",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Magic: The Gathering",
+  "slug": "magic-the-gathering",
+  "subs": 2,
+  "qid": "Q4043590",
+  "enwiki": "Magic: The Gathering (1997 video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Need for Speed",
+  "slug": "need-for-speed",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Haxball",
+  "slug": "haxball",
+  "subs": 2,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Stone Simulator",
+  "slug": "stone-simulator",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Resident Evil 10",
+  "slug": "resident-evil-10",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "The CUBE",
+  "slug": "the-cube",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Persona 5: The Phantom X",
+  "slug": "persona-5-the-phantom-x",
+  "subs": 1,
+  "qid": "Q117750097",
+  "enwiki": "Persona 5: The Phantom X",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Warhammer 40,000: Space Marine 3",
+  "slug": "warhammer-40000-space-marine-3",
+  "subs": 1,
+  "qid": "Q133272052",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Drunken FC",
+  "slug": "drunken-fc",
+  "subs": 1,
+  "qid": "Q135017462",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Спарта 2035",
+  "slug": "sparta-2035",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Tanks Blitz",
+  "slug": "tanks-blitz",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "SchoolBoy Runaway",
+  "slug": "schoolboy-runaway",
+  "subs": 1,
+  "qid": "Q135067023",
+  "enwiki": "",
+  "reason": "нет: жанр, оценка"
+ },
+ {
+  "name": "Twilight Wars",
+  "slug": "twilight-wars",
+  "subs": 1,
+  "qid": "Q135058201",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "PixelTap",
+  "slug": "pixeltap",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Batman: Arkham Shadow",
+  "slug": "batman-arkham-shadow",
+  "subs": 1,
+  "qid": "Q125731242",
+  "enwiki": "Batman: Arkham Shadow",
+  "reason": "нет: платформа"
+ },
+ {
+  "name": "Supernatural: The Game",
+  "slug": "supernatural-the-game",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "AFK Journey",
+  "slug": "afk-journey",
+  "subs": 1,
+  "qid": "Q125505215",
+  "enwiki": "AFK Journey",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Terminator: Survivors",
+  "slug": "terminator-survivors",
+  "subs": 1,
+  "qid": "Q124706009",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Marvel’s Venom",
+  "slug": "marvels-venom",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Marvel’s Blade",
+  "slug": "marvel-s-blade",
+  "subs": 1,
+  "qid": "Q123699068",
+  "enwiki": "Marvel's Blade",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Exodus",
+  "slug": "exodus",
+  "subs": 1,
+  "qid": "Q2115150",
+  "enwiki": "Exodus: Journey to the Promised Land",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Брукхейвен",
+  "slug": "brukheven",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Счетчик Блокс",
+  "slug": "counter-blox",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Good pizza, great pizza",
+  "slug": "goode-pizza-great-pizza",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "The Ants Underground Kingdom",
+  "slug": "the-ants-underground-kingdom",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Dragon Champions",
+  "slug": "dragon-champions",
+  "subs": 1,
+  "qid": "Q106654309",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Taxi Boss",
+  "slug": "taxi-boss",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Doors",
+  "slug": "doors",
+  "subs": 1,
+  "qid": "Q114235411",
+  "enwiki": "",
+  "reason": "нет: жанр, оценка"
+ },
+ {
+  "name": "Pls Donate",
+  "slug": "pls-donate",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Hijutsu Conflict",
+  "slug": "hijutsu-conflict",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Farming Simulator 17",
+  "slug": "farming-simulator-17",
+  "subs": 1,
+  "qid": "Q25384945",
+  "enwiki": "Farming Simulator 17",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Mad Max",
+  "slug": "mad-max",
+  "subs": 1,
+  "qid": "Q6726002",
+  "enwiki": "Mad Max (1990 video game)",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Project: Playtime",
+  "slug": "project-playtime",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Albion Online",
+  "slug": "albion-online",
+  "subs": 1,
+  "qid": "Q21039865",
+  "enwiki": "Albion Online",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Мор (Утопия)",
+  "slug": "pathologic",
+  "subs": 1,
+  "qid": "Q2429644",
+  "enwiki": "Pathologic",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Red Dead Revolver",
+  "slug": "red-dead-revolver",
+  "subs": 1,
+  "qid": "Q641697",
+  "enwiki": "Red Dead Revolver",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Tennis Clash",
+  "slug": "tennis-clash",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Delta Force",
+  "slug": "delta-force",
+  "subs": 1,
+  "qid": "Q4037172",
+  "enwiki": "",
+  "reason": "нет: платформа, жанр, оценка"
+ },
+ {
+  "name": "ELEX",
+  "slug": "elex",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Myths of Moonrise",
+  "slug": "myths-of-moonrise",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Idle Awakening",
+  "slug": "idle-awakening",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Sssnaker",
+  "slug": "sssnaker",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Modern Warships",
+  "slug": "modern-warships",
+  "subs": 1,
+  "qid": "Q109905983",
+  "enwiki": "",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Scarface: The World Is Yours",
+  "slug": "scarface-the-world-is-yours",
+  "subs": 1,
+  "qid": "Q1139501",
+  "enwiki": "Scarface: The World Is Yours",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Shadow Warrior (2013)",
+  "slug": "shadow-warrior-2013",
+  "subs": 1,
+  "qid": "Q126187774",
+  "enwiki": "",
+  "reason": "нет: платформа, жанр, оценка"
+ },
+ {
+  "name": "Vanquish",
+  "slug": "vanquish",
+  "subs": 1,
+  "qid": "Q1421826",
+  "enwiki": "Vanquish (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Totally Spies!",
+  "slug": "totally-spies",
+  "subs": 1,
+  "qid": "Q7828238",
+  "enwiki": "Totally Spies! (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Asphalt",
+  "slug": "asphalt",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Mafia City",
+  "slug": "mafia-city",
+  "subs": 1,
+  "qid": "Q111914349",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Shadowgun Legends",
+  "slug": "shadowgun-legends",
+  "subs": 1,
+  "qid": "Q28127121",
+  "enwiki": "Shadowgun Legends",
+  "reason": "нет: платформа"
+ },
+ {
+  "name": "Soulcalibur",
+  "slug": "soulcalibur",
+  "subs": 1,
+  "qid": "Q1060715",
+  "enwiki": "Soulcalibur (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Prototype 2",
+  "slug": "prototype-2",
+  "subs": 1,
+  "qid": "Q2075296",
+  "enwiki": "Prototype 2",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Prototype",
+  "slug": "prototype",
+  "subs": 1,
+  "qid": "Q473852",
+  "enwiki": "Prototype (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "FIFA Football 2003",
+  "slug": "fifa-football-2003",
+  "subs": 1,
+  "qid": "Q2080005",
+  "enwiki": "FIFA Football 2003",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Spider-Man: Web of Shadows",
+  "slug": "spider-man-web-of-shadows",
+  "subs": 1,
+  "qid": "Q2635988",
+  "enwiki": "Spider-Man: Web of Shadows",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Spider-Man 3",
+  "slug": "spider-man-3",
+  "subs": 1,
+  "qid": "Q2337769",
+  "enwiki": "Spider-Man 3 (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Spider-Man: The Movie Game",
+  "slug": "spider-man-the-movie-game",
+  "subs": 1,
+  "qid": "Q2539517",
+  "enwiki": "Spider-Man (2002 video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Serious Sam II",
+  "slug": "serious-sam-2",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Pro Evolution Soccer 5",
+  "slug": "pro-evolution-soccer-5",
+  "subs": 1,
+  "qid": "Q1991104",
+  "enwiki": "Pro Evolution Soccer 5",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Heroes of Might and Magic 4",
+  "slug": "heroes-of-might-and-magic-4",
+  "subs": 1,
+  "qid": "Q641684",
+  "enwiki": "Heroes of Might and Magic IV",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Hitman: Contracts",
+  "slug": "hitman-contracts",
+  "subs": 1,
+  "qid": "Q600707",
+  "enwiki": "Hitman: Contracts",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Star Wars Jedi Knight: Jedi Academy",
+  "slug": "star-wars-jedi-knight-jedi-academy",
+  "subs": 1,
+  "qid": "Q55295",
+  "enwiki": "Star Wars Jedi Knight: Jedi Academy",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Batman: The Enemy Within",
+  "slug": "batman-the-enemy-within",
+  "subs": 1,
+  "qid": "Q35236980",
+  "enwiki": "Batman: The Enemy Within",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Batman: The Telltale Series",
+  "slug": "batman-the-telltale-series",
+  "subs": 1,
+  "qid": "Q23647030",
+  "enwiki": "Batman: The Telltale Series",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Resident Evil 2",
+  "slug": "resident-evil-2-1998",
+  "subs": 1,
+  "qid": "Q733992",
+  "enwiki": "Resident Evil 2",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "GTA: Liberty City Stories",
+  "slug": "gta-liberty-city-stories",
+  "subs": 1,
+  "qid": "Q94778",
+  "enwiki": "Grand Theft Auto: Liberty City Stories",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Unturned",
+  "slug": "unturned",
+  "subs": 1,
+  "qid": "Q17501827",
+  "enwiki": "Unturned",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Atomic Heart 2",
+  "slug": "atomic-heart-2",
+  "subs": 1,
+  "qid": "Q117289636",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Russian Train Trip 2",
+  "slug": "russian-train-trip-2",
+  "subs": 1,
+  "qid": "Q122312035",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Choice of Life: Middle Ages 2",
+  "slug": "choice-of-life-middle-ages-2",
+  "subs": 1,
+  "qid": "Q122387023",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Silent Hill Townfall",
+  "slug": "silent-hill-townfall",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Neon Prime",
+  "slug": "neon-prime",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Mafia: The City of Lost Heaven",
+  "slug": "mafia-1",
+  "subs": 1,
+  "qid": "Q213217",
+  "enwiki": "Mafia (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "DISTORTION",
+  "slug": "distortion",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Crysis 4",
+  "slug": "crysis-4",
+  "subs": 1,
+  "qid": "Q110696546",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Serious Sam: Siberian Mayhem",
+  "slug": "serious-sam-siberian-mayhem",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Endless Journey",
+  "slug": "endless-journey",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Любовь, Деньги, Рок-н-Ролл",
+  "slug": "love-money-rock-n-roll",
+  "subs": 1,
+  "qid": "Q113529133",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "theHunter: Call of the Wild",
+  "slug": "thehunter-call-of-the-wild",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Blue Archive",
+  "slug": "blue-archive",
+  "subs": 1,
+  "qid": "Q105344455",
+  "enwiki": "Blue Archive",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Grand Piece Online",
+  "slug": "grand-piece-online",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Car Dealership Tycoon",
+  "slug": "car-dealership-tycoon",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Funky Friday",
+  "slug": "funky-friday",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Принц Персии: Пески времени (ремейк)",
+  "slug": "princ-persii-peski-vremeni-remejk",
+  "subs": 1,
+  "qid": "Q715292",
+  "enwiki": "Prince of Persia: The Sands of Time",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Geometry Dash",
+  "slug": "geometry-dash",
+  "subs": 1,
+  "qid": "Q16190030",
+  "enwiki": "Geometry Dash",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Battlefield 4",
+  "slug": "battlefield-4",
+  "subs": 1,
+  "qid": "Q2618557",
+  "enwiki": "Battlefield 4",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Free Fire MAX",
+  "slug": "free-fire-max",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Call of Duty (2023)",
+  "slug": "call-of-duty-2023",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Lineage2M",
+  "slug": "lineage2m",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Battlefield Mobile",
+  "slug": "battlefield-mobile",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Arsenal Roblox",
+  "slug": "arsenal-roblox",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Skyblivion",
+  "slug": "skyblivion",
+  "subs": 1,
+  "qid": "Q116475018",
+  "enwiki": "Skyblivion",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Anime Warriors",
+  "slug": "anime-warrior",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Tiny Bunny",
+  "slug": "tiny-bunny",
+  "subs": 1,
+  "qid": "Q112153189",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Star Stable",
+  "slug": "star-stable",
+  "subs": 1,
+  "qid": "Q15150055",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Cookie Clicker",
+  "slug": "cookie-clicker",
+  "subs": 1,
+  "qid": "Q15103408",
+  "enwiki": "Cookie Clicker",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Легенда Феникса",
+  "slug": "legenda-feniksa",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Ghost of Tsushima: Director's Cut",
+  "slug": "ghost-of-tsushima-directors-cut",
+  "subs": 1,
+  "qid": "Q107398164",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Fallout: London",
+  "slug": "fallout-london",
+  "subs": 1,
+  "qid": "Q112655898",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "GTA 5: Expanded and Enhanced",
+  "slug": "gta-5-expanded-and-enhanced",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Painkiller",
+  "slug": "painkiller",
+  "subs": 1,
+  "qid": "Q939447",
+  "enwiki": "Painkiller (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Palia",
+  "slug": "palia",
+  "subs": 1,
+  "qid": "Q121335879",
+  "enwiki": "Palia",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Your Bizarre Adventure",
+  "slug": "your-bizarre-adventure",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Pioner",
+  "slug": "pioner",
+  "subs": 1,
+  "qid": "Q117429559",
+  "enwiki": "Pioner (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Resident Evil 6",
+  "slug": "resident-evil-6",
+  "subs": 1,
+  "qid": "Q108823077",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Battlefield",
+  "slug": "battlefield",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Apex Legends Mobile",
+  "slug": "apex-legends-mobile",
+  "subs": 1,
+  "qid": "Q112671149",
+  "enwiki": "Apex Legends Mobile",
+  "reason": "нет: платформа"
+ },
+ {
+  "name": "Summertime Saga",
+  "slug": "summertime-saga",
+  "subs": 1,
+  "qid": "Q110397619",
+  "enwiki": "Summertime Saga",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Radmir RP",
+  "slug": "radmir-rp",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "7DS",
+  "slug": "7ds",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Warpath",
+  "slug": "warpath",
+  "subs": 1,
+  "qid": "Q7969888",
+  "enwiki": "Warpath (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Resident Evil Re:Verse",
+  "slug": "resident-evil-re-verse",
+  "subs": 1,
+  "qid": "Q104991768",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Racing Master",
+  "slug": "racing-master",
+  "subs": 1,
+  "qid": "Q110854895",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Mortal Kombat",
+  "slug": "mortal-kombat",
+  "subs": 1,
+  "qid": "Q150294",
+  "enwiki": "Mortal Kombat (1992 video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Homescapes",
+  "slug": "homescapes",
+  "subs": 1,
+  "qid": "Q43401642",
+  "enwiki": "Homescapes",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Rise of Kingdoms",
+  "slug": "rise-of-kingdoms",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Six Days in Fallujah",
+  "slug": "six-days-in-fallujah",
+  "subs": 1,
+  "qid": "Q7532694",
+  "enwiki": "Six Days in Fallujah",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "ARK: Survival Evolved",
+  "slug": "ark-survival-evolved",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Shindo Life",
+  "slug": "shindo-life",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Crossout",
+  "slug": "crossout",
+  "subs": 1,
+  "qid": "Q20707353",
+  "enwiki": "Crossout",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Honkai Impact 3rd",
+  "slug": "honkai-impact-3rd",
+  "subs": 1,
+  "qid": "Q29169625",
+  "enwiki": "Honkai Impact 3rd",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Disco Elysium: The Final Cut",
+  "slug": "disco-elysium-the-final-cut",
+  "subs": 1,
+  "qid": "Q127164835",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Enlisted",
+  "slug": "enlisted",
+  "subs": 1,
+  "qid": "Q100394553",
+  "enwiki": "Enlisted (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Phasmophobia",
+  "slug": "phasmophobia",
+  "subs": 1,
+  "qid": "Q99990957",
+  "enwiki": "Phasmophobia (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Devil May Cry 5: Special Edition",
+  "slug": "devil-may-cry-5-special-edition",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "War Robots",
+  "slug": "war-robots",
+  "subs": 1,
+  "qid": "Q20640476",
+  "enwiki": "War Robots",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Prince of Persia: The Sands of Time Remake",
+  "slug": "prince-of-persia-the-sands-of-time-remake",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Teardown",
+  "slug": "teardown",
+  "subs": 1,
+  "qid": "Q82791936",
+  "enwiki": "Teardown (video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Diabotical",
+  "slug": "diabotical",
+  "subs": 1,
+  "qid": "Q88556878",
+  "enwiki": "Diabotical",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Garry’s Mod",
+  "slug": "garrys-mod",
+  "subs": 1,
+  "qid": "Q837923",
+  "enwiki": "Garry's Mod",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Metro Redux",
+  "slug": "metro-redux",
+  "subs": 1,
+  "qid": "Q19906377",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Fast & Furious: Crossroads",
+  "slug": "fast-furious-crossroads",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Dreams",
+  "slug": "dreams",
+  "subs": 1,
+  "qid": "Q141480901",
+  "reason": "нет даты выхода"
+ },
+ {
+  "name": "Path of Exile 2",
+  "slug": "path-of-exile-2",
+  "subs": 1,
+  "qid": "Q75135732",
+  "reason": "не вышла"
+ },
+ {
+  "name": "League of Legends: Wild Rift",
+  "slug": "league-of-legends-wild-rift",
+  "subs": 1,
+  "qid": "Q75230763",
+  "enwiki": "League of Legends: Wild Rift",
+  "reason": "нет: платформа"
+ },
+ {
+  "name": "Greedfall",
+  "slug": "greedfall",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Super Mario Bros.",
+  "slug": "super-mario",
+  "subs": 1,
+  "qid": "Q11168",
+  "enwiki": "Super Mario Bros.",
+  "reason": "нет: платформа, оценка"
+ },
+ {
+  "name": "Pokemon GO",
+  "slug": "pokemon-go",
+  "subs": 1,
+  "qid": "Q20966579",
+  "enwiki": "Pokémon Go",
+  "reason": "нет: платформа, жанр"
+ },
+ {
+  "name": "DmC: Devil May Cry",
+  "slug": "dmc-devil-may-cry",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Life is Strange 2",
+  "slug": "life-is-strange-2",
+  "subs": 1,
+  "qid": "Q30010677",
+  "enwiki": "Life Is Strange 2",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Star Wars: The Force Unleashed",
+  "slug": "star-wars-the-force-unleashed",
+  "subs": 1,
+  "qid": "Q840167",
+  "enwiki": "Star Wars: The Force Unleashed",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Farming Simulator 20",
+  "slug": "farming-simulator-20",
+  "subs": 1,
+  "qid": "Q99980046",
+  "enwiki": "Farming Simulator 20",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Bum Simulator",
+  "slug": "bum-simulator",
+  "subs": 1,
+  "qid": "Q112154634",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Stellaris",
+  "slug": "stellaris",
+  "subs": 1,
+  "qid": "Q3972960",
+  "enwiki": "",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Hitman 2",
+  "slug": "hitman-2",
+  "subs": 1,
+  "qid": "Q1037042",
+  "reason": "дубль тега"
+ },
+ {
+  "name": "Assassin's Creed: Origins",
+  "slug": "assassiss-creed-origins",
+  "subs": 1,
+  "qid": null,
+  "reason": "не найдено в Wikidata"
+ },
+ {
+  "name": "Clash of Clans",
+  "slug": "clash-of-clans",
+  "subs": 1,
+  "qid": "Q13399098",
+  "enwiki": "Clash of Clans",
+  "reason": "нет: платформа"
+ },
+ {
+  "name": "Doom",
+  "slug": "doom",
+  "subs": 1,
+  "qid": "Q189784",
+  "enwiki": "Doom (1993 video game)",
+  "reason": "нет: оценка"
+ },
+ {
+  "name": "Crossfire",
+  "slug": "crossfire",
+  "subs": 1,
+  "qid": "Q498866",
+  "enwiki": "Crossfire (2007 video game)",
+  "reason": "нет: оценка"
+ }
+]

@@ -1,0 +1,571 @@
+GTA 5|gta-5|333
+Standoff 2|standoff-2|200
+FIFA Online 4|fifa-online-4|136
+WOT Blitz|wot-blitz|134
+Hearthstone|hearthstone|122
+Roblox|roblox|116
+Fortnite|fortnite|100
+Free Fire|garena-free-fire|77
+Counter-Strike: Global Offensive|cs-go|76
+Valorant|valorant|57
+Among Us|among-us|38
+PUBG|pubg|35
+World of Tanks|world-of-tanks|35
+Genshin Impact|genshin-impact|33
+Call of Duty: Warzone|call-of-duty-warzone|33
+Call of Duty: Modern Warfare (2019)|cod-mw-2019|32
+Football Manager 2025|football-manager-2025|30
+FIFA 21|fifa-21|30
+Dota 2|dota-2|30
+Overwatch|overwatch|30
+FIFA 19|fifa-19|28
+Minecraft|minecraft|28
+Heroes of Might and Magic 3|heroes-of-might-and-magic-3|27
+Rainbow Six Siege|rainbow-six|27
+Brawl Stars|brawl-stars|26
+GTA 6|gta-6|26
+Cyberpunk 2077|cyberpunk-2077|26
+Football Manager 2019|fm-2019|26
+Football Manager 2024|football-manager-2024|25
+World of Warcraft|wow|25
+FIFA 22|fifa-22|24
+STALKER 2|stalker-2|24
+Heroes of the Storm|heroes-of-the-storm|24
+efootball PES|efootball|23
+FIFA 20|fifa-20|23
+StarCraft|starcraft|23
+Adopt me!|adopt-me|19
+Counter-Strike 2|counter-strike-2|18
+FIFA 23|fifa-23|18
+GTA: San Andreas|grand-theft-auto-san-andreas|18
+Murder Mystery 2|murder-mystery-2|17
+Far Cry 3|far-cry-3|16
+PUBG Mobile|pubg-mobile|16
+Battlefield V|battlefield-5|16
+Pro Evolution Soccer 2019|pes2019|16
+Red Dead Redemption 2|rdr-2|15
+Skyrim|skyrim|15
+Counter-Strike 1.6|counter-strike-1-6|15
+PUBG: New State|pubg-new-state|14
+Mobile Legends: Bang Bang|mobile-legends|13
+League of Legends|league-of-legends|13
+Ведьмак 3: Дикая Охота|witcher-3|13
+GTA Online|gta-online|11
+Гвинт|gwent|10
+Football Manager 2021|football-manager-2021|9
+Mass Effect|mass-effect|9
+Football Manager 2020|football-manager-2020|9
+Pro Evolution Soccer 2020|pro-evolution-soccer-2020|9
+GTA Vice City|grand-theft-auto-vice-city|9
+Apex Legends|apex-legends|9
+Call of Duty|call-of-duty|9
+99 ночей в лесу|99-nights-in-the-forest|8
+Fishing Clash|fishing-clash|8
+Dota Underlords|dota-underlords|8
+Artifact|artifact|8
+War Thunder|war-thunder|8
+GTA 4|gta-4|7
+Warcraft|warcraft|7
+Football Manager 2023|football-manager-2023|6
+Muscle Legends|muscle-legends|6
+Blox Fruits|blox-fruits|6
+Raid: Shadow Legends|raid-shadow-legends|6
+Call of Duty: Mobile|call-of-duty-mobile|6
+Call of Duty: Black Ops 4|cod-bo-4|6
+FIFA 18|fifa-18|6
+Warface|warface|6
+Quake|quake|6
+Kingdom Come Deliverance 2|kingdom-come-deliverance-2|5
+Pop It Trading|pop-it-trading|5
+Выжить убийца|roblox-survive-the-killer|5
+BeamNG.drive|beamng-drive|5
+AFK Arena|afk-arena|5
+Rise of Empires|rise-of-empires|5
+Mass Effect 4|mass-effect-4|5
+StarCraft 2|starcraft2|5
+Battlefield 2042|battlefield-2042|5
+Diablo 4|diablo-4|5
+Grand Theft Auto|grand-theft-auto|5
+Assassin's Creed|assassins-creed|5
+Rocket League|rocket-league|5
+Only Up|only-up|4
+EA Sports FC|ea-sports-fc|4
+Rush Royale|rush-royale|4
+Left To Survive|left-to-survive|4
+Honkai: Star Rail|honkai-star-rail|4
+Football Manager 2022|football-manager-2022|4
+Pet Simulator|pet-simulator|4
+Forza Horizon 5|forza-horizon-5|4
+NHL 21|nhl-21|4
+Call of Duty: Black Ops Cold War|cod-black-ops-cold-war|4
+Rust|rust|4
+Mass Effect 3|mass-effect-3|4
+The Last of Us|the-last-of-us|4
+FIFA Mobile|fifa-mobile|4
+Mass Effect 2|mass-effect-2|4
+Assassin's Creed: Odyssey|ac-odyssey|4
+Ведьмак|the-witcher|4
+Tekken 7|tekken7|4
+Mortal Kombat 11|mk-11|4
+Hamster Kombat|hamster-kombat|3
+Мир танков|mir-tankov|3
+The Grand Mafia|the-grand-mafia|3
+Call of Duty: Warzone 2|call-of-duty-warzone-2|3
+Shadow Fight 3|shadow-fight-3|3
+Lords Mobile|lords-mobile|3
+S.T.A.L.K.E.R.: Тень Чернобыля|stalker-shadow-of-chernobyl|3
+Metro|metro|3
+Hogwarts Legacy|hogwarts-legacy|3
+Far Cry 6|far-cry-6|3
+Resident Evil Village|resident-evil-village|3
+Ведьмак 4|witcher-4|3
+Call of Duty: Modern Warfare 2|call-of-duty-modern-warfare-2|3
+Mass Effect: Andromeda|mass-effect-andromeda|3
+Hollow Knight: Silksong|hollow-knight-silksong|3
+Dragon Age: Origins|dragon-age|3
+Overwatch 2|overwatch-2|3
+Resident Evil|resident-evil|3
+Warhammer|warhammer|3
+NHL 20|nhl-20|3
+Dying Light 2: Stay Human|dying-light-2|3
+Elden Ring|elden-ring|3
+Starfield|starfield|3
+Team Fortress 2|team-fortress2|3
+Star Wars: Battlefront 2|star-wars-battlefront-2|3
+The Elder Scrolls IV: Oblivion|the-elder-scrolls-iv-oblivion|3
+The Last of Us 2|the-last-of-us-part-2|3
+Borderlands 3|borderlands-3|3
+Horizon Zero Dawn|horizon-zero-dawn|3
+Atomic Heart|atomic-heart|3
+Half-Life 3|half-life-3|3
+Battlefield 1|battlefield-1|3
+Vainglory|vainglory|3
+Age of Empires|age-of-empires|3
+Unreal Tournament|unreal-tournament|3
+The Strongest Battlegrounds|the-strongest-battlegrounds|2
+Rivals|rivals|2
+The Expanse: Osiris Reborn|the-expanse-osiris-reborn|2
+Дурак онлайн|durak-online|2
+Grow a Garden|grow-a-garden|2
+EA Sports FC 25|ea-sports-fc-25|2
+Deadlock|deadlock|2
+Doomsday Last Survivors|doomsday-last-survivors|2
+Metal Gear Solid 3: Snake Eater (Remake)|metal-gear-solid-3-remake|2
+Wolfenstein (2009)|wolfenstein-2009|2
+Call of Duty: Modern Warfare 3 (2023)|call-of-duty-modern-warfare-3-2023|2
+Life Is Strange|life-is-strange|2
+Call of Duty: Black Ops 3 (2015)|cod-bo-3|2
+Mighty Party|mighty-party|2
+Call of Duty: Modern Warfare 2 (2022)|call-of-duty-modern-warfare-2-2022|2
+Построй корабль и найди сокровище|build-a-boat-for-treasure|2
+Slayers Unleashed|slayers-unleashed|2
+Bee Swarm Simulator|bee-swarm-simulator|2
+Legends of Speed|legends-of-speed|2
+Sleeping Dogs|sleeping-dogs|2
+PC Building Simulator|pc-building-simulator|2
+UFL|ufl|2
+NHL 22|nhl-22|2
+Counter-Strike Global Offensive|counter-strike-global-offensive|2
+Gothic 2|gothic-2|2
+Puzzles & Survival|puzzles-and-survival|2
+Клуб Романтики|club-romantiki|2
+Assassin's Creed 4: Black Flag|assassins-creed-4-black-flag|2
+Metal Gear Solid V: The Phantom Pain|metal-gear-5|2
+Gothic 1|gothic-1|2
+Vikings: War of Clans|vikings-war-of-clans|2
+Surviving Mars|surviving-mars|2
+Valheim|valheim|2
+Warframe|warframe|2
+Far Cry 4|far-cry-4|2
+Mass Effect Legendary Edition|mass-effect-legendary-edition|2
+S.T.A.L.K.E.R.: Чистое небо|stalker-clear-sky|2
+Age of Empires 3: Definitive Edition|age-of-empires-3-definitive-edition|2
+Pro Evolution Soccer 2021|pes-2021|2
+Mafia: Definitive Edition|mafia-definitive-edition|2
+Marvel’s Spider-Man: Miles Morales|marvels-spider-man-miles-morales|2
+Europa Universalis 4|europa-universalis-4|2
+Dead by Daylight|dead-by-daylight|2
+Resident Evil 4 Remake|resident-evil-4-remake|2
+Total War: Shogun 2|total-war-shogun-2|2
+S.T.A.L.K.E.R.: Зов Припяти|stalker-call-of-pripyat|2
+Escape from Tarkov|escape-from-tarkov|2
+The Wolf Among Us 2|the-wolf-among-us-2|2
+Disco Elysium|disco-elysium|2
+Skull and Bones|skull-and-bones|2
+Naraka: Bladepoint|naraka-bladepoint|2
+BioShock|bioshock|2
+Hitman (2016)|hitman|2
+Fallout 3|fallout3|2
+Half-Life|half-life|2
+Half-Life 2|half-life-2|2
+Crusader Kings 3|crusader-kings-3|2
+Total War Saga: Troy|total-war-saga-troy|2
+Dark Souls|dark-souls|2
+Teamfight Tactics|teamfight-tactics|2
+Age of Empires 2: Definitive Edition|age-of-empires-2-definitive-edition|2
+The Elder Scrolls 6|the-elder-scrolls-6|2
+Baldur's Gate 3|baldurs-gate-3|2
+Бесконечное лето|everlasting-summer|2
+Star Wars: Knights of The Old Republic|star-wars-knights-of-the-old-republic|2
+Borderlands|borderlands|2
+Dota Allstars|dota-allstars|2
+Magic: The Gathering|magic-the-gathering|2
+Crusader Kings 2|crusader-kings-2|2
+Forza Horizon 4|forza-horizon-4|2
+Metro Exodus|metro-exodus|2
+Diablo|diablo|2
+Far Cry 5|far-cry-5|2
+God of War|god-of-war|2
+Detroit: Become Human|detroit-bh|2
+NHL 19|nhl-19|2
+The Elder Scrolls: Legends|the-elder-scrolls-legends|2
+Fallout 4|fallout-4|2
+Мир кораблей|world-of-warships|2
+NBA 2K|nba-2k|2
+Need for Speed|need-for-speed|2
+Haxball|haxball|2
+Stone Simulator|stone-simulator|1
+Resident Evil 10|resident-evil-10|1
+Call of Duty: Black Ops 7|call-of-duty-black-ops-7|1
+The CUBE|the-cube|1
+Resident Evil Requiem|resident-evil-requiem|1
+EA Sports FC 26|ea-sports-fc-26|1
+007 First Light|007-first-light|1
+Persona 5: The Phantom X|persona-5-the-phantom-x|1
+Tainted Grail: The Fall of Avalon|tainted-grail-the-fall-of-avalon|1
+Quarantine Zone: The Last Check|quarantine-zone-the-last-check|1
+Europa Universalis 5|europa-universalis-5|1
+Atomfall|atomfall|1
+Warhammer 40,000: Space Marine 3|warhammer-40000-space-marine-3|1
+Приключения капитана Блада|captain-blood|1
+The Blood of Dawnwalker|the-blood-of-dawnwalker|1
+Dispatch|dispatch|1
+Dying Light: The Beast|dying-light-the-beast|1
+Drunken FC|drunken-fc|1
+Спарта 2035|sparta-2035|1
+Tanks Blitz|tanks-blitz|1
+Mafia: The Old Country|mafia-the-old-country|1
+SchoolBoy Runaway|schoolboy-runaway|1
+Twilight Wars|twilight-wars|1
+PixelTap|pixeltap|1
+Doom: The Dark Ages|doom-the-dark-ages|1
+Call of Duty: Black Ops 6|call-of-duty-black-ops-6|1
+В тылу врага 2|men-of-war-2|1
+Batman: Arkham Shadow|batman-arkham-shadow|1
+Supernatural: The Game|supernatural-the-game|1
+AFK Journey|afk-journey|1
+Marvel Rivals|marvel-rivals|1
+Terminator: Survivors|terminator-survivors|1
+Marvel’s Venom|marvels-venom|1
+Marvel’s Blade|marvel-s-blade|1
+Exodus|exodus|1
+L.A. Noire|l-a-noire|1
+Брукхейвен|brukheven|1
+Счетчик Блокс|counter-blox|1
+Good pizza, great pizza|goode-pizza-great-pizza|1
+The Ants Underground Kingdom|the-ants-underground-kingdom|1
+Dragon Champions|dragon-champions|1
+Taxi Boss|taxi-boss|1
+Pizza Tower|pizza-tower|1
+Doors|doors|1
+Pls Donate|pls-donate|1
+Hijutsu Conflict|hijutsu-conflict|1
+Fallout|fallout|1
+Farming Simulator 17|farming-simulator-17|1
+Mad Max|mad-max|1
+Dead Island|dead-island|1
+Project: Playtime|project-playtime|1
+В тылу врага|behind-enemy-lines|1
+Albion Online|albion-online|1
+Dead Rising 4|dead-rising-4|1
+Dead Rising|dead-rising|1
+Мор (Утопия)|pathologic|1
+Red Dead Revolver|red-dead-revolver|1
+Alpha Protocol|alpha-protocol|1
+X-Men Origins: Wolverine|x-men-origins-wolverine|1
+Tennis Clash|tennis-clash|1
+Delta Force|delta-force|1
+ELEX|elex|1
+Myths of Moonrise|myths-of-moonrise|1
+Idle Awakening|idle-awakening|1
+Sssnaker|sssnaker|1
+Modern Warships|modern-warships|1
+Scarface: The World Is Yours|scarface-the-world-is-yours|1
+InFamous 2|infamous-2|1
+Shadow Warrior (2013)|shadow-warrior-2013|1
+Bulletstorm|bulletstorm|1
+Vanquish|vanquish|1
+Resistance 3|resistance-3|1
+Tom Clancy’s Ghost Recon|ghost-recon|1
+Totally Spies!|totally-spies|1
+Asphalt|asphalt|1
+Mafia City|mafia-city|1
+Shadowgun Legends|shadowgun-legends|1
+Soulcalibur|soulcalibur|1
+Command & Conquer: Red Alert|command-conquer-red-alert|1
+Prototype 2|prototype-2|1
+Prototype|prototype|1
+FIFA Football 2003|fifa-football-2003|1
+Saints Row IV|saints-row-4|1
+Saints Row 2|saints-row-2|1
+Saints Row|saints-row|1
+Duke Nukem 3D|duke-nukem-3d|1
+The Amazing Spider-Man 2 (2014)|the-amazing-spider-man-2-2014|1
+The Amazing Spider-Man (2012)|the-amazing-spider-man-2012|1
+Spider-Man: Edge of Time|spider-man-edge-of-time|1
+Spider-Man: Shattered Dimensions|spider-man-shattered-dimensions|1
+Spider-Man: Web of Shadows|spider-man-web-of-shadows|1
+Spider-Man: Friend or Foe|spider-man-friend-or-foe|1
+Spider-Man 3|spider-man-3|1
+Spider-Man: The Movie Game|spider-man-the-movie-game|1
+Serious Sam II|serious-sam-2|1
+Metro: Last Light|metro-last-light|1
+Killzone|killzone|1
+Tekken 6|tekken-6|1
+Tekken 5|tekken-5|1
+Tekken|tekken|1
+Pro Evolution Soccer 5|pro-evolution-soccer-5|1
+Pro Evolution Soccer 2018|pro-evolution-soccer-2018|1
+Devil May Cry 4|devil-may-cry-4|1
+Devil May Cry 2|devil-may-cry-2|1
+Heroes of Might and Magic 5|heroes-of-might-and-magic-5|1
+Heroes of Might and Magic 4|heroes-of-might-and-magic-4|1
+Hitman: Blood Money|hitman-blood-money|1
+Hitman: Contracts|hitman-contracts|1
+Hitman 2: Silent Assassin|hitman-2-silent-assassin|1
+Hitman: Codename 47|hitman-codename-47|1
+Mafia III|mafia-3|1
+Mafia II|mafia-2|1
+Star Wars: Battlefront II (2017)|star-wars-battlefront-2-2017|1
+Star Wars Jedi Knight: Jedi Academy|star-wars-jedi-knight-jedi-academy|1
+Batman: The Enemy Within|batman-the-enemy-within|1
+Batman: The Telltale Series|batman-the-telltale-series|1
+Batman: Arkham Knight|batman-arkham-knight|1
+Batman: Arkham Origins|batman-arkham-origins|1
+Batman: Arkham City|batman-arkham-city|1
+Batman: Arkham Asylum|batman-arkham-asylum|1
+Sid Meier’s Civilization V|sid-meiers-civilization-5|1
+God of War III|god-of-war-3|1
+Warhammer 40,000: Space Marine 2|warhammer-40000-space-marine-2|1
+Resident Evil 4|resident-evil-4-2005|1
+Resident Evil 3: Nemesis|resident-evil-3-nemesis-1999|1
+Resident Evil 2|resident-evil-2-1998|1
+Call of Duty 4: Modern Warfare (2007)|cod4-mw-2007|1
+GTA: Vice City Stories|gta-vice-city-stories|1
+GTA: Liberty City Stories|gta-liberty-city-stories|1
+Wuthering Waves|wuthering-waves|1
+Unturned|unturned|1
+Brotato|brotato|1
+Atomic Heart 2|atomic-heart-2|1
+Russian Train Trip 2|russian-train-trip-2|1
+Choice of Life: Middle Ages 2|choice-of-life-middle-ages-2|1
+Silent Hill 2|silent-hill-2|1
+Silent Hill Townfall|silent-hill-townfall|1
+Neon Prime|neon-prime|1
+Mafia: The City of Lost Heaven|mafia-1|1
+Lies of P|lies-of-p|1
+Marvel’s Spider-Man Remastered|marvel-s-spider-man-remastered|1
+DISTORTION|distortion|1
+NHL 23|nhl-23|1
+Zenless Zone Zero|zenless-zone-zero|1
+Cities: Skylines|cities-skylines|1
+Crysis 4|crysis-4|1
+Serious Sam: Siberian Mayhem|serious-sam-siberian-mayhem|1
+Endless Journey|endless-journey|1
+Avatar: Frontiers of Pandora|avatar-frontiers-of-pandora|1
+Max Payne 3|max-payne-3|1
+Cult of the Lamb|cult-of-the-lamb|1
+Любовь, Деньги, Рок-н-Ролл|love-money-rock-n-roll|1
+theHunter: Call of the Wild|thehunter-call-of-the-wild|1
+Blue Archive|blue-archive|1
+Grand Piece Online|grand-piece-online|1
+Car Dealership Tycoon|car-dealership-tycoon|1
+Funky Friday|funky-friday|1
+Принц Персии: Пески времени (ремейк)|princ-persii-peski-vremeni-remejk|1
+Geometry Dash|geometry-dash|1
+Battlefield 4|battlefield-4|1
+GTA The Trilogy: The Definitive Edition|gta-trilogy-definitive-edition|1
+Free Fire MAX|free-fire-max|1
+Call of Duty (2023)|call-of-duty-2023|1
+Forspoken|forspoken|1
+Marvel's Spider-Man 2|marvels-spider-man-2|1
+Marvel’s Wolverine|marvels-wolverine|1
+Lineage2M|lineage2m|1
+inFamous|infamous|1
+Battlefield Mobile|battlefield-mobile|1
+Arsenal Roblox|arsenal-roblox|1
+Skyblivion|skyblivion|1
+Anime Warriors|anime-warrior|1
+Tiny Bunny|tiny-bunny|1
+Star Stable|star-stable|1
+Cookie Clicker|cookie-clicker|1
+Insurgency Sandstorm|insurgency-sandstorm|1
+Легенда Феникса|legenda-feniksa|1
+Ведьмак 2|witcher-2|1
+Doki Doki Literature Club|doki-doki-literature-club|1
+World of Warcraft: Wrath of the Lich King|wow-wrath-of-the-lich-king|1
+RoboCop: Rogue City|robocop-rogue-city|1
+Ghost of Tsushima: Director's Cut|ghost-of-tsushima-directors-cut|1
+Resident Evil Code: Veronica|resident-evil-code-veronica|1
+Fallout: London|fallout-london|1
+GTA 5: Expanded and Enhanced|gta-5-expanded-and-enhanced|1
+Painkiller|painkiller|1
+Palia|palia|1
+Your Bizarre Adventure|your-bizarre-adventure|1
+Far Cry 2|far-cry-2|1
+Far Cry|far-cry|1
+Pioner|pioner|1
+GTA 3|gta-3|1
+Final Fantasy XIV|final-fantasy-14|1
+Resident Evil 6|resident-evil-6|1
+Resident Evil 5|resident-evil-5|1
+Dead Island 2|dead-island-2|1
+The Binding of Isaac: Rebirth|the-binding-of-isaac-rebirth|1
+SnowRunner|snowrunner|1
+Battlefield|battlefield|1
+Apex Legends Mobile|apex-legends-mobile|1
+Wolfenstein II: The New Colossus|wolfenstein-2-the-new-colossus|1
+Counter-Strike: Source|cs-source|1
+Diablo 2|diablo-2|1
+Summertime Saga|summertime-saga|1
+The Evil Within 2|the-evil-within-2|1
+The Elder Scrolls III: Morrowind|the-elder-scrolls-iii-morrowind|1
+Radmir RP|radmir-rp|1
+Astro Bot|astro-bot|1
+Zombie Army 4: Dead War|zombie-army-4-dead-war|1
+7DS|7ds|1
+Warpath|warpath|1
+Assassin’s Creed: Brotherhood|assassins-creed-brotherhood|1
+Assassin's Creed 2|assassins-creed-2|1
+Call of Duty Vanguard|call-of-duty-vanguard|1
+Resident Evil Re:Verse|resident-evil-re-verse|1
+Racing Master|racing-master|1
+Mortal Kombat|mortal-kombat|1
+Teenage Mutant Ninja Turtles: Shredder’s Revenge|teenage-mutant-ninja-turtles-shredders-revenge|1
+Euro Truck Simulator 2|euro-truck-simulator-2|1
+Portal 2|portal-2|1
+Homescapes|homescapes|1
+Rise of Kingdoms|rise-of-kingdoms|1
+Six Days in Fallujah|six-days-in-fallujah|1
+Resident Evil 7|resident-evil-7|1
+ARK: Survival Evolved|ark-survival-evolved|1
+Shindo Life|shindo-life|1
+The Day Before|the-day-before|1
+Scorn|scorn|1
+Fallout: New Vegas|fallout-new-vegas|1
+Age of Empires 4|age-of-empires-4|1
+Crossout|crossout|1
+Honkai Impact 3rd|honkai-impact-3rd|1
+Dead Space|dead-space|1
+Disco Elysium: The Final Cut|disco-elysium-the-final-cut|1
+Crimson Desert|crimson-desert|1
+Lineage 2|lineage-2|1
+Assassin’s Creed 3|assassins-creed-3|1
+Enlisted|enlisted|1
+Phasmophobia|phasmophobia|1
+Need for Speed: Hot Pursuit Remastered|need-for-speed-hot-pursuit-remastered|1
+Left 4 Dead 2|left-4-dead-2|1
+God of War: Ragnarok|god-of-war-ragnarok|1
+Devil May Cry 5: Special Edition|devil-may-cry-5-special-edition|1
+War Robots|war-robots|1
+Prince of Persia: The Sands of Time Remake|prince-of-persia-the-sands-of-time-remake|1
+Super Mario 3D All-Stars|super-mario-3d-all-stars|1
+Teardown|teardown|1
+Gotham Knights|gotham-knights|1
+Suicide Squad: Kill the Justice League|suicide-squad-kill-the-justice-league|1
+Black Myth: Wukong|black-myth-wu-kong|1
+Dying Light|dying-light|1
+Forza Motorsport|forza-motorsport|1
+Fall Guys: Ultimate Knockout|fall-guys-ultimate-knockout|1
+Diabotical|diabotical|1
+Watch Dogs 2|watch-dogs-2|1
+Mortal Shell|mortal-shell|1
+NBA 2K21|nba2k21|1
+Stray|stray|1
+Hitman 3|hitman-3|1
+Final Fantasy 16|final-fantasy-16|1
+Prey (2017)|prey|1
+Sherlock Holmes: Chapter One|sherlock-holmes-chapter-one|1
+Borderlands 4|borderlands-4|1
+Mafia 2: Definitive Edition|mafia-2-definitive-edition|1
+Terraria|terraria|1
+Assassin's Creed Valhalla|ac-valhalla|1
+Pac-Man|pac-man|1
+Saints Row: The Third|saints-row-the-third|1
+Garry’s Mod|garrys-mod|1
+Assetto Corsa Competizione|assetto-corsa-competizione|1
+State of Decay 2|state-of-decay-2|1
+Metro Redux|metro-redux|1
+Gothic Remake|gothic-remake|1
+Fast & Furious: Crossroads|fast-furious-crossroads|1
+Ruined King: A League of Legends Story|ruined-king-a-league-of-legends-story|1
+Senua's Saga: Hellblade 2|senuas-saga-hellblade-2|1
+Mount & Blade 2: Bannerlord|mount-blade-2-bannerlord|1
+Chivalry 2|chivalry-2|1
+King’s Bounty 2|kings-bounty-2|1
+Animal Crossing: New Horizons|animal-crossing-new-horizons|1
+Dreams|dreams|1
+Resident Evil 3 Remake|resident-evil-3-remake|1
+Titanfall|titanfall|1
+Half-Life: Alyx|half-life-alyx|1
+Path of Exile 2|path-of-exile-2|1
+We Happy Few|we-happy-few|1
+Super Smash Bros. Ultimate|super-smash-bros-ultimate|1
+Warcraft 3: Reforged|warcraft3-reforged|1
+League of Legends: Wild Rift|league-of-legends-wild-rift|1
+The Elder Scrolls Online|the-elder-scrolls-online|1
+Sea of Thieves|sea-of-thieves|1
+Half-Life: Source|half-life-source|1
+Terminator: Resistance|terminator-resistance|1
+NBA 2K20|nba-2k20|1
+Greedfall|greedfall|1
+DayZ|dayz|1
+Microsoft Flight Simulator (2020)|microsoft-flight-simulator|1
+Minecraft: Dungeons|minecraft-dungeons|1
+Remember Me|remember-me|1
+Super Mario Bros.|super-mario|1
+Cuphead|cuphead|1
+Pokemon GO|pokemon-go|1
+Marvel’s Avengers|marvels-avengers-a-day|1
+Total War: Three Kingdoms|total-war-three-kingdoms|1
+DmC: Devil May Cry|dmc-devil-may-cry|1
+World of Warcraft Classic|world-of-warcraft-classic|1
+Life is Strange 2|life-is-strange-2|1
+Halo Infinite|halo-infinite|1
+World War Z|world-war-z|1
+Assassin's Creed: Unity|assasins-creed-unity|1
+Star Wars: The Force Unleashed|star-wars-the-force-unleashed|1
+Shadow of the Tomb Raider|shadow-of-the-tomb-raider|1
+Sid Meier’s Civilization 6|sid-meier-s-civilization-vi|1
+Death Stranding|death-stranding|1
+Chernobylite|chernobylite|1
+Farming Simulator 20|farming-simulator-20|1
+Red Dead Redemption|red-dead-redemption|1
+Doom Eternal|doom-eternal|1
+Max Payne|max-payne|1
+Rage 2|rage-2|1
+The Sims 4|the-sims-4|1
+Control|control|1
+Sekiro: Shadows Die Twice|sekiro|1
+Tom Clancy's The Division 2|the-division-2|1
+Devil May Cry 5|dmc-5|1
+Resident Evil 2 Remake|re-2-remake|1
+Bum Simulator|bum-simulator|1
+X4: Foundations|x4-foundations|1
+Diablo Immortal|diablo-immortal|1
+Stellaris|stellaris|1
+Hitman 2|hitman-2|1
+Fallout 76|fallout-76|1
+Assassin's Creed: Origins|assassiss-creed-origins|1
+Spider-Man (2018)|spider-man|1
+Clash of Clans|clash-of-clans|1
+Paladins|paladins|1
+Madden NFL 21|madden-nfl-21|1
+Doom|doom|1
+Heroes of Newerth|heroes-of-newerth|1
+Crossfire|crossfire|1
+Command & Conquer Remastered Collection|command-conquer-remastered-collection|1
+Halo|halo|1
+Trackmania|trackmania|1
+Street Fighter 5|street-fighter-5|1
+Fields of Mistria|fields-of-mistria|0
