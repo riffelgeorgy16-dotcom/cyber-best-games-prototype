@@ -110,7 +110,6 @@ export function validate(
   // Ограничения прототипа
   out.push({ level: 'limitation', code: 'csr', what: 'Метатеги и JSON-LD меняются в браузере. Поисковик увидит их только при серверной генерации HTML (требование ТЗ к серверу)' });
   out.push({ level: 'limitation', code: 'status', what: 'HTTP-коды (200, 301, 404) только имитируются: статический хостинг отдает их иначе' });
-  out.push({ level: 'limitation', code: 'mobile', what: 'Мобильный домен m.cyber.sports.ru не эмулируется, alternate и canonical для него только вычисляются' });
   if (seo.indexStatus === 'noindex-few')
     out.push({ level: 'info', code: 'few', what: `Найдено ${slice.total} игр (меньше 3): страница показывается, но закрыта noindex (решение п.4)` });
   return out;

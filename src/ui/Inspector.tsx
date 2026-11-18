@@ -76,8 +76,6 @@ export function Inspector(p: {
                 <Row k="Robots" v={seo.robots} mono />
                 <Row k="rel=prev" v={seo.prev} mono />
                 <Row k="rel=next" v={seo.next} mono />
-                <Row k="rel=alternate (моб.)" v={seo.alternateMobile} mono />
-                <Row k="canonical моб. версии" v={seo.mobileCanonical} mono />
                 <Row k="Хлебные крошки" v={seo.breadcrumbs.map((c) => c.name).join(' / ')} />
                 <Row k="Активные фильтры" v={[
                   state.genre && 'жанр: ' + p.dicts.genres[state.genre].name,

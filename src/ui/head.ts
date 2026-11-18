@@ -30,7 +30,6 @@ export function applyHead(seo: PageSeo | null, notFound = false) {
     setMeta('robots', 'noindex, follow');
     setMeta('description', '');
     ['canonical', 'prev', 'next'].forEach((r) => setLink(r));
-    setLink('alternate', undefined, { media: 'only screen and (max-width: 640px)' });
     document.getElementById('ld-itemlist')?.remove();
     document.getElementById('ld-breadcrumbs')?.remove();
     return;
@@ -43,7 +42,6 @@ export function applyHead(seo: PageSeo | null, notFound = false) {
   setLink('canonical', seo.canonical);
   setLink('prev', seo.prev);
   setLink('next', seo.next);
-  setLink('alternate', seo.alternateMobile, { media: 'only screen and (max-width: 640px)' });
   setJson('ld-itemlist', seo.itemList);
   setJson('ld-breadcrumbs', seo.breadcrumbList);
 }

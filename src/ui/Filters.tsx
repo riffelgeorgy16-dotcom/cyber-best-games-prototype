@@ -5,6 +5,7 @@ import { buildUrl, DEFAULT_SORT } from '../core/route';
 import type { CatalogState, Dictionaries, Game } from '../core/types';
 import { href } from './router';
 import { onLinkClick } from './Chrome';
+import collections from '../data/collections.json';
 
 type Kind = 'platform' | 'genre' | 'year' | 'rating';
 const TITLES: Record<Kind, string> = { platform: 'Платформа', genre: 'Жанр', year: 'Год', rating: 'Оценка' };
@@ -110,47 +111,13 @@ export function Filters(props: {
   );
 }
 
-/** Плашки подборок: ссылки на индексируемые страницы фильтров (3 и более игр) */
-const COLLECTIONS: { label: string; s: Partial<CatalogState> }[] = [
-  { label: 'Лучшие RPG', s: { genre: 'rpg' } },
-  { label: 'Шутеры на ПК', s: { genre: 'shutery', platform: 'pc' } },
-  { label: 'Хорроры', s: { genre: 'horror-igry' } },
-  { label: 'Игры 2025 года', s: { year: '2025' } },
-  { label: 'Лучшее на PS5', s: { platform: 'playstation-5' } },
-  { label: 'Стратегии', s: { genre: 'strategii' } },
-  { label: 'Игры с открытым миром', s: { genre: 'igry-s-otkrytym-mirom' } },
-  { label: 'Стелс', s: { genre: 'stels-igry' } },
-  { label: 'Игры про выживание', s: { genre: 'igry-vyzhivanie' } },
-  { label: 'Постапокалипсис', s: { genre: 'igry-postapokalipsis' } },
-  { label: 'Научная фантастика', s: { genre: 'igry-nauchnaya-fantastika' } },
-  { label: 'Игры на Nintendo Switch', s: { platform: 'nintendo-switch' } },
-  { label: 'Спортивные игры', s: { genre: 'sportivnye-igry' } },
-  { label: 'Soulslike', s: { genre: 'soulslike' } },
-  { label: 'Слэшеры', s: { genre: 'sleshery' } },
-  { label: 'Игры на Xbox Series X/S', s: { platform: 'xbox-series' } },
-  { label: 'Королевская битва', s: { genre: 'battle-royale' } },
-  { label: 'MMORPG', s: { genre: 'mmorpg' } },
-  { label: 'Игры 2024 года', s: { year: '2024' } },
-  { label: 'Классика PS2', s: { platform: 'playstation-2' } },
-];
-const SHOWN = 8;
-
-export function Collections({ games, current, onNav }: { games: Game[]; current: string; onNav: (u: string) => void }) {
-  const [all, setAll] = useState(false);
-  const items = COLLECTIONS.map((c) => ({ ...c, url: buildUrl({ page: 1, ...c.s }) }))
-    .filter((c) => games.filter((g) =>
-      (!c.s.genre || g.genres.includes(c.s.genre)) && (!c.s.platform || g.platforms.includes(c.s.platform)) && (!c.s.year || String(g.year) === c.s.year),
-    ).length >= CONFIG.minIndexable);
-  const shown = all ? items : items.slice(0, SHOWN);
+/** Плашки подборок: редакционные посты Кибера из src/data/collections.json */
+export function Collections() {
   return (
     <nav className="chips" aria-label="Подборки">
-      {shown.map((c) => (
-        <a key={c.url} href={href(c.url)} className={'chip' + (current === c.url ? ' on' : '')}
-          onClick={(e) => onLinkClick(e, c.url, onNav)}>{c.label}</a>
+      {collections.items.map((c) => (
+        <a key={c.url} href={c.url} className="chip" title={c.title}>{c.label}</a>
       ))}
-      {items.length > SHOWN && (
-        <button className="chip chip-more" onClick={() => setAll(!all)}>{all ? 'Свернуть' : 'Другие подборки'}</button>
-      )}
     </nav>
   );
 }

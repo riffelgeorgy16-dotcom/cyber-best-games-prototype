@@ -16,8 +16,6 @@ export interface PageSeo {
   robots: string;
   prev?: string;
   next?: string;
-  alternateMobile: string;
-  mobileCanonical: string;
   indexStatus: 'index' | 'noindex-few' | 'noindex-search' | 'noindex-params' | 'noindex-empty';
   breadcrumbs: Crumb[];
   itemList: object;
@@ -149,8 +147,6 @@ export function computeSeo(s: CatalogState, slice: PageSlice, d: Dictionaries): 
     template: { source: type === 'main' ? 'exact' : found.source, row: found.tpl?.row },
     title, description, h1, h1Base: base.h1,
     canonical, robots, prev, next,
-    alternateMobile: absolute(buildPath(s), CONFIG.mobileHost),
-    mobileCanonical: filterBase,
     indexStatus, breadcrumbs: bc, itemList, breadcrumbList, url,
   };
 }

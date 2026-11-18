@@ -1,0 +1,9 @@
+{
+  "_comment": "Редакционные подборки над фильтрами. Меняются без правки кода: label - текст плашки, title - заголовок поста, url - ссылка на пост.",
+  "items": [
+    { "label": "Интерактивное кино", "title": "10 лучших игр в жанре интерактивного кино", "url": "https://cyber.sports.ru/games/blogs/3206077.html" },
+    { "label": "Инди-игры", "title": "14 великих инди-игр. В такое - играем!", "url": "https://cyber.sports.ru/games/blogs/3232098.html" },
+    { "label": "Красивая графика", "title": "Игры с красивой графикой на ПК: топ игр с красивым миром", "url": "https://cyber.sports.ru/games/blogs/3306364.html" },
+    { "label": "Зимние игры", "title": "15 лучших игр про выживание зимой", "url": "https://cyber.sports.ru/games/blogs/3378347.html" }
+  ]
+}

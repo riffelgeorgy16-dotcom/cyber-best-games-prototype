@@ -1,7 +1,6 @@
 // Настройки, согласованные с заказчиком. Меняются здесь, а не в коде логики.
 export const CONFIG = {
   host: 'https://cyber.sports.ru',
-  mobileHost: 'https://m.cyber.sports.ru',
   base: '/games/best/',
   perPage: 35,
   /** Минимум игр для индексируемой страницы (ТЗ: "Минимальное количество игр для создания страницы - 3") */

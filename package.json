@@ -1,13 +1,14 @@
 {
   "name": "cyber-best-games-prototype",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:file": "VITE_ROUTER=hash vite build",
-    "test": "vitest run"
+    "test": "vitest run",
+    "build:pages": "VITE_FORCE_NOINDEX=1 VITE_BASE=/cyber-best-games-prototype/ vite build && VITE_FORCE_NOINDEX=1 tsx scripts/prerender.ts dist && cp dist/index.html dist/404.html"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.7.0",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "vite": "^5.4.21",
     "vite-plugin-singlefile": "^2.3.4",

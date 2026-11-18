@@ -50,8 +50,7 @@ export function GameCard({ game: g, position, dicts: d, onNav }: { game: Game; p
         <Cover g={g} />
       </a>
       <div className="card-body">
-        <div className="card-top">
-          <span className="pos" title="Позиция в общем списке">{position}</span>
+        <div className="card-top" data-position={position}>
           <span className={'rating r' + Math.floor(g.rating.value)} title="Оценка по 10-балльной шкале">
             <b>{formatRating(g.rating.value)}</b>
           </span>

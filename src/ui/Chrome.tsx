@@ -20,7 +20,7 @@ export function AddressBar({ url, onGo, mode }: { url: string; onGo: (u: string)
       className="addr"
       onSubmit={(e) => {
         e.preventDefault();
-        let v = val.trim().replace(/^https?:\/\/(m\.)?cyber\.sports\.ru/, '');
+        let v = val.trim().replace(/^https?:\/\/cyber\.sports\.ru/, '');
         if (!v.startsWith('/')) v = '/' + v;
         onGo(v);
       }}

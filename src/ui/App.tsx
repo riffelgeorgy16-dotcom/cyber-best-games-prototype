@@ -12,7 +12,6 @@ import { applyHead } from './head';
 import { Header, AddressBar, Breadcrumbs, NewsBlocks, Footer } from './Chrome';
 import { Filters, Collections } from './Filters';
 import { AddGameButton } from './AddGame';
-import { buildPath } from '../core/route';
 import { SearchBar } from './SearchBar';
 import { GameCard } from './GameCard';
 import { Pagination } from './Pagination';
@@ -75,7 +74,7 @@ export function App() {
               <h1 className="h1">{seo.h1}</h1>
               <AddGameButton />
             </div>
-            <Collections games={ALL} current={buildPath(state)} onNav={navigate} />
+            <Collections />
             {state.q && <p className="search-note">Результаты поиска по запросу «{state.q}» с учетом выбранных фильтров</p>}
             <Filters
               games={ALL} dicts={D} state={state} onNav={navigate}

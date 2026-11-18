@@ -27,7 +27,7 @@ async def head(pg):
       empty: document.querySelector('.empty-text')?.textContent || null,
       nf: !!document.querySelector('.notfound'),
       insErr: document.querySelector('.ins-toggle')?.textContent || '',
-      path: location.pathname + location.search,
+      path: location.pathname.replace(/^\/cyber-best-games-prototype/, '') + location.search,
     })''')
 
 def no_err(h): return 'ошибок нет' in h['insErr']
@@ -178,7 +178,7 @@ async def main():
         t = await g.locator('.card-title a').get_attribute('href')
         check('Название ведет на тег Кибера', re.match(r'^https://cyber\.sports\.ru/games/[^/]+/$', t or ''), t)
         gl = await g.locator('.card-row').first.locator('a').first.get_attribute('href')
-        check('Жанр ведет на страницу жанра', re.match(r'^/games/best/[a-z0-9-]+/$', gl or ''), gl)
+        check('Жанр ведет на страницу жанра', re.match(r'^(/cyber-best-games-prototype)?/games/best/[a-z0-9-]+/$', gl or ''), gl)
         date = await g.locator('.card-date').text_content()
         check('Дата без "Вышла:"', 'Вышла' not in date, date)
 
@@ -228,16 +228,11 @@ async def main():
         allv = [float(x) for x in await pg.locator('.rating b').all_text_contents()]
         check('Оценки в шкале 0-10', allv and all(0 <= v <= 10 for v in allv), allv[:5])
 
-        # v0.2: подборки
-        chips = await pg.locator('.chips a.chip').count()
-        check('Подборки: 8 плашек на старте', chips == 8, chips)
-        await pg.click('.chip-more'); await pg.wait_for_timeout(200)
-        more = await pg.locator('.chips a.chip').count()
-        check('Подборки: "Другие подборки" раскрывает список', more > chips, more)
-        await pg.click('.chips a.chip:has-text("Лучшие RPG")'); await pg.wait_for_timeout(300)
-        h = await head(pg)
-        check('Подборка ведет на страницу фильтра', h['path'] == '/games/best/rpg/' and h['robots'] == 'index, follow', (h['path'], h['robots']))
-
+        # v0.3: подборки - посты редакции
+        chips = await pg.evaluate("() => [...document.querySelectorAll('.chips a.chip')].map(a => a.href)")
+        check('Подборки: 4 ссылки на посты Кибера', len(chips) == 4 and all(re.match(r'^https://cyber\.sports\.ru/games/blogs/\d+\.html$', c) for c in chips), chips)
+        check('На карточках нет порядковых номеров', await pg.locator('.card .pos').count() == 0)
+        await go('/games/best/rpg/')
         # v0.2: добавить игру
         await pg.click('.btn-add')
         check('Окно заявки открылось', await pg.locator('.modal').count() == 1)
