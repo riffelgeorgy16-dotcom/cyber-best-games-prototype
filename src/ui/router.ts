@@ -14,17 +14,26 @@ export function encodeHash(url: string): string {
   const segs = path.slice(CONFIG.base.length).split('/').filter(Boolean);
   const p = new URLSearchParams(search);
   const page = p.get('page');
-  return 'best' + segs.map((s) => '--' + s).join('') + (page ? '--p' + page : '');
+  const rating = p.get('rating');
+  const sort = p.get('sort');
+  return 'best' + segs.map((s) => '--' + s).join('') + (rating ? '--r' + rating : '') + (sort ? '--s' + sort : '') + (page ? '--p' + page : '');
 }
 
 export function decodeHash(hash: string): string {
   const h = hash.replace(/^#/, '');
   if (!h || !h.startsWith('best')) return CONFIG.base;
   const parts = h.split('--').slice(1);
-  let page = '';
+  let page = '', sort = '', rating = '';
   if (parts.length && /^p\d+$/.test(parts[parts.length - 1])) page = parts.pop()!.slice(1);
+  if (parts.length && /^s[a-z-]+$/.test(parts[parts.length - 1]) && !/^\d/.test(parts[parts.length - 1])) {
+    const cand = parts[parts.length - 1];
+    if (['srating-desc', 'srating-asc', 'spopular', 'salpha', 'snew', 'sold'].includes(cand)) sort = parts.pop()!.slice(1);
+  }
+  if (parts.length && /^r\d+-\d+$/.test(parts[parts.length - 1])) rating = parts.pop()!.slice(1);
   const params: string[] = [];
   if (memoryQuery) params.push('q=' + encodeURIComponent(memoryQuery));
+  if (rating) params.push('rating=' + rating);
+  if (sort) params.push('sort=' + sort);
   if (page) params.push('page=' + page);
   return CONFIG.base + parts.map((s) => s + '/').join('') + (params.length ? '?' + params.join('&') : '');
 }
