@@ -41,9 +41,35 @@ function LinkList({ items, max, onNav }: { items: { t: string; u: string }[]; ma
   );
 }
 
+/** Короткие подписи бейджей платформ и семейство (для цвета). Логотипы брендов не используются. */
+const BADGE: Record<string, [string, string]> = {
+  pc: ['ПК', 'pc'], 'playstation-5': ['PS5', 'ps'], 'playstation-4': ['PS4', 'ps'], 'playstation-3': ['PS3', 'ps'],
+  'playstation-2': ['PS2', 'ps'], 'playstation-1': ['PS1', 'ps'], psp: ['PSP', 'ps'], 'ps-vita': ['Vita', 'ps'],
+  'xbox-series': ['Xbox X|S', 'xb'], 'xbox-one': ['Xbox One', 'xb'], 'xbox-360': ['X360', 'xb'], xbox: ['Xbox', 'xb'],
+  'nintendo-switch': ['Switch', 'nn'], 'nintendo-switch-2': ['Switch 2', 'nn'], 'nintendo-wii': ['Wii', 'nn'], 'nintendo-wii-u': ['Wii U', 'nn'],
+  'nintendo-ds': ['DS', 'nn'], 'nintendo-3ds': ['3DS', 'nn'], 'nintendo-gamecube': ['GameCube', 'nn'], 'nintendo-64': ['N64', 'nn'],
+  'nintendo-game-boy': ['Game Boy', 'nn'], 'nintendo-game-boy-advance': ['GBA', 'nn'],
+  sega: ['SEGA', 'sg'], 'sega-mega-drive': ['Mega Drive', 'sg'], 'sega-mega-drive-2': ['Mega Drive 2', 'sg'], 'sega-dreamcast': ['Dreamcast', 'sg'],
+  mac: ['Mac', 'pc'], linux: ['Linux', 'pc'], 'oculus-quest-3': ['Quest 3', 'vr'], 'steam-vr': ['SteamVR', 'vr'],
+};
+
+function PlatformBadges({ slugs, d, onNav }: { slugs: string[]; d: Dictionaries; onNav: (u: string) => void }) {
+  return (
+    <div className="badges">
+      {slugs.map((s) => {
+        const u = buildUrl({ platform: s, page: 1 });
+        const [t, fam] = BADGE[s] ?? [d.platforms[s].name, 'pc'];
+        const full = d.platforms[s].var || d.platforms[s].name;
+        return (
+          <a key={s} className={'badge b-' + fam} href={href(u)} title={`Лучшие игры на ${full}`} onClick={(e) => onLinkClick(e, u, onNav)}>{t}</a>
+        );
+      })}
+    </div>
+  );
+}
+
 export function GameCard({ game: g, position, dicts: d, onNav }: { game: Game; position: number; dicts: Dictionaries; onNav: (u: string) => void }) {
   const genres = g.genres.map((s) => ({ t: d.genres[s].name, u: buildUrl({ genre: s, page: 1 }) }));
-  const platforms = g.platforms.map((s) => ({ t: d.platforms[s].var || d.platforms[s].name, u: buildUrl({ platform: s, page: 1 }) }));
   return (
     <article className="card">
       <a className="cover-link" href={g.url} tabIndex={-1} aria-hidden>
@@ -56,8 +82,8 @@ export function GameCard({ game: g, position, dicts: d, onNav }: { game: Game; p
           </span>
         </div>
         <h3 className="card-title"><a href={g.url}>{g.name}</a></h3>
-        <div className="card-row"><span className="lbl">Жанр:</span> <LinkList items={genres} max={3} onNav={onNav} /></div>
-        <div className="card-row"><span className="lbl">Платформа:</span> <LinkList items={platforms} max={4} onNav={onNav} /></div>
+        <div className="card-row"><span className="lbl">Жанр:</span> <LinkList items={genres} max={2} onNav={onNav} /></div>
+        <PlatformBadges slugs={g.platforms} d={d} onNav={onNav} />
         <div className="card-date">{formatDate(g)}</div>
       </div>
     </article>

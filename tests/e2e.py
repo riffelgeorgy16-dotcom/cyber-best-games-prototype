@@ -246,6 +246,35 @@ async def main():
         check('Заполненная заявка: экран успеха с пометкой прототипа', await pg.locator('.ok-msg').count() == 1 and 'никуда не отправлена' in (await pg.locator('.modal').text_content()))
         await pg.keyboard.press('Escape'); await pg.wait_for_timeout(200)
         check('Окно закрывается по Esc', await pg.locator('.modal').count() == 0)
+
+        # v0.4: бейджи платформ
+        await go('/games/best/')
+        b0 = pg.locator('.card .badges a.badge').first
+        bh = await b0.get_attribute('href'); bt = await b0.get_attribute('title')
+        check('Бейдж платформы - ссылка на страницу платформы', re.match(r'^(/cyber-best-games-prototype)?/games/best/[a-z0-9-]+/$', bh or '') and bt.startswith('Лучшие игры на'), (bh, bt))
+        await b0.click(); await pg.wait_for_timeout(300)
+        h = await head(pg)
+        check('Клик по бейджу открывает страницу платформы', re.match(r'^/games/best/[a-z0-9-]+/$', h['path']) and h['robots'] == 'index, follow', h['path'])
+        gen_counts = await pg.evaluate("() => [...document.querySelectorAll('.card-row')].map(r => r.querySelectorAll('a').length)")
+        check('Жанров на карточке не больше 2 (без раскрытия)', gen_counts and max(gen_counts) <= 2, max(gen_counts) if gen_counts else None)
+
+        # v0.4: показать еще
+        await go('/games/best/')
+        await pg.evaluate("() => window.scrollTo(0, document.body.scrollHeight)")
+        await pg.click('.btn-more'); await pg.wait_for_timeout(400)
+        h = await head(pg)
+        check('Показать еще: 70 карточек на экране', h['cards'] == 70, h['cards'])
+        check('Показать еще: адрес ?page=2', h['path'] == '/games/best/?page=2', h['path'])
+        check('Показать еще: страница не прокручена наверх', await pg.evaluate('window.scrollY') > 500)
+        check('Показать еще: метатеги второй страницы, ошибок нет', h['h1'].endswith(' - Страница 2') and no_err(h), (h['h1'], h['insErr']))
+        await pg.click('.btn-more'); await pg.wait_for_timeout(400)
+        h = await head(pg)
+        check('Показать еще дважды: 105 карточек, ?page=3', h['cards'] == 105 and h['path'] == '/games/best/?page=3', (h['cards'], h['path']))
+        await pg.reload(wait_until='networkidle')
+        h = await head(pg)
+        check('Обновление после «Показать еще»: 35 карточек третьей страницы', h['cards'] == 35 and h['path'] == '/games/best/?page=3')
+        await go('/games/best/?page=10')
+        check('На последней странице кнопки нет', await pg.locator('.btn-more').count() == 0)
         check('Нет JS-ошибок на страницах', not errors, errors[:3])
         await b.close()
     bad = [r for r in results if not r[1]]

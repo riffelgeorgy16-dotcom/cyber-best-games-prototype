@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import dictsRaw from '../data/dictionaries.json';
 import gamesRaw from '../data/games.json';
 import { CONFIG } from '../core/config';
@@ -39,8 +39,16 @@ export function App() {
     }
   }, [route, url, path]);
 
+  // «Показать еще»: страница, с которой начато накопление карточек. Любая другая навигация его сбрасывает.
+  const [appendFrom, setAppendFrom] = useState<number | null>(null);
+  const appending = useRef(false);
+
   // Сообщение о пустом результате живет только до следующей навигации
-  useEffect(() => setEmptyNotice(null), [url]);
+  useEffect(() => {
+    setEmptyNotice(null);
+    if (appending.current) appending.current = false;
+    else setAppendFrom(null);
+  }, [url]);
 
   const state: CatalogState | null = route.kind === 'ok' ? route.state : null;
   const sorted = useMemo(() => (state ? filterGames(ALL, state) : []), [state]);
@@ -56,7 +64,26 @@ export function App() {
   );
 
   useEffect(() => { applyHead(seo, notFound); }, [seo, notFound]);
-  useEffect(() => { if (route.kind === 'ok') window.scrollTo({ top: 0 }); }, [path, search]);
+  const scrollRef = useRef(true);
+  useEffect(() => {
+    if (route.kind === 'ok' && scrollRef.current) window.scrollTo({ top: 0 });
+    scrollRef.current = true;
+  }, [path, search]);
+
+  const showMore = () => {
+    if (!state) return;
+    if (appendFrom === null) setAppendFrom(state.page);
+    appending.current = true;
+    scrollRef.current = false;
+    setRouteEvent(null);
+    go(buildUrl({ ...state, page: state.page + 1 }));
+  };
+  const start = appendFrom !== null && state && appendFrom < state.page ? appendFrom : null;
+  const shown = start !== null && state ? sorted.slice((start - 1) * CONFIG.perPage, state.page * CONFIG.perPage) : slice.items;
+  const shownOffset = start !== null ? (start - 1) * CONFIG.perPage : slice.offset;
+  const allIssues = start !== null
+    ? [...issues, { level: 'info' as const, code: 'more', what: `«Показать еще»: на экране страницы ${start}-${state?.page} (${shown.length} карточек). Метатеги и ItemList - по текущей странице ${state?.page}, как при прямом заходе` }]
+    : issues;
 
   const navigate = (to: string) => { setRouteEvent(null); go(to); };
 
@@ -86,12 +113,19 @@ export function App() {
               <EmptyState onReset={() => navigate(CONFIG.base)} detail={emptyNotice} />
             ) : (
               <>
-                <div className="result-count">Найдено игр: {slice.total}{slice.pages > 1 && `, страница ${slice.page} из ${slice.pages}`}</div>
+                <div className="result-count">Найдено игр: {slice.total}{slice.pages > 1 && `, страница ${start !== null ? `${start}-${slice.page}` : slice.page} из ${slice.pages}`}</div>
                 <div className="grid">
-                  {slice.items.map((g, i) => (
-                    <GameCard key={g.id} game={g} position={slice.offset + i + 1} dicts={D} onNav={navigate} />
+                  {shown.map((g, i) => (
+                    <GameCard key={g.id} game={g} position={shownOffset + i + 1} dicts={D} onNav={navigate} />
                   ))}
                 </div>
+                {state.page < slice.pages && (
+                  <div className="more-wrap">
+                    <button className="btn btn-more" onClick={showMore}>
+                      Показать еще {Math.min(CONFIG.perPage, slice.total - state.page * CONFIG.perPage)}
+                    </button>
+                  </div>
+                )}
                 <Pagination state={state} pages={slice.pages} onNav={navigate} />
               </>
             )}
@@ -101,7 +135,7 @@ export function App() {
       </main>
       <Footer total={ALL.length} />
       <Inspector
-        url={url} state={state} seo={seo} slice={slice} issues={issues} dicts={D}
+        url={url} state={state} seo={seo} slice={slice} issues={allIssues} dicts={D}
         notFound={notFound ? notFoundReason : null} routeEvent={routeEvent}
         emptyNotice={emptyNotice}
       />

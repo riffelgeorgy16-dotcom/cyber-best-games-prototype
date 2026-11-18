@@ -190,3 +190,17 @@ main { padding: 18px 0 40px; }
 
 .card:hover, .card:focus-within { transform: scale(1.03); box-shadow: 0 10px 28px rgba(20, 30, 50, .18); z-index: 2; position: relative; }
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover, .card:focus-within { transform: none; } }
+
+/* v0.4: бейджи платформ, «Показать еще» */
+.badges { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 2px; }
+.badge { font-size: 11px; font-weight: 700; line-height: 1; padding: 5px 6px; border-radius: 5px; text-decoration: none; border: 1px solid; white-space: nowrap; }
+.badge:hover { filter: brightness(.92); text-decoration: none; }
+.b-pc { color: #3a3f48; border-color: #c9ced6; background: #f3f5f8; }
+.b-ps { color: #1f4fbf; border-color: #b9caf2; background: #eef3ff; }
+.b-xb { color: #1d7a2f; border-color: #b8dcbf; background: #eef8f0; }
+.b-nn { color: #c02a2a; border-color: #f0c0c0; background: #fdf0f0; }
+.b-sg { color: #22345e; border-color: #c3cbe0; background: #eff2f9; }
+.b-vr { color: #6a3fb5; border-color: #d6c6f0; background: #f5f0fd; }
+.more-wrap { display: flex; justify-content: center; margin-top: 22px; }
+.btn-more { background: #fff; color: var(--blue); border: 1px solid var(--blue); padding: 12px 28px; }
+.btn-more:hover { background: #eef3ff; color: var(--blue); }
