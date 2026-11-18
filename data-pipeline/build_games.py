@@ -142,7 +142,8 @@ for r in res:
     if missing:
         diag.append({**r, 'qid': q, 'enwiki': title, 'reason': 'нет: ' + ', '.join(missing)}); continue
     v = rt[src_r]
-    rating = {'value': round(v * 10 if src_r == 'IGN' else v, 1), 'display': (f'{v:g}/10' if src_r == 'IGN' else f'{v:g}/100'), 'source': src_r}
+    # единая 10-балльная шкала: IGN как есть, Metacritic/OpenCritic делим на 10 (94/100 -> 9.4)
+    rating = {'value': round(v if src_r == 'IGN' else v / 10, 1), 'source': src_r, 'original': (f'{v:g}/10' if src_r == 'IGN' else f'{v:g}/100')}
     year = int(first[:4])
     prec = 'year' if first.endswith('-01-01') and len([x for x in dates if x[:4] == first[:4]]) == 1 else 'day'
     steam = d['steam'][0] if d['steam'] else None

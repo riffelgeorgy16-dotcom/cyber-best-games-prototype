@@ -18,7 +18,7 @@ export interface PageSeo {
   next?: string;
   alternateMobile: string;
   mobileCanonical: string;
-  indexStatus: 'index' | 'noindex-few' | 'noindex-search' | 'noindex-empty';
+  indexStatus: 'index' | 'noindex-few' | 'noindex-search' | 'noindex-params' | 'noindex-empty';
   breadcrumbs: Crumb[];
   itemList: object;
   breadcrumbList: object;
@@ -109,11 +109,12 @@ export function computeSeo(s: CatalogState, slice: PageSlice, d: Dictionaries): 
   let indexStatus: PageSeo['indexStatus'] = 'index';
   if (total === 0) indexStatus = 'noindex-empty';
   else if (s.q) indexStatus = 'noindex-search';
+  else if (s.sort || s.rating) indexStatus = 'noindex-params';
   else if (total < CONFIG.minIndexable) indexStatus = 'noindex-few';
 
   const filterBase = absolute(buildPath(s));
   let canonical =
-    CONFIG.canonicalMode === 'filter-base' ? filterBase : absolute(buildUrl({ ...s, q: undefined }));
+    CONFIG.canonicalMode === 'filter-base' ? filterBase : absolute(buildUrl({ ...s, q: undefined, sort: undefined, rating: undefined }));
   if (indexStatus === 'noindex-empty') canonical = absolute(CONFIG.base); // ТЗ: пустой результат -> canonical на главную каталога
   const robots = indexStatus === 'index' ? 'index, follow' : 'noindex, follow';
 
@@ -129,7 +130,7 @@ export function computeSeo(s: CatalogState, slice: PageSlice, d: Dictionaries): 
     url,
     description,
     numberOfItems: total,
-    itemListOrder: 'https://schema.org/ItemListOrderDescending',
+    itemListOrder: ['rating-asc', 'alpha', 'old'].includes(s.sort ?? '') ? 'https://schema.org/ItemListOrderAscending' : 'https://schema.org/ItemListOrderDescending',
     itemListElement: slice.items.map((g: Game, i) => ({
       '@type': 'ListItem',
       position: slice.offset + i + 1,

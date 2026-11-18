@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { buildUrl } from '../core/route';
+import { formatRating } from '../core/catalog';
 import type { Dictionaries, Game } from '../core/types';
 import { href } from './router';
 import { onLinkClick } from './Chrome';
@@ -51,8 +52,8 @@ export function GameCard({ game: g, position, dicts: d, onNav }: { game: Game; p
       <div className="card-body">
         <div className="card-top">
           <span className="pos" title="Позиция в общем списке">{position}</span>
-          <span className={'rating r' + Math.floor(g.rating.value / 10)} title={`Оценка ${g.rating.source}`}>
-            <b>{g.rating.display}</b> <small>{g.rating.source}</small>
+          <span className={'rating r' + Math.floor(g.rating.value)} title="Оценка по 10-балльной шкале">
+            <b>{formatRating(g.rating.value)}</b>
           </span>
         </div>
         <h3 className="card-title"><a href={g.url}>{g.name}</a></h3>

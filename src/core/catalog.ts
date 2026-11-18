@@ -1,26 +1,46 @@
 import { CONFIG } from './config';
-import type { CatalogState, Game } from './types';
+import type { CatalogState, Game, RatingBand, SortKey } from './types';
 
-/** Сортировка: оценка по убыванию; при равенстве - подписчики тега, затем название */
-export function sortGames(games: Game[]): Game[] {
-  return [...games].sort(
-    (a, b) => b.rating.value - a.rating.value || b.subscribers - a.subscribers || a.name.localeCompare(b.name, 'ru'),
-  );
+const byName = (a: Game, b: Game) => a.name.localeCompare(b.name, 'ru');
+/**
+ * Сортировки. По умолчанию - оценка по убыванию.
+ * При равенстве: подписчики тега Кибера, затем название.
+ */
+export function sortGames(games: Game[], key: SortKey = 'rating-desc'): Game[] {
+  const cmp: Record<SortKey, (a: Game, b: Game) => number> = {
+    'rating-desc': (a, b) => b.rating.value - a.rating.value || b.subscribers - a.subscribers || byName(a, b),
+    'rating-asc': (a, b) => a.rating.value - b.rating.value || b.subscribers - a.subscribers || byName(a, b),
+    popular: (a, b) => b.subscribers - a.subscribers || b.rating.value - a.rating.value || byName(a, b),
+    alpha: byName,
+    new: (a, b) => b.releaseDate.localeCompare(a.releaseDate) || b.rating.value - a.rating.value || byName(a, b),
+    old: (a, b) => a.releaseDate.localeCompare(b.releaseDate) || b.rating.value - a.rating.value || byName(a, b),
+  };
+  return [...games].sort(cmp[key]);
 }
+
+export function inBand(g: Game, band: RatingBand) {
+  const b = CONFIG.ratingBands.find((x) => x.key === band)!;
+  return g.rating.value >= b.min && g.rating.value < b.max;
+}
+
+/** Показ оценки: 10-балльная шкала, один знак после запятой (10 без дробной части) */
+export const formatRating = (v: number) => (v >= 10 ? '10' : v.toFixed(1));
 
 export const normalize = (s: string) =>
   s.toLowerCase().replace(/ё/g, 'е').replace(/[’'`:\-–—.,!?()]/g, ' ').replace(/\s+/g, ' ').trim();
 
 /** Фильтрация по точному совпадению характеристик */
-export function filterGames(games: Game[], s: Pick<CatalogState, 'genre' | 'platform' | 'year' | 'q'>): Game[] {
+export function filterGames(games: Game[], s: Pick<CatalogState, 'genre' | 'platform' | 'year' | 'q' | 'rating' | 'sort'>): Game[] {
   const q = s.q ? normalize(s.q) : '';
-  return games.filter(
+  const list = games.filter(
     (g) =>
       (!s.genre || g.genres.includes(s.genre)) &&
       (!s.platform || g.platforms.includes(s.platform)) &&
       (!s.year || String(g.year) === s.year) &&
+      (!s.rating || inBand(g, s.rating)) &&
       (!q || normalize(g.name).includes(q)),
   );
+  return sortGames(list, s.sort);
 }
 
 export interface PageSlice {
@@ -41,13 +61,14 @@ export function paginate(sorted: Game[], page: number): PageSlice {
 }
 
 /** Сколько игр даст каждый вариант фильтра при сохранении остальных выбранных параметров */
-export function optionCounts(games: Game[], s: CatalogState, kind: 'genre' | 'platform' | 'year', values: string[]) {
+export function optionCounts(games: Game[], s: CatalogState, kind: 'genre' | 'platform' | 'year' | 'rating', values: string[]) {
   const others = { ...s, q: undefined, [kind]: undefined } as CatalogState;
   const base = filterGames(games, others);
   const res: Record<string, number> = {};
   for (const v of values) {
     res[v] = base.filter((g) =>
-      kind === 'genre' ? g.genres.includes(v) : kind === 'platform' ? g.platforms.includes(v) : String(g.year) === v,
+      kind === 'genre' ? g.genres.includes(v) : kind === 'platform' ? g.platforms.includes(v)
+        : kind === 'rating' ? inBand(g, v as RatingBand) : String(g.year) === v,
     ).length;
   }
   return res;

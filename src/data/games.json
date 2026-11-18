@@ -29,9 +29,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -64,9 +64,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -104,9 +104,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4465480/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -140,9 +140,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -180,9 +180,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/945360/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -220,9 +220,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -257,9 +257,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -294,9 +294,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -330,9 +330,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2000950/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -368,9 +368,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1313860/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -406,9 +406,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 94.0,
-    "display": "9.4/10",
-    "source": "IGN"
+    "value": 9.4,
+    "source": "IGN",
+    "original": "9.4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -444,9 +444,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "8.2/10",
-    "source": "IGN"
+    "value": 8.2,
+    "source": "IGN",
+    "original": "8.2/10"
    },
    "cover": null,
    "coverSource": null,
@@ -493,9 +493,9 @@
     "retro-igry"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "93/100",
-    "source": "Metacritic"
+    "value": 9.3,
+    "source": "Metacritic",
+    "original": "93/100"
    },
    "cover": null,
    "coverSource": null,
@@ -531,9 +531,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/359550/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -571,9 +571,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -608,9 +608,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 86.0,
-    "display": "86/100",
-    "source": "Metacritic"
+    "value": 8.6,
+    "source": "Metacritic",
+    "original": "86/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/872790/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -645,9 +645,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 91.0,
-    "display": "9.1/10",
-    "source": "IGN"
+    "value": 9.1,
+    "source": "IGN",
+    "original": "9.1/10"
    },
    "cover": null,
    "coverSource": null,
@@ -683,9 +683,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1506830/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -721,9 +721,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1643320/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -759,9 +759,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": null,
    "coverSource": null,
@@ -795,9 +795,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 78.0,
-    "display": "7.8/10",
-    "source": "IGN"
+    "value": 7.8,
+    "source": "IGN",
+    "original": "7.8/10"
    },
    "cover": null,
    "coverSource": null,
@@ -830,9 +830,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "82/100",
-    "source": "Metacritic"
+    "value": 8.2,
+    "source": "Metacritic",
+    "original": "82/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -869,9 +869,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1811260/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -911,9 +911,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 99.0,
-    "display": "9.9/10",
-    "source": "IGN"
+    "value": 9.9,
+    "source": "IGN",
+    "original": "9.9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/12120/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -949,9 +949,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/220240/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -986,9 +986,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1238810/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1021,9 +1021,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "8.2/10",
-    "source": "IGN"
+    "value": 8.2,
+    "source": "IGN",
+    "original": "8.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/770240/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1057,9 +1057,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1174180/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1099,9 +1099,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/72850/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1133,9 +1133,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": null,
    "coverSource": null,
@@ -1172,9 +1172,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "9.3/10",
-    "source": "IGN"
+    "value": 9.3,
+    "source": "IGN",
+    "original": "9.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1208,9 +1208,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "80/100",
-    "source": "Metacritic"
+    "value": 8.0,
+    "source": "Metacritic",
+    "original": "80/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1284410/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1246,9 +1246,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "85/100",
-    "source": "Metacritic"
+    "value": 8.5,
+    "source": "Metacritic",
+    "original": "85/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1263850/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1287,9 +1287,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 94.0,
-    "display": "9.4/10",
-    "source": "IGN"
+    "value": 9.4,
+    "source": "IGN",
+    "original": "9.4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/17460/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1322,9 +1322,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 87.0,
-    "display": "8.7/10",
-    "source": "IGN"
+    "value": 8.7,
+    "source": "IGN",
+    "original": "8.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1100600/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1357,9 +1357,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 83.0,
-    "display": "8.3/10",
-    "source": "IGN"
+    "value": 8.3,
+    "source": "IGN",
+    "original": "8.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/996470/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1396,9 +1396,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 97.0,
-    "display": "9.7/10",
-    "source": "IGN"
+    "value": 9.7,
+    "source": "IGN",
+    "original": "9.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/12110/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1437,9 +1437,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1474,9 +1474,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "9.3/10",
-    "source": "IGN"
+    "value": 9.3,
+    "source": "IGN",
+    "original": "9.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2620/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1509,9 +1509,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/583950/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1550,9 +1550,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 81.0,
-    "display": "81/100",
-    "source": "Metacritic"
+    "value": 8.1,
+    "source": "Metacritic",
+    "original": "81/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/236390/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1587,9 +1587,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/12210/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1623,9 +1623,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 77.0,
-    "display": "7.7/10",
-    "source": "IGN"
+    "value": 7.7,
+    "source": "IGN",
+    "original": "7.7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -1661,9 +1661,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": null,
    "coverSource": null,
@@ -1699,9 +1699,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 81.0,
-    "display": "8.1/10",
-    "source": "IGN"
+    "value": 8.1,
+    "source": "IGN",
+    "original": "8.1/10"
    },
    "cover": null,
    "coverSource": null,
@@ -1738,9 +1738,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 62.0,
-    "display": "62/100",
-    "source": "Metacritic"
+    "value": 6.2,
+    "source": "Metacritic",
+    "original": "62/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/291480/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1783,9 +1783,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2310/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1818,9 +1818,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1771300/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1854,9 +1854,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -1892,9 +1892,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1517290/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1932,9 +1932,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2344520/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -1967,9 +1967,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": null,
    "coverSource": null,
@@ -2003,9 +2003,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/15100/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2041,9 +2041,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "9.3/10",
-    "source": "IGN"
+    "value": 9.3,
+    "source": "IGN",
+    "original": "9.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/252950/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2076,9 +2076,9 @@
     "roguelike"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "82/100",
-    "source": "Metacritic"
+    "value": 8.2,
+    "source": "Metacritic",
+    "original": "82/100"
    },
    "cover": null,
    "coverSource": null,
@@ -2114,9 +2114,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "85/100",
-    "source": "Metacritic"
+    "value": 8.5,
+    "source": "Metacritic",
+    "original": "85/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1569040/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2150,9 +2150,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2184,9 +2184,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": null,
    "coverSource": null,
@@ -2222,9 +2222,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1985810/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2262,9 +2262,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2303,9 +2303,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1238020/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2342,9 +2342,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 96.0,
-    "display": "9.6/10",
-    "source": "IGN"
+    "value": 9.6,
+    "source": "IGN",
+    "original": "9.6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2362420/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2377,9 +2377,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": null,
    "coverSource": null,
@@ -2412,9 +2412,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2450,9 +2450,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/976310/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2487,9 +2487,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "8.2/10",
-    "source": "IGN"
+    "value": 8.2,
+    "source": "IGN",
+    "original": "8.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4500/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2528,9 +2528,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 86.0,
-    "display": "8.6/10",
-    "source": "IGN"
+    "value": 8.6,
+    "source": "IGN",
+    "original": "8.6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/43110/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2567,9 +2567,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/990080/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2607,9 +2607,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2369390/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2646,9 +2646,9 @@
     "igry-ot-pervogo-lica"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1196590/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2683,9 +2683,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/10180/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2722,9 +2722,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 77.0,
-    "display": "7.7/10",
-    "source": "IGN"
+    "value": 7.7,
+    "source": "IGN",
+    "original": "7.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1238000/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2765,9 +2765,9 @@
     "metroidvaniya"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030300/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2801,9 +2801,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/47810/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2835,9 +2835,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 79.0,
-    "display": "7.9/10",
-    "source": "IGN"
+    "value": 7.9,
+    "source": "IGN",
+    "original": "7.9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -2876,9 +2876,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/534380/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2917,9 +2917,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2955,9 +2955,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "8.9/10",
-    "source": "IGN"
+    "value": 8.9,
+    "source": "IGN",
+    "original": "8.9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/440/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -2994,9 +2994,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 84.0,
-    "display": "84/100",
-    "source": "Metacritic"
+    "value": 8.4,
+    "source": "Metacritic",
+    "original": "84/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/6060/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3029,9 +3029,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 94.0,
-    "display": "94/100",
-    "source": "Metacritic"
+    "value": 9.4,
+    "source": "Metacritic",
+    "original": "94/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/22330/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3065,9 +3065,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": null,
    "coverSource": null,
@@ -3105,9 +3105,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3142,9 +3142,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "9.3/10",
-    "source": "IGN"
+    "value": 9.3,
+    "source": "IGN",
+    "original": "9.3/10"
    },
    "cover": null,
    "coverSource": null,
@@ -3181,9 +3181,9 @@
     "igry-ot-pervogo-lica"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/668580/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3218,9 +3218,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1238840/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3251,9 +3251,9 @@
     "moba"
    ],
    "rating": {
-    "value": 81.0,
-    "display": "8.1/10",
-    "source": "IGN"
+    "value": 8.1,
+    "source": "IGN",
+    "original": "8.1/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1025580/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3286,9 +3286,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -3326,9 +3326,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "92/100",
-    "source": "Metacritic"
+    "value": 9.2,
+    "source": "Metacritic",
+    "original": "92/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/13240/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3364,9 +3364,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2669320/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3402,9 +3402,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 96.0,
-    "display": "9.6/10",
-    "source": "IGN"
+    "value": 9.6,
+    "source": "IGN",
+    "original": "9.6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2131650/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3440,9 +3440,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2519060/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3481,9 +3481,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3521,9 +3521,9 @@
     "igry-ot-tretego-lica"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/202170/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3557,9 +3557,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": null,
    "coverSource": null,
@@ -3590,9 +3590,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/39510/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3631,9 +3631,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/287700/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3665,9 +3665,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 86.0,
-    "display": "8.6/10",
-    "source": "IGN"
+    "value": 8.6,
+    "source": "IGN",
+    "original": "8.6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/65540/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3703,9 +3703,9 @@
     "igry-vyzhivanie"
    ],
    "rating": {
-    "value": 78.0,
-    "display": "7.8/10",
-    "source": "IGN"
+    "value": 7.8,
+    "source": "IGN",
+    "original": "7.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/464920/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3742,9 +3742,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/892970/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3782,9 +3782,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/298110/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3821,9 +3821,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1328670/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3859,9 +3859,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 73.0,
-    "display": "7.3/10",
-    "source": "IGN"
+    "value": 7.3,
+    "source": "IGN",
+    "original": "7.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/20510/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3893,9 +3893,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/933110/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3930,9 +3930,9 @@
     "igry-ot-tretego-lica"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030840/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -3965,9 +3965,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1817190/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4001,9 +4001,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "8.9/10",
-    "source": "IGN"
+    "value": 8.9,
+    "source": "IGN",
+    "original": "8.9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/236850/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4039,9 +4039,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/381210/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4077,9 +4077,9 @@
     "horror-igry"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "93/100",
-    "source": "Metacritic"
+    "value": 9.3,
+    "source": "Metacritic",
+    "original": "93/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2050650/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4114,9 +4114,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/34330/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4151,9 +4151,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "8.2/10",
-    "source": "IGN"
+    "value": 8.2,
+    "source": "IGN",
+    "original": "8.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/41700/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4190,9 +4190,9 @@
     "detektivy-igry"
    ],
    "rating": {
-    "value": 96.0,
-    "display": "9.6/10",
-    "source": "IGN"
+    "value": 9.6,
+    "source": "IGN",
+    "original": "9.6/10"
    },
    "cover": null,
    "coverSource": null,
@@ -4231,9 +4231,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2853730/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4268,9 +4268,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1203220/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4308,9 +4308,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 97.0,
-    "display": "9.7/10",
-    "source": "IGN"
+    "value": 9.7,
+    "source": "IGN",
+    "original": "9.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/7670/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4348,9 +4348,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 96.0,
-    "display": "9.6/10",
-    "source": "IGN"
+    "value": 9.6,
+    "source": "IGN",
+    "original": "9.6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/22300/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4386,9 +4386,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/70/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4427,9 +4427,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 97.0,
-    "display": "9.7/10",
-    "source": "IGN"
+    "value": 9.7,
+    "source": "IGN",
+    "original": "9.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/220/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4466,9 +4466,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1158310/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4502,9 +4502,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1099410/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4544,9 +4544,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/211420/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4581,9 +4581,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 84.0,
-    "display": "84/100",
-    "source": "Metacritic"
+    "value": 8.4,
+    "source": "Metacritic",
+    "original": "84/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/813780/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4618,9 +4618,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4658,9 +4658,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 88.0,
-    "display": "8.8/10",
-    "source": "IGN"
+    "value": 8.8,
+    "source": "IGN",
+    "original": "8.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/8980/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4694,9 +4694,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/203770/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4729,9 +4729,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 96.0,
-    "display": "9.6/10",
-    "source": "IGN"
+    "value": 9.6,
+    "source": "IGN",
+    "original": "9.6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1293830/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4771,9 +4771,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/412020/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4808,9 +4808,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": null,
    "coverSource": null,
@@ -4846,9 +4846,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "8.9/10",
-    "source": "IGN"
+    "value": 8.9,
+    "source": "IGN",
+    "original": "8.9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/552520/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4882,9 +4882,9 @@
     "sleshery"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4918,9 +4918,9 @@
     "kiberpank-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222140/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -4952,9 +4952,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "8.9/10",
-    "source": "IGN"
+    "value": 8.9,
+    "source": "IGN",
+    "original": "8.9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -4989,9 +4989,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 83.0,
-    "display": "8.3/10",
-    "source": "IGN"
+    "value": 8.3,
+    "source": "IGN",
+    "original": "8.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/364470/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5028,9 +5028,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/377160/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5061,9 +5061,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 83.0,
-    "display": "8.3/10",
-    "source": "IGN"
+    "value": 8.3,
+    "source": "IGN",
+    "original": "8.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/552990/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5095,9 +5095,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": null,
    "coverSource": null,
@@ -5133,9 +5133,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3606480/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5168,9 +5168,9 @@
     "horror-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3764200/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5207,9 +5207,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3405690/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5244,9 +5244,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3768760/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5279,9 +5279,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "80/100",
-    "source": "Metacritic"
+    "value": 8.0,
+    "source": "Metacritic",
+    "original": "80/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1466060/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5313,9 +5313,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 68.0,
-    "display": "68/100",
-    "source": "Metacritic"
+    "value": 6.8,
+    "source": "Metacritic",
+    "original": "68/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3419520/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5346,9 +5346,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "85/100",
-    "source": "Metacritic"
+    "value": 8.5,
+    "source": "Metacritic",
+    "original": "85/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3450310/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5384,9 +5384,9 @@
     "igry-vyzhivanie"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/801800/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5424,9 +5424,9 @@
     "sleshery"
    ],
    "rating": {
-    "value": 50.0,
-    "display": "50/100",
-    "source": "Metacritic"
+    "value": 5.0,
+    "source": "Metacritic",
+    "original": "50/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3040220/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5459,9 +5459,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3751260/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5497,9 +5497,9 @@
     "interaktivnoe-kino"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2592160/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5536,9 +5536,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3008130/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5571,9 +5571,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1941540/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5606,9 +5606,9 @@
     "igry-ot-pervogo-lica"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3017860/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5644,9 +5644,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2933620/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5681,9 +5681,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1128860/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5718,9 +5718,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2767030/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5757,9 +5757,9 @@
     "detektivy-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/110800/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5792,9 +5792,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2231450/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5827,9 +5827,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "89/100",
-    "source": "Metacritic"
+    "value": 8.9,
+    "source": "Metacritic",
+    "original": "89/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/38400/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5868,9 +5868,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/91310/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5901,9 +5901,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/11480/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5939,9 +5939,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 81.0,
-    "display": "8.1/10",
-    "source": "IGN"
+    "value": 8.1,
+    "source": "IGN",
+    "original": "8.1/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/543460/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -5978,9 +5978,9 @@
     "zombi-igry"
    ],
    "rating": {
-    "value": 83.0,
-    "display": "8.3/10",
-    "source": "IGN"
+    "value": 8.3,
+    "source": "IGN",
+    "original": "8.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/427190/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6013,9 +6013,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 63.0,
-    "display": "6.3/10",
-    "source": "IGN"
+    "value": 6.3,
+    "source": "IGN",
+    "original": "6.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/34010/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6053,9 +6053,9 @@
     "sleshery"
    ],
    "rating": {
-    "value": 77.0,
-    "display": "77/100",
-    "source": "Metacritic"
+    "value": 7.7,
+    "source": "Metacritic",
+    "original": "77/100"
    },
    "cover": null,
    "coverSource": null,
@@ -6087,9 +6087,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6127,9 +6127,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 84.0,
-    "display": "84/100",
-    "source": "Metacritic"
+    "value": 8.4,
+    "source": "Metacritic",
+    "original": "84/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/99810/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6162,9 +6162,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6199,9 +6199,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 84.0,
-    "display": "84/100",
-    "source": "Metacritic"
+    "value": 8.4,
+    "source": "Metacritic",
+    "original": "84/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/15300/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6235,9 +6235,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2229840/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6276,9 +6276,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 73.0,
-    "display": "7.3/10",
-    "source": "IGN"
+    "value": 7.3,
+    "source": "IGN",
+    "original": "7.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/206420/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6313,9 +6313,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "8.2/10",
-    "source": "IGN"
+    "value": 8.2,
+    "source": "IGN",
+    "original": "8.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/9480/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6347,9 +6347,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6389,9 +6389,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/225140/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6427,9 +6427,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 54.0,
-    "display": "5.4/10",
-    "source": "IGN"
+    "value": 5.4,
+    "source": "IGN",
+    "original": "5.4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/267550/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6468,9 +6468,9 @@
     "platformery"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/212580/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6507,9 +6507,9 @@
     "kiberpank-igry"
    ],
    "rating": {
-    "value": 45.0,
-    "display": "4.5/10",
-    "source": "IGN"
+    "value": 4.5,
+    "source": "IGN",
+    "original": "4.5/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6547,9 +6547,9 @@
     "kiberpank-igry"
    ],
    "rating": {
-    "value": 76.0,
-    "display": "76/100",
-    "source": "Metacritic"
+    "value": 7.6,
+    "source": "Metacritic",
+    "original": "76/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/231990/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6588,9 +6588,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 62.0,
-    "display": "62/100",
-    "source": "Metacritic"
+    "value": 6.2,
+    "source": "Metacritic",
+    "original": "62/100"
    },
    "cover": null,
    "coverSource": null,
@@ -6630,9 +6630,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 77.0,
-    "display": "7.7/10",
-    "source": "IGN"
+    "value": 7.7,
+    "source": "IGN",
+    "original": "7.7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6666,9 +6666,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6702,9 +6702,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "82/100",
-    "source": "Metacritic"
+    "value": 8.2,
+    "source": "Metacritic",
+    "original": "82/100"
    },
    "cover": null,
    "coverSource": null,
@@ -6736,9 +6736,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "9.3/10",
-    "source": "IGN"
+    "value": 9.3,
+    "source": "IGN",
+    "original": "9.3/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6769,9 +6769,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6806,9 +6806,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/592580/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6844,9 +6844,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 87.0,
-    "display": "8.7/10",
-    "source": "IGN"
+    "value": 8.7,
+    "source": "IGN",
+    "original": "8.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/45700/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6882,9 +6882,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -6917,9 +6917,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 78.0,
-    "display": "7.8/10",
-    "source": "IGN"
+    "value": 7.8,
+    "source": "IGN",
+    "original": "7.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/15170/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6958,9 +6958,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/6860/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -6997,9 +6997,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 87.0,
-    "display": "8.7/10",
-    "source": "IGN"
+    "value": 8.7,
+    "source": "IGN",
+    "original": "8.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/6850/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7031,9 +7031,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/6900/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7069,9 +7069,9 @@
     "igry-ot-tretego-lica"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/360430/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7107,9 +7107,9 @@
     "igry-ot-tretego-lica"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/50130/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7146,9 +7146,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 88.0,
-    "display": "8.8/10",
-    "source": "IGN"
+    "value": 8.8,
+    "source": "IGN",
+    "original": "8.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1237950/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7184,9 +7184,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/208650/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7223,9 +7223,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 78.0,
-    "display": "7.8/10",
-    "source": "IGN"
+    "value": 7.8,
+    "source": "IGN",
+    "original": "7.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/209000/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7264,9 +7264,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/200260/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7302,9 +7302,9 @@
     "metroidvaniya"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "9.3/10",
-    "source": "IGN"
+    "value": 9.3,
+    "source": "IGN",
+    "original": "9.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/35140/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7337,9 +7337,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/8930/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7372,9 +7372,9 @@
     "sleshery"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "9.3/10",
-    "source": "IGN"
+    "value": 9.3,
+    "source": "IGN",
+    "original": "9.3/10"
    },
    "cover": null,
    "coverSource": null,
@@ -7410,9 +7410,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2183900/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7455,9 +7455,9 @@
     "igry-ot-tretego-lica"
    ],
    "rating": {
-    "value": 96.0,
-    "display": "96/100",
-    "source": "Metacritic"
+    "value": 9.6,
+    "source": "Metacritic",
+    "original": "96/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/254700/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7492,9 +7492,9 @@
     "horror-igry"
    ],
    "rating": {
-    "value": 94.0,
-    "display": "9.4/10",
-    "source": "IGN"
+    "value": 9.4,
+    "source": "IGN",
+    "original": "9.4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4249120/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7530,9 +7530,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 94.0,
-    "display": "9.4/10",
-    "source": "IGN"
+    "value": 9.4,
+    "source": "IGN",
+    "original": "9.4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/7940/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7566,9 +7566,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -7603,9 +7603,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3513350/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7638,9 +7638,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 76.0,
-    "display": "76/100",
-    "source": "Metacritic"
+    "value": 7.6,
+    "source": "Metacritic",
+    "original": "76/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1942280/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7674,9 +7674,9 @@
     "horror-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -7712,9 +7712,9 @@
     "soulslike"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1627720/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7746,9 +7746,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 87.0,
-    "display": "8.7/10",
-    "source": "IGN"
+    "value": 8.7,
+    "source": "IGN",
+    "original": "8.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1817070/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7783,9 +7783,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": null,
    "coverSource": null,
@@ -7820,9 +7820,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4162040/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7858,9 +7858,9 @@
     "simulyatory"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/255710/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7894,9 +7894,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2840770/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7932,9 +7932,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/204100/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -7974,9 +7974,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1313140/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8012,9 +8012,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 50.0,
-    "display": "5/10",
-    "source": "IGN"
+    "value": 5.0,
+    "source": "IGN",
+    "original": "5/10"
    },
    "cover": null,
    "coverSource": null,
@@ -8046,9 +8046,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1680880/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8080,9 +8080,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2651280/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8113,9 +8113,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": null,
    "coverSource": null,
@@ -8147,9 +8147,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": null,
    "coverSource": null,
@@ -8183,9 +8183,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 88.0,
-    "display": "8.8/10",
-    "source": "IGN"
+    "value": 8.8,
+    "source": "IGN",
+    "original": "8.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/581320/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8220,9 +8220,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/20920/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8256,9 +8256,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "89/100",
-    "source": "Metacritic"
+    "value": 8.9,
+    "source": "Metacritic",
+    "original": "89/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/698780/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8292,9 +8292,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -8329,9 +8329,9 @@
     "igry-ot-pervogo-lica"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1681430/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8368,9 +8368,9 @@
     "horror-igry"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": null,
    "coverSource": null,
@@ -8404,9 +8404,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "8.9/10",
-    "source": "IGN"
+    "value": 8.9,
+    "source": "IGN",
+    "original": "8.9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/19900/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8441,9 +8441,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/13520/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8479,9 +8479,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 96.0,
-    "display": "9.6/10",
-    "source": "IGN"
+    "value": 9.6,
+    "source": "IGN",
+    "original": "9.6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/12100/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8520,9 +8520,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 86.0,
-    "display": "8.6/10",
-    "source": "IGN"
+    "value": 8.6,
+    "source": "IGN",
+    "original": "8.6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8561,9 +8561,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/21690/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8602,9 +8602,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/934700/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8647,9 +8647,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/250900/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8687,9 +8687,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1465360/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8725,9 +8725,9 @@
     "igry-ot-pervogo-lica"
    ],
    "rating": {
-    "value": 91.0,
-    "display": "9.1/10",
-    "source": "IGN"
+    "value": 9.1,
+    "source": "IGN",
+    "original": "9.1/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/612880/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8761,9 +8761,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 88.0,
-    "display": "88/100",
-    "source": "Metacritic"
+    "value": 8.8,
+    "source": "Metacritic",
+    "original": "88/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/240/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8798,9 +8798,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 83.0,
-    "display": "8.3/10",
-    "source": "IGN"
+    "value": 8.3,
+    "source": "IGN",
+    "original": "8.3/10"
    },
    "cover": null,
    "coverSource": null,
@@ -8833,9 +8833,9 @@
     "igry-vyzhivanie"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/601430/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8867,9 +8867,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 94.0,
-    "display": "9.4/10",
-    "source": "IGN"
+    "value": 9.4,
+    "source": "IGN",
+    "original": "9.4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/22320/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8901,9 +8901,9 @@
     "platformery"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -8939,9 +8939,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/694280/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -8979,9 +8979,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/48190/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9020,9 +9020,9 @@
     "igry-ot-tretego-lica"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/33230/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9058,9 +9058,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 74.0,
-    "display": "74/100",
-    "source": "Metacritic"
+    "value": 7.4,
+    "source": "Metacritic",
+    "original": "74/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1985820/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9098,9 +9098,9 @@
     "retro-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1361510/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9134,9 +9134,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 79.0,
-    "display": "79/100",
-    "source": "Metacritic"
+    "value": 7.9,
+    "source": "Metacritic",
+    "original": "79/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/227300/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9175,9 +9175,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9216,9 +9216,9 @@
     "igry-ot-pervogo-lica"
    ],
    "rating": {
-    "value": 77.0,
-    "display": "7.7/10",
-    "source": "IGN"
+    "value": 7.7,
+    "source": "IGN",
+    "original": "7.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/418370/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9252,9 +9252,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 10.0,
-    "display": "1/10",
-    "source": "IGN"
+    "value": 1.0,
+    "source": "IGN",
+    "original": "1/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1372880/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9290,9 +9290,9 @@
     "biopank-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/698670/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9326,9 +9326,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/22380/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9360,9 +9360,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1466860/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9397,9 +9397,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 87.0,
-    "display": "8.7/10",
-    "source": "IGN"
+    "value": 8.7,
+    "source": "IGN",
+    "original": "8.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/17470/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9433,9 +9433,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3321460/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9468,9 +9468,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 67.0,
-    "display": "6.7/10",
-    "source": "IGN"
+    "value": 6.7,
+    "source": "IGN",
+    "original": "6.7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -9509,9 +9509,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/208480/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9545,9 +9545,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "89/100",
-    "source": "Metacritic"
+    "value": 8.9,
+    "source": "Metacritic",
+    "original": "89/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1328660/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9584,9 +9584,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/550/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9620,9 +9620,9 @@
     "sleshery"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2322010/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9655,9 +9655,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "82/100",
-    "source": "Metacritic"
+    "value": 8.2,
+    "source": "Metacritic",
+    "original": "82/100"
    },
    "cover": null,
    "coverSource": null,
@@ -9694,9 +9694,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 50.0,
-    "display": "5/10",
-    "source": "IGN"
+    "value": 5.0,
+    "source": "IGN",
+    "original": "5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1496790/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9734,9 +9734,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 50.0,
-    "display": "5/10",
-    "source": "IGN"
+    "value": 5.0,
+    "source": "IGN",
+    "original": "5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/315210/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9770,9 +9770,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 81.0,
-    "display": "81/100",
-    "source": "Metacritic"
+    "value": 8.1,
+    "source": "Metacritic",
+    "original": "81/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2358720/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9810,9 +9810,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/239140/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9844,9 +9844,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2440510/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9883,9 +9883,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1097150/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9921,9 +9921,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/447040/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9957,9 +9957,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1110910/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -9995,9 +9995,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1225330/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10040,9 +10040,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1332010/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10082,9 +10082,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1659040/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10116,9 +10116,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2515020/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10154,9 +10154,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/480490/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10191,9 +10191,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1137300/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10230,9 +10230,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1285190/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10265,9 +10265,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1030830/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10311,9 +10311,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 92.0,
-    "display": "9.2/10",
-    "source": "IGN"
+    "value": 9.2,
+    "source": "IGN",
+    "original": "9.2/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/105600/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10350,9 +10350,9 @@
     "stels-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2208920/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10390,9 +10390,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -10428,9 +10428,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/55230/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10465,9 +10465,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/805550/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10504,9 +10504,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/495420/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10539,9 +10539,9 @@
     "rpg"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1297900/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10577,9 +10577,9 @@
     "strategii"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1276790/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10612,9 +10612,9 @@
     "sleshery"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2461850/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10651,9 +10651,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/261550/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10689,9 +10689,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1824220/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10725,9 +10725,9 @@
     "taktiki"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1135300/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10759,9 +10759,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": null,
    "coverSource": null,
@@ -10797,9 +10797,9 @@
     "horror-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/952060/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10834,9 +10834,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 89.0,
-    "display": "8.9/10",
-    "source": "IGN"
+    "value": 8.9,
+    "source": "IGN",
+    "original": "8.9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1454890/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10869,9 +10869,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/546560/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10912,9 +10912,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 73.0,
-    "display": "7.3/10",
-    "source": "IGN"
+    "value": 7.3,
+    "source": "IGN",
+    "original": "7.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/320240/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -10945,9 +10945,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 94.0,
-    "display": "9.4/10",
-    "source": "IGN"
+    "value": 9.4,
+    "source": "IGN",
+    "original": "9.4/10"
    },
    "cover": null,
    "coverSource": null,
@@ -10980,9 +10980,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -11021,9 +11021,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/306130/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11060,9 +11060,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1172620/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11096,9 +11096,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/280/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11132,9 +11132,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 40.0,
-    "display": "4/10",
-    "source": "IGN"
+    "value": 4.0,
+    "source": "IGN",
+    "original": "4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/954740/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11168,9 +11168,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 78.0,
-    "display": "7.8/10",
-    "source": "IGN"
+    "value": 7.8,
+    "source": "IGN",
+    "original": "7.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1089350/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11208,9 +11208,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 56.0,
-    "display": "56/100",
-    "source": "Metacritic"
+    "value": 5.6,
+    "source": "Metacritic",
+    "original": "56/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/221100/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11242,9 +11242,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 100.0,
-    "display": "10/10",
-    "source": "IGN"
+    "value": 10.0,
+    "source": "IGN",
+    "original": "10/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1250410/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11280,9 +11280,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1672970/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11317,9 +11317,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 59.0,
-    "display": "5.9/10",
-    "source": "IGN"
+    "value": 5.9,
+    "source": "IGN",
+    "original": "5.9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/228300/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11355,9 +11355,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 88.0,
-    "display": "8.8/10",
-    "source": "IGN"
+    "value": 8.8,
+    "source": "IGN",
+    "original": "8.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/268910/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11395,9 +11395,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/997070/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11431,9 +11431,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 93.0,
-    "display": "9.3/10",
-    "source": "IGN"
+    "value": 9.3,
+    "source": "IGN",
+    "original": "9.3/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/779340/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11467,9 +11467,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 81.0,
-    "display": "81/100",
-    "source": "Metacritic"
+    "value": 8.1,
+    "source": "Metacritic",
+    "original": "81/100"
    },
    "cover": null,
    "coverSource": null,
@@ -11503,9 +11503,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1240440/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11545,9 +11545,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 73.0,
-    "display": "73/100",
-    "source": "Metacritic"
+    "value": 7.3,
+    "source": "Metacritic",
+    "original": "73/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/699130/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11582,9 +11582,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 78.0,
-    "display": "7.8/10",
-    "source": "IGN"
+    "value": 7.8,
+    "source": "IGN",
+    "original": "7.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/289650/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11622,9 +11622,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/750920/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11660,9 +11660,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 94.0,
-    "display": "9.4/10",
-    "source": "IGN"
+    "value": 9.4,
+    "source": "IGN",
+    "original": "9.4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11696,9 +11696,9 @@
     "adventure"
    ],
    "rating": {
-    "value": 68.0,
-    "display": "6.8/10",
-    "source": "IGN"
+    "value": 6.8,
+    "source": "IGN",
+    "original": "6.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1190460/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11736,9 +11736,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "82/100",
-    "source": "Metacritic"
+    "value": 8.2,
+    "source": "Metacritic",
+    "original": "82/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1016800/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11777,9 +11777,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 97.0,
-    "display": "9.7/10",
-    "source": "IGN"
+    "value": 9.7,
+    "source": "IGN",
+    "original": "9.7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2668510/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11818,9 +11818,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/782330/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11856,9 +11856,9 @@
     "detektivy-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/12140/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11894,9 +11894,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/548570/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11929,9 +11929,9 @@
     "simulyatory"
    ],
    "rating": {
-    "value": 75.0,
-    "display": "7.5/10",
-    "source": "IGN"
+    "value": 7.5,
+    "source": "IGN",
+    "original": "7.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -11970,9 +11970,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 88.0,
-    "display": "8.8/10",
-    "source": "IGN"
+    "value": 8.8,
+    "source": "IGN",
+    "original": "8.8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/870780/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12007,9 +12007,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/814380/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12045,9 +12045,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 85.0,
-    "display": "8.5/10",
-    "source": "IGN"
+    "value": 8.5,
+    "source": "IGN",
+    "original": "8.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2221490/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12083,9 +12083,9 @@
     "fentezi-igry"
    ],
    "rating": {
-    "value": 95.0,
-    "display": "9.5/10",
-    "source": "IGN"
+    "value": 9.5,
+    "source": "IGN",
+    "original": "9.5/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/601150/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12121,9 +12121,9 @@
     "horror-igry"
    ],
    "rating": {
-    "value": 90.0,
-    "display": "9/10",
-    "source": "IGN"
+    "value": 9.0,
+    "source": "IGN",
+    "original": "9/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/883710/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12156,9 +12156,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 59.0,
-    "display": "59/100",
-    "source": "Metacritic"
+    "value": 5.9,
+    "source": "Metacritic",
+    "original": "59/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/392160/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12192,9 +12192,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": null,
    "coverSource": null,
@@ -12231,9 +12231,9 @@
     "igry-postapokalipsis"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1151340/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12266,9 +12266,9 @@
     "igry-nauchnaya-fantastika"
    ],
    "rating": {
-    "value": 87.0,
-    "display": "8.7/10",
-    "source": "IGN"
+    "value": 8.7,
+    "source": "IGN",
+    "original": "8.7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -12303,9 +12303,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 84.0,
-    "display": "8.4/10",
-    "source": "IGN"
+    "value": 8.4,
+    "source": "IGN",
+    "original": "8.4/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/444090/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12340,9 +12340,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 60.0,
-    "display": "6/10",
-    "source": "IGN"
+    "value": 6.0,
+    "source": "IGN",
+    "original": "6/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1239520/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12375,9 +12375,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 76.0,
-    "display": "76/100",
-    "source": "Metacritic"
+    "value": 7.6,
+    "source": "Metacritic",
+    "original": "76/100"
    },
    "cover": null,
    "coverSource": null,
@@ -12409,9 +12409,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 82.0,
-    "display": "82/100",
-    "source": "Metacritic"
+    "value": 8.2,
+    "source": "Metacritic",
+    "original": "82/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/1213210/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12448,9 +12448,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 97.0,
-    "display": "9.7/10",
-    "source": "IGN"
+    "value": 9.7,
+    "source": "IGN",
+    "original": "9.7/10"
    },
    "cover": null,
    "coverSource": null,
@@ -12481,9 +12481,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 70.0,
-    "display": "7/10",
-    "source": "IGN"
+    "value": 7.0,
+    "source": "IGN",
+    "original": "7/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2225070/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12515,9 +12515,9 @@
     "multipleer-igry"
    ],
    "rating": {
-    "value": 80.0,
-    "display": "8/10",
-    "source": "IGN"
+    "value": 8.0,
+    "source": "IGN",
+    "original": "8/10"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/310950/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",
@@ -12548,9 +12548,9 @@
     "simulyatory"
    ],
    "rating": {
-    "value": 88.0,
-    "display": "88/100",
-    "source": "Metacritic"
+    "value": 8.8,
+    "source": "Metacritic",
+    "original": "88/100"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2142790/header.jpg",
    "coverSource": "Steam (по Steam ID из Wikidata)",

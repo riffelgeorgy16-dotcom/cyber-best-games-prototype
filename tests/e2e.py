@@ -191,6 +191,66 @@ async def main():
             pos += [e['position'] for e in h['itemlist']['itemListElement']]
         check(f'Все {pages} страниц: позиции 1..{total_all} без пропусков', pos == list(range(1, total_all + 1)), (len(pos), total_all))
 
+
+        # v0.2: сортировка
+        await go('/games/best/shutery/')
+        await pg.click('.sorthead'); await pg.click('.fpanel-sort a:has-text("Сначала новые")'); await pg.wait_for_timeout(300)
+        h = await head(pg)
+        check('Сортировка: ?sort=new, фильтр сохранен', h['path'] == '/games/best/shutery/?sort=new', h['path'])
+        check('Сортировка: noindex и canonical без параметров', h['robots'] == 'noindex, follow' and h['canonical'] == 'https://cyber.sports.ru/games/best/shutery/', (h['robots'], h['canonical']))
+        dates = await pg.evaluate("() => [...document.querySelectorAll('.card-date')].map(e => e.textContent)")
+        years = [int(re.search(r'(\d{4})', d).group(1)) for d in dates]
+        check('Сортировка: новые сверху', years == sorted(years, reverse=True), years[:8])
+        await pg.click('.fblock:nth-child(1) .fhead'); await pg.click('.fpanel a:has-text("ПК")'); await pg.wait_for_timeout(300)
+        h = await head(pg)
+        check('Смена фильтра сохраняет сортировку', h['path'] == '/games/best/shutery/pc/?sort=new', h['path'])
+        await go('/games/best/?sort=alpha')
+        names = await pg.locator('.card-title').all_text_contents()
+        check('Сортировка по алфавиту', names == sorted(names, key=lambda x: x.lower()) or names[0] < names[-1], names[:5])
+        await go('/games/best/?sort=rating-desc')
+        h = await head(pg)
+        check('sort=rating-desc (по умолчанию) -> 301 на чистый адрес', h['path'] == '/games/best/', h['path'])
+
+        # v0.2: фильтр оценки
+        await go('/games/best/')
+        await pg.click('.fblock:nth-child(4) .fhead'); await pg.click('.fpanel-rating a:has-text("4-7")'); await pg.wait_for_timeout(300)
+        h = await head(pg)
+        check('Оценка 4-7: ?rating=4-7', h['path'] == '/games/best/?rating=4-7', h['path'])
+        vals = [float(x) for x in await pg.locator('.rating b').all_text_contents()]
+        check('Оценка 4-7: все оценки в диапазоне', vals and all(4 <= v < 8 for v in vals), vals[:10])
+        check('Оценка: noindex', h['robots'] == 'noindex, follow', h['robots'])
+        check('Оценка: инспектор без ошибок', no_err(h), h['insErr'])
+
+        # v0.2: оценки без источника, 10-балльная шкала
+        await go('/games/best/')
+        txt = ' '.join(await pg.locator('.card').all_text_contents())
+        check('На карточках нет IGN / Metacritic', 'IGN' not in txt and 'Metacritic' not in txt and '/100' not in txt and '/10' not in txt)
+        allv = [float(x) for x in await pg.locator('.rating b').all_text_contents()]
+        check('Оценки в шкале 0-10', allv and all(0 <= v <= 10 for v in allv), allv[:5])
+
+        # v0.2: подборки
+        chips = await pg.locator('.chips a.chip').count()
+        check('Подборки: 8 плашек на старте', chips == 8, chips)
+        await pg.click('.chip-more'); await pg.wait_for_timeout(200)
+        more = await pg.locator('.chips a.chip').count()
+        check('Подборки: "Другие подборки" раскрывает список', more > chips, more)
+        await pg.click('.chips a.chip:has-text("Лучшие RPG")'); await pg.wait_for_timeout(300)
+        h = await head(pg)
+        check('Подборка ведет на страницу фильтра', h['path'] == '/games/best/rpg/' and h['robots'] == 'index, follow', (h['path'], h['robots']))
+
+        # v0.2: добавить игру
+        await pg.click('.btn-add')
+        check('Окно заявки открылось', await pg.locator('.modal').count() == 1)
+        await pg.click('.modal button[type=submit]'); await pg.wait_for_timeout(200)
+        errs_n = await pg.locator('.form-errors li').count()
+        check('Пустая заявка не отправляется (3 ошибки)', errs_n == 3, errs_n)
+        await pg.fill('.modal input[type=email]', 'dev@example.com')
+        await pg.fill('.modal textarea', 'Название: Test Game\nСсылка: https://store.steampowered.com/app/1/')
+        await pg.check('.chk-agree input')
+        await pg.click('.modal button[type=submit]'); await pg.wait_for_timeout(200)
+        check('Заполненная заявка: экран успеха с пометкой прототипа', await pg.locator('.ok-msg').count() == 1 and 'никуда не отправлена' in (await pg.locator('.modal').text_content()))
+        await pg.keyboard.press('Escape'); await pg.wait_for_timeout(200)
+        check('Окно закрывается по Esc', await pg.locator('.modal').count() == 0)
         check('Нет JS-ошибок на страницах', not errors, errors[:3])
         await b.close()
     bad = [r for r in results if not r[1]]

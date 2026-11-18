@@ -58,14 +58,15 @@ export function validate(
       ? absolute(CONFIG.base)
       : CONFIG.canonicalMode === 'filter-base'
         ? filterBase
-        : absolute(buildUrl({ ...s, q: undefined }));
+        : absolute(buildUrl({ ...s, q: undefined, sort: undefined, rating: undefined }));
   if (seo.canonical !== expCanon) err('canonical', 'Ошибка canonical', expCanon, seo.canonical);
   if (CONFIG.canonicalMode === 'filter-base' && /[?&]page=/.test(seo.canonical)) err('canonical-page', 'Canonical содержит page', 'без ?page', seo.canonical);
 
   // 7. Robots по правилу существования страницы
-  const expRobots = slice.total >= CONFIG.minIndexable && !s.q ? 'index, follow' : 'noindex, follow';
+  const expRobots = slice.total >= CONFIG.minIndexable && !s.q && !s.sort && !s.rating ? 'index, follow' : 'noindex, follow';
   if (seo.robots !== expRobots)
-    err('robots', 'Нарушено правило индексации (минимум 3 игры, поиск не индексируется)', expRobots, seo.robots);
+    err('robots', 'Нарушено правило индексации (минимум 3 игры; поиск, сортировка и фильтр оценки не индексируются)', expRobots, seo.robots);
+  if (/[?&](sort|rating|q)=/.test(seo.canonical)) err('canonical-params', 'Canonical содержит параметры сортировки, оценки или поиска', 'без GET-параметров', seo.canonical);
 
   // 8. Prev / Next
   const expPrev = s.page > 1 ? absolute(buildUrl({ ...s, page: s.page - 1 })) : undefined;

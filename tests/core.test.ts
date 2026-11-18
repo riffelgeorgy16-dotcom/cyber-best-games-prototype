@@ -10,7 +10,7 @@ const D = dictsRaw as unknown as Dictionaries;
 const mk = (i: number, over: Partial<Game> = {}): Game => ({
   id: 'g' + i, name: 'Game ' + i, url: `https://cyber.sports.ru/games/g${i}/`, subscribers: 0,
   releaseDate: '2024-05-0' + ((i % 9) + 1), datePrecision: 'day', year: 2024,
-  platforms: ['pc'], genres: ['ekshen-igry'], rating: { value: 100 - (i % 50), display: '', source: 'IGN' },
+  platforms: ['pc'], genres: ['ekshen-igry'], rating: { value: (100 - (i % 50)) / 10, source: 'IGN', original: '' },
   wikidata: 'Q' + i, sources: {}, ...over,
 });
 // 80 экшенов на ПК 2024, 2 хоррора на PS5 2020
@@ -140,5 +140,38 @@ describe('SEO', () => {
       const seo = computeSeo(st, paginate(filterGames(GAMES, st), 1), D);
       expect(seo.title + seo.h1 + seo.description, `строка ${t.row}`).not.toMatch(/\[\[|\]\]/);
     }
+  });
+});
+
+describe('v0.2: сортировка и фильтр оценки', () => {
+  it('параметры разбираются и собираются в одном порядке', () => {
+    const r = parseUrl('/games/best/rpg/', '?rating=8-10&sort=new&page=2', D);
+    expect(r).toEqual({ kind: 'ok', state: { genre: 'rpg', rating: '8-10', sort: 'new', page: 2 } });
+    expect(buildUrl({ genre: 'rpg', rating: '8-10', sort: 'new', page: 2 })).toBe('/games/best/rpg/?rating=8-10&sort=new&page=2');
+  });
+  it('сортировка по умолчанию и мусорные значения -> 301 на чистый адрес', () => {
+    expect(parseUrl('/games/best/', '?sort=rating-desc', D)).toMatchObject({ kind: 'redirect', to: '/games/best/' });
+    expect(parseUrl('/games/best/', '?sort=xxx', D)).toMatchObject({ kind: 'redirect', to: '/games/best/' });
+    expect(parseUrl('/games/best/', '?rating=5-6', D)).toMatchObject({ kind: 'redirect', to: '/games/best/' });
+    expect(parseUrl('/games/best/', '?page=2&sort=new', D)).toMatchObject({ kind: 'redirect', to: '/games/best/?sort=new&page=2' });
+  });
+  it('сортировка и оценка: noindex, canonical без параметров, ошибок нет', () => {
+    const { seo, errors } = page('/games/best/ekshen-igry/?rating=8-10&sort=alpha');
+    expect(seo!.robots).toBe('noindex, follow');
+    expect(seo!.canonical).toBe('https://cyber.sports.ru/games/best/ekshen-igry/');
+    expect((seo!.itemList as { itemListOrder: string }).itemListOrder).toBe('https://schema.org/ItemListOrderAscending');
+    expect(errors).toEqual([]);
+  });
+  it('диапазоны оценки покрывают всю шкалу без пересечений', () => {
+    const vals = [0, 3.9, 4, 7.9, 8, 9.4, 10];
+    const band = (v: number) => (['1-3', '4-7', '8-10'] as const).filter((b) => filterGames([mk(1, { rating: { value: v, source: 'IGN', original: '' } })], { rating: b }).length);
+    expect(vals.map(band)).toEqual([['1-3'], ['1-3'], ['4-7'], ['4-7'], ['8-10'], ['8-10'], ['8-10']]);
+  });
+  it('все 6 сортировок упорядочивают список', () => {
+    const list = [mk(1, { name: 'B', releaseDate: '2020-01-01', subscribers: 5, rating: { value: 7, source: 'IGN', original: '' } }),
+      mk(2, { name: 'A', releaseDate: '2024-01-01', subscribers: 1, rating: { value: 9, source: 'IGN', original: '' } })];
+    const order = (s: string) => filterGames(list, { sort: s as never }).map((g) => g.name).join('');
+    expect([order('rating-desc'), order('rating-asc'), order('popular'), order('alpha'), order('new'), order('old')])
+      .toEqual(['AB', 'BA', 'BA', 'AB', 'AB', 'BA']);
   });
 });

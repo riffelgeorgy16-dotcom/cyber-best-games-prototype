@@ -11,6 +11,7 @@ const STATUS: Record<PageSeo['indexStatus'], string> = {
   index: 'Индексируется (3 и более игр)',
   'noindex-few': 'noindex: меньше 3 игр (страница не продвигается)',
   'noindex-search': 'noindex: результаты поиска',
+  'noindex-params': 'noindex: сортировка или фильтр оценки (GET-параметры)',
   'noindex-empty': 'noindex: игр не найдено, canonical на главную каталога',
 };
 
@@ -82,6 +83,8 @@ export function Inspector(p: {
                   state.genre && 'жанр: ' + p.dicts.genres[state.genre].name,
                   state.platform && 'платформа: ' + p.dicts.platforms[state.platform].name,
                   state.year && 'год: ' + state.year,
+                  state.rating && 'оценка: ' + state.rating,
+                  state.sort && 'сортировка: ' + CONFIG.sorts.find((x) => x.key === state.sort)?.label,
                   state.q && 'поиск: ' + state.q,
                 ].filter(Boolean).join(', ') || 'нет'} />
                 <Row k="Подходящих игр" v={slice.total} />

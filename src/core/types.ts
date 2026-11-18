@@ -1,9 +1,9 @@
 // Общие типы прототипа каталога /games/best/
 
 export interface Rating {
-  value: number;        // нормализованная оценка 0-100, по ней идет сортировка
-  display: string;      // как показывать: "9/10", "92/100"
-  source: 'IGN' | 'Metacritic' | 'OpenCritic' | 'GameRankings';
+  value: number;        // оценка по 10-балльной шкале (Metacritic 94/100 -> 9.4)
+  source: 'IGN' | 'Metacritic' | 'OpenCritic' | 'GameRankings'; // только для данных и инспектора, на сайте не показывается
+  original: string;     // исходная оценка источника: "9/10", "94/100"
 }
 
 export interface Game {
@@ -49,12 +49,19 @@ export interface Dictionaries {
 }
 
 /** Разобранное состояние страницы каталога */
+export type SortKey = 'rating-desc' | 'rating-asc' | 'popular' | 'alpha' | 'new' | 'old';
+export type RatingBand = '1-3' | '4-7' | '8-10';
+
 export interface CatalogState {
   genre?: string;
   platform?: string;
   year?: string;
   page: number;
   q?: string;
+  /** Оценка: GET-параметр, страницы не индексируются */
+  rating?: RatingBand;
+  /** Сортировка: GET-параметр, по умолчанию rating-desc (в адрес не пишется) */
+  sort?: SortKey;
 }
 
 export type RouteResult =

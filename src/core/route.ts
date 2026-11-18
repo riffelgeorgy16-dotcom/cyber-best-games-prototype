@@ -1,5 +1,9 @@
 import { CONFIG } from './config';
-import type { CatalogState, Dictionaries, RouteResult } from './types';
+import type { CatalogState, Dictionaries, RatingBand, RouteResult, SortKey } from './types';
+
+export const DEFAULT_SORT: SortKey = CONFIG.sorts[0].key;
+const SORTS = CONFIG.sorts.map((s) => s.key) as readonly string[];
+const BANDS = CONFIG.ratingBands.map((b) => b.key) as readonly string[];
 
 type SegKind = 'genre' | 'platform' | 'year';
 
@@ -24,6 +28,8 @@ export function buildUrl(s: CatalogState, opts: { withPage?: boolean; withQuery?
   const { withPage = true, withQuery = true } = opts;
   const params: string[] = [];
   if (withQuery && s.q) params.push('q=' + encodeURIComponent(s.q));
+  if (withQuery && s.rating) params.push('rating=' + s.rating);
+  if (withQuery && s.sort && s.sort !== DEFAULT_SORT) params.push('sort=' + s.sort);
   if (withPage && s.page > 1) params.push('page=' + s.page);
   return buildPath(s) + (params.length ? '?' + params.join('&') : '');
 }
@@ -59,16 +65,29 @@ export function parseUrl(pathname: string, search: string, d: Dictionaries): Rou
   }
   const q = params.get('q');
   if (q && q.trim()) state.q = q.trim();
+  const rating = params.get('rating');
+  const sort = params.get('sort');
+  let badParam = '';
+  if (rating !== null) { if (BANDS.includes(rating)) state.rating = rating as RatingBand; else badParam = `неизвестная оценка "${rating}"`; }
+  if (sort !== null) {
+    if (sort === DEFAULT_SORT) badParam = 'сортировка по умолчанию не пишется в адрес';
+    else if (SORTS.includes(sort)) state.sort = sort as SortKey;
+    else badParam = `неизвестная сортировка "${sort}"`;
+  }
 
   const canonicalOrder = CONFIG.segmentOrder.filter((k) => seen.includes(k));
   const orderOk = canonicalOrder.every((k, i) => seen[i] === k);
   const lower = segs.some((s) => s !== s.toLowerCase());
-  if (!orderOk || needSlash || lower || pageRaw === '1') {
+  const canonicalSearch = buildUrl(state).split('?')[1] ?? '';
+  const paramOrder = search.replace(/^\?/, '') !== '' && search.replace(/^\?/, '') !== canonicalSearch && !badParam && pageRaw !== '1';
+  if (!orderOk || needSlash || lower || pageRaw === '1' || badParam || paramOrder) {
     const reasons = [
       !orderOk && 'порядок сегментов не жанр/платформа/год',
       needSlash && 'нет слеша в конце',
       lower && 'заглавные буквы в адресе',
       pageRaw === '1' && 'page=1 дублирует первую страницу',
+      badParam,
+      paramOrder && 'порядок или запись GET-параметров',
     ].filter(Boolean).join(', ');
     return { kind: 'redirect', to: buildUrl(state), reason: reasons };
   }
