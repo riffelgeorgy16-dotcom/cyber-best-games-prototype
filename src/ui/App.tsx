@@ -18,12 +18,14 @@ import { SearchBar } from './SearchBar';
 import { GameCard } from './GameCard';
 import { GameBackdrop } from './GameBackdrop';
 import { RatingDialog, readerScore, type ReaderRating } from './ReaderRating';
+import { readReaderRatings, READER_RATINGS_KEY, writeReaderRatings } from './readerRatingStorage';
 import { Pagination } from './Pagination';
 import { CatalogEditorial } from './CatalogEditorial';
 import { Inspector, type RouteEvent } from './Inspector';
 
 const D = dictsRaw as unknown as Dictionaries;
 const ALL: Game[] = sortGames((gamesRaw as { games: Game[] }).games);
+const GAMES_BY_ID = new Map(ALL.map((game) => [game.id, game]));
 
 export const EMPTY_TEXT = 'По вашим фильтрам ничего не найдено. Попробуйте изменить или очистить все фильтры';
 
@@ -33,7 +35,7 @@ export function App() {
   const [emptyNotice, setEmptyNotice] = useState<string | null>(null);
   const [demoSignedIn, setDemoSignedIn] = useState(false);
   const [ratingGame, setRatingGame] = useState<Game | null>(null);
-  const [ratings, setRatings] = useState<Map<Game, ReaderRating>>(() => new Map());
+  const [ratings, setRatings] = useState(() => readReaderRatings(GAMES_BY_ID) ?? new Map<Game, ReaderRating>());
   const [showRatings, setShowRatings] = useState(false);
   const [hoverGame, setHoverGame] = useState<string | null>(null);
   const [focusGame, setFocusGame] = useState<string | null>(null);
@@ -43,6 +45,16 @@ export function App() {
   useEffect(() => {
     if (showRatings) myRatingsHeading.current?.focus();
   }, [showRatings]);
+
+  useEffect(() => {
+    function reloadRatings(event: StorageEvent) {
+      if (event.key !== READER_RATINGS_KEY && event.key !== null) return;
+      const stored = readReaderRatings(GAMES_BY_ID);
+      if (stored) setRatings(stored);
+    }
+    window.addEventListener('storage', reloadRatings);
+    return () => window.removeEventListener('storage', reloadRatings);
+  }, []);
 
   const [path, search = ''] = url.split('?');
   const route = useMemo(() => parseUrl(path, search ? '?' + search : '', D), [path, search]);
@@ -115,12 +127,11 @@ export function App() {
   const openMyRatings = () => { setSavedRating(null); setShowRatings(true); };
   const saveRating = (rating: ReaderRating) => {
     if (!ratingGame) return;
-    setRatings((previous) => {
-      const updated = new Map(previous);
-      updated.delete(ratingGame);
-      updated.set(ratingGame, rating);
-      return updated;
-    });
+    const updated = new Map(ratings);
+    updated.delete(ratingGame);
+    updated.set(ratingGame, rating);
+    writeReaderRatings(updated);
+    setRatings(updated);
     setSavedRating({ game: ratingGame, score: rating.score });
     setRatingGame(null);
   };
