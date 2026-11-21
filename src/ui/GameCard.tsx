@@ -76,12 +76,26 @@ type GameCardProps = {
   onNav: (url: string) => void;
   readerRating?: ReaderRating;
   onRate: () => void;
+  onHoverGame?: (id: string | null) => void;
+  onFocusGame?: (id: string | null) => void;
 };
 
-export function GameCard({ game: g, position, dicts: d, onNav, readerRating, onRate }: GameCardProps) {
+export function GameCard({ game: g, position, dicts: d, onNav, readerRating, onRate, onHoverGame, onFocusGame }: GameCardProps) {
   const genres = g.genres.map((s) => ({ t: d.genres[s].name, u: buildUrl({ genre: s, page: 1 }) }));
   return (
-    <article className="card">
+    <article className="card"
+      onPointerEnter={onHoverGame && ((event) => {
+        if (event.pointerType === 'mouse') onHoverGame(g.id);
+      })}
+      onPointerLeave={onHoverGame && ((event) => {
+        if (event.pointerType === 'mouse') onHoverGame(null);
+      })}
+      onFocus={onFocusGame && ((event) => {
+        if (event.target.matches(':focus-visible')) onFocusGame(g.id);
+      })}
+      onBlur={onFocusGame && ((event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) onFocusGame(null);
+      })}>
       <a className="cover-link" href={g.url} tabIndex={-1} aria-hidden>
         <Cover g={g} />
       </a>

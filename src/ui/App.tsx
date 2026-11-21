@@ -16,6 +16,7 @@ import { Filters, Collections } from './Filters';
 import { AddGameButton } from './AddGame';
 import { SearchBar } from './SearchBar';
 import { GameCard } from './GameCard';
+import { GameBackdrop } from './GameBackdrop';
 import { RatingDialog, readerScore, type ReaderRating } from './ReaderRating';
 import { Pagination } from './Pagination';
 import { CatalogEditorial } from './CatalogEditorial';
@@ -34,6 +35,8 @@ export function App() {
   const [ratingGame, setRatingGame] = useState<Game | null>(null);
   const [ratings, setRatings] = useState<Map<Game, ReaderRating>>(() => new Map());
   const [showRatings, setShowRatings] = useState(false);
+  const [hoverGame, setHoverGame] = useState<string | null>(null);
+  const [focusGame, setFocusGame] = useState<string | null>(null);
   const [savedRating, setSavedRating] = useState<{ game: Game; score: number } | null>(null);
   const myRatingsHeading = useRef<HTMLHeadingElement>(null);
 
@@ -60,6 +63,8 @@ export function App() {
   // Сообщение о пустом результате живет только до следующей навигации
   useEffect(() => {
     setEmptyNotice(null);
+    setHoverGame(null);
+    setFocusGame(null);
     if (appending.current) appending.current = false;
     else setAppendFrom(null);
   }, [url]);
@@ -122,6 +127,7 @@ export function App() {
 
   return (
     <div className="page">
+      <GameBackdrop gameId={showRatings || ratingGame || emptyNotice || notFound ? null : hoverGame ?? focusGame} />
       <AddressBar url={url} onGo={(u) => navigate(u)} mode={MODE} />
       <Header />
       <main className="container">
@@ -180,6 +186,7 @@ export function App() {
                   <div className="grid">
                     {shown.map((g, i) => (
                       <GameCard key={g.id} game={g} position={shownOffset + i + 1} dicts={D} onNav={navigate}
+                        onHoverGame={setHoverGame} onFocusGame={setFocusGame}
                         readerRating={ratings.get(g)} onRate={() => openRating(g)} />
                     ))}
                   </div>
