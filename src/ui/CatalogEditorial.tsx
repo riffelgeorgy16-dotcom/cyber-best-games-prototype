@@ -5,7 +5,9 @@ export function CatalogEditorial({ heading, paragraphs }: {
   return (
     <section className="catalog-editorial" aria-labelledby="catalog-editorial-title">
       <h2 className="h2" id="catalog-editorial-title">{heading}</h2>
-      {paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+      <div className="editorial-columns">
+        {paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+      </div>
     </section>
   );
 }

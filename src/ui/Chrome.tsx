@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import news from '../data/news.json';
 import { CONFIG } from '../core/config';
 import type { Crumb } from '../core/seo';
 import { href } from './router';
@@ -99,30 +98,6 @@ export function Breadcrumbs({ crumbs, onNav }: { crumbs: Crumb[]; onNav: (u: str
         );
       })}
     </nav>
-  );
-}
-
-export function NewsBlocks() {
-  return (
-    <section className="news">
-      <div className="news-col">
-        <h2 className="h2">Главные новости</h2>
-        <ul>
-          {news.news.map((n) => (
-            <li key={n.url}><a href={n.url}>{n.title}</a><span className="muted"> · {n.date}</span></li>
-          ))}
-        </ul>
-      </div>
-      <div className="news-col">
-        <h2 className="h2">Свежие записи в блогах</h2>
-        <ul>
-          {news.blogs.map((n) => (
-            <li key={n.url}><a href={n.url}>{n.title}</a><span className="muted"> · {n.blog}</span></li>
-          ))}
-        </ul>
-      </div>
-      <p className="muted small">Снимок ссылок Кибера на {news.snapshot}. В рабочей версии блоки заполняются из CMS.</p>
-    </section>
   );
 }
 

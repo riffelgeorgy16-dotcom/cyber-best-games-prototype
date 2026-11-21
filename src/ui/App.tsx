@@ -10,7 +10,8 @@ import { validate } from '../core/validate';
 import type { CatalogState, Dictionaries, Game } from '../core/types';
 import { currentUrl, go, subscribe, MODE } from './router';
 import { applyHead } from './head';
-import { Header, AddressBar, Breadcrumbs, NewsBlocks, Footer } from './Chrome';
+import { Header, AddressBar, Breadcrumbs, Footer } from './Chrome';
+import { CatalogMedia } from './CatalogMedia';
 import { Filters, Collections } from './Filters';
 import { AddGameButton } from './AddGame';
 import { SearchBar } from './SearchBar';
@@ -193,7 +194,7 @@ export function App() {
                 </>
               )}
             </>}
-            <NewsBlocks />
+            <CatalogMedia />
             {editorial && <CatalogEditorial {...editorial} />}
           </>
         )}

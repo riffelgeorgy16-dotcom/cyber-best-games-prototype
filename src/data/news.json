@@ -8,10 +8,15 @@
     {"title": "5 букв Тинькофф: ответы на слова из 5 букв сегодня, 17 ноября", "url": "https://cyber.sports.ru/games/1117439259-5-bukv-tinkoff-otvety-na-slova-iz-5-bukv-segodnya-17-noyabrya.html", "date": "17 ноября, 09:49"}
   ],
   "blogs": [
-    {"title": "Во что поиграть в ожидании GTA: 11 игр-клонов", "url": "https://cyber.sports.ru/games/blogs/3098559.html", "blog": "Кое-что об играх"},
-    {"title": "Кто первым пройдет GTA 6? На это уже принимают ставки", "url": "https://cyber.sports.ru/games/blogs/3633418.html", "blog": "Мемвайз"},
-    {"title": "Спорт в GTA 6: какие занятия уже показала Rockstar?", "url": "https://cyber.sports.ru/games/blogs/3633503.html", "blog": "Билли Бутчер"},
-    {"title": "Лу в Бравл Старс: что за персонаж, возраст, лучший билд и все скины героя", "url": "https://cyber.sports.ru/games/blogs/3633502.html", "blog": "Мобилити"},
-    {"title": "Как делали GTA 6: краткая история 11 лет разработки", "url": "https://cyber.sports.ru/games/blogs/3562993.html", "blog": "Гоша Ядвидчук про игры"}
+    {"title": "Во что поиграть в ожидании GTA: 11 игр-клонов", "url": "https://cyber.sports.ru/games/blogs/3098559.html", "blog": "Кое-что об играх", "image": "https://photobooth.cdn.sports.ru/preset/post/6/31/2d94040934022bc90f3bfa77e652d.jpeg?f=webp&q=90&s=2x&w=730"},
+    {"title": "Лу в Бравл Старс: что за персонаж, возраст, лучший билд и все скины героя", "url": "https://cyber.sports.ru/games/blogs/3633502.html", "blog": "Мобилити", "image": "https://cyber.sports.ru/dynamic_images/post/363/350/2/share/e9759d_no_text.jpg"},
+    {"title": "Как делали GTA 6: краткая история 11 лет разработки", "url": "https://cyber.sports.ru/games/blogs/3562993.html", "blog": "Гоша Ядвидчук про игры", "image": "https://cyber.sports.ru/dynamic_images/post/356/299/3/share/c3fff3_no_text.jpg"},
+    {"title": "Спорт в GTA 6: какие занятия уже показала Rockstar?", "url": "https://cyber.sports.ru/games/blogs/3633503.html", "blog": "Билли Бутчер", "image": "https://cyber.sports.ru/dynamic_images/post/363/350/3/share/3a37af_no_text.jpg"},
+    {"title": "Кто первым пройдет GTA 6? На это уже принимают ставки", "url": "https://cyber.sports.ru/games/blogs/3633418.html", "blog": "Мемвайз", "image": "https://cyber.sports.ru/dynamic_images/post/363/341/8/share/01b663_no_text.jpg"}
+  ],
+  "collections": [
+    {"title": "10 самых грустных моментов трилогии Mass Effect", "url": "https://cyber.sports.ru/games/blogs/3091018.html", "blog": "Ни слова про Гвинт", "image": "https://cyber.sports.ru/dynamic_images/post/309/101/8/share/cf665a_no_text.jpg"},
+    {"title": "7 жутких монстров из игр, которым хватило одного появления", "url": "https://cyber.sports.ru/games/blogs/3368164.html", "blog": "Ни слова про Гвинт", "image": "https://cyber.sports.ru/dynamic_images/post/336/816/4/share/fd6b75_no_text.jpg"},
+    {"title": "В какие игры играть осенью?", "url": "https://cyber.sports.ru/games/blogs/3553633.html", "blog": "Поиграем?", "image": "https://cyber.sports.ru/dynamic_images/post/355/363/3/share/e5fc70_no_text.jpg"}
   ]
 }
