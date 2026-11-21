@@ -3,13 +3,17 @@
 // видны в исходном коде страницы (Ctrl+U), а не только после работы скрипта.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
+import { createElement } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
 import dictsRaw from '../src/data/dictionaries.json';
 import gamesRaw from '../src/data/games.json';
 import { CONFIG } from '../src/core/config';
 import { filterGames, paginate, formatRating } from '../src/core/catalog';
+import { catalogEditorial } from '../src/core/editorial';
 import { computeSeo } from '../src/core/seo';
 import { buildPath } from '../src/core/route';
 import type { CatalogState, Dictionaries, Game } from '../src/core/types';
+import { CatalogEditorial } from '../src/ui/CatalogEditorial';
 
 const D = dictsRaw as unknown as Dictionaries;
 const G = (gamesRaw as unknown as { games: Game[] }).games;
@@ -44,10 +48,12 @@ for (const s of states) {
     `<script type="application/ld+json" id="ld-itemlist">${JSON.stringify(seo.itemList)}</script>`,
     `<script type="application/ld+json" id="ld-breadcrumbs">${JSON.stringify(seo.breadcrumbList)}</script>`,
   ].filter(Boolean).join('\n  ');
+  const copy = catalogEditorial(s);
+  const editorial = copy ? renderToStaticMarkup(createElement(CatalogEditorial, copy)) : '';
   const body =
     `<div id="root"><h1>${esc(seo.h1)}</h1><ol>` +
     slice.items.map((g) => `<li><a href="${g.url}">${esc(g.name)}</a> ${formatRating(g.rating.value)}</li>`).join('') +
-    `</ol></div>`;
+    `</ol>${editorial}</div>`;
   const html = tpl
     .replace(/<title>.*?<\/title>/s, head)
     .replace(/<meta name="robots"[^>]*>\s*/, '')

@@ -4,6 +4,7 @@ import gamesRaw from '../data/games.json';
 import { CONFIG } from '../core/config';
 import { parseUrl, buildUrl } from '../core/route';
 import { filterGames, paginate, sortGames } from '../core/catalog';
+import { catalogEditorial } from '../core/editorial';
 import { computeSeo } from '../core/seo';
 import { validate } from '../core/validate';
 import type { CatalogState, Dictionaries, Game } from '../core/types';
@@ -16,6 +17,7 @@ import { SearchBar } from './SearchBar';
 import { GameCard } from './GameCard';
 import { RatingDialog, readerScore, type ReaderRating } from './ReaderRating';
 import { Pagination } from './Pagination';
+import { CatalogEditorial } from './CatalogEditorial';
 import { Inspector, type RouteEvent } from './Inspector';
 
 const D = dictsRaw as unknown as Dictionaries;
@@ -62,6 +64,7 @@ export function App() {
   }, [url]);
 
   const state: CatalogState | null = route.kind === 'ok' ? route.state : null;
+  const editorial = state && !showRatings && !emptyNotice ? catalogEditorial(state) : undefined;
   const sorted = useMemo(() => (state ? filterGames(ALL, state) : []), [state]);
   const slice = useMemo(() => paginate(sorted, state?.page ?? 1), [sorted, state]);
   const notFound = route.kind === 'not_found' || (state !== null && slice.outOfRange && slice.total > 0);
@@ -191,6 +194,7 @@ export function App() {
               )}
             </>}
             <NewsBlocks />
+            {editorial && <CatalogEditorial {...editorial} />}
           </>
         )}
       </main>
