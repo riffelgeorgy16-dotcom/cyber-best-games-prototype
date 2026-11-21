@@ -121,12 +121,6 @@ export function GameCard({ game: g, position, dicts: d, onNav, readerRating, onR
         <h3 className="card-title">{g.url ? <a href={g.url}>{g.name}</a> : g.name}</h3>
         <div className="card-row"><span className="lbl">Жанр:</span> <LinkList items={genres} max={2} onNav={onNav} /></div>
         <PlatformBadges slugs={g.platforms} d={d} onNav={onNav} />
-        {g.developers?.length ? (
-          <div className="card-row"><span className="lbl">Разработчик:</span> {g.developers.join(', ')}</div>
-        ) : null}
-        {g.publishers?.length ? (
-          <div className="card-row"><span className="lbl">Издатель:</span> {g.publishers.join(', ')}</div>
-        ) : null}
         <div className="card-date">{formatDate(g)}</div>
       </div>
     </article>

@@ -19,8 +19,6 @@ export interface Game {
   platforms: string[];  // слаги платформ из справочника
   genres: string[];     // слаги жанров из справочника
   rating?: Rating;
-  developers?: string[];
-  publishers?: string[];
   cover?: string;       // URL обложки
   coverSource?: string;
   wikidata: string;
