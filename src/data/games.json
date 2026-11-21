@@ -12789,10 +12789,18 @@
     "genres": "https://www.wikidata.org/wiki/Q124526760#P136",
     "candidate": "https://en.wikipedia.org/wiki/Despelote",
     "genreArticle": "https://en.wikipedia.org/wiki/Despelote",
-    "cover": "https://store.steampowered.com/app/2367820/"
+    "cover": "https://store.steampowered.com/app/2367820/",
+    "rating": "https://store.steampowered.com/app/2367820/"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2367820/header.jpg",
-   "coverSource": "https://store.steampowered.com/app/2367820/"
+   "coverSource": "https://store.steampowered.com/app/2367820/",
+   "rating": {
+    "value": 8.9,
+    "source": "Metacritic",
+    "original": "89/100",
+    "platform": "ПК",
+    "url": "https://www.metacritic.com/game/pc/despelote"
+   }
   },
   {
    "id": "wd-q133804475",
@@ -19536,10 +19544,18 @@
     "genres": "https://www.wikidata.org/wiki/Q910938#P136",
     "candidate": "https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best",
     "genreArticle": "https://en.wikipedia.org/wiki/Fallout_2",
-    "cover": "https://store.steampowered.com/app/38410/"
+    "cover": "https://store.steampowered.com/app/38410/",
+    "rating": "https://store.steampowered.com/app/38410/"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/38410/header.jpg",
-   "coverSource": "https://store.steampowered.com/app/38410/"
+   "coverSource": "https://store.steampowered.com/app/38410/",
+   "rating": {
+    "value": 8.6,
+    "source": "Metacritic",
+    "original": "86/100",
+    "platform": "ПК",
+    "url": "https://www.metacritic.com/game/pc/fallout-2"
+   }
   },
   {
    "id": "wd-q592507",
@@ -20532,10 +20548,18 @@
     "genres": "https://www.wikidata.org/wiki/Q644793#P136",
     "candidate": "https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best",
     "genreArticle": "https://en.wikipedia.org/wiki/Deus_Ex_(video_game)",
-    "cover": "https://store.steampowered.com/app/6910/"
+    "cover": "https://store.steampowered.com/app/6910/",
+    "rating": "https://store.steampowered.com/app/6910/"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/6910/header.jpg",
-   "coverSource": "https://store.steampowered.com/app/6910/"
+   "coverSource": "https://store.steampowered.com/app/6910/",
+   "rating": {
+    "value": 9.0,
+    "source": "Metacritic",
+    "original": "90/100",
+    "platform": "ПК",
+    "url": "https://www.metacritic.com/game/pc/deus-ex"
+   }
   },
   {
    "id": "wd-q474573",
@@ -21110,10 +21134,18 @@
     "genres": "https://www.wikidata.org/wiki/Q1658068#P136",
     "candidate": "https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best",
     "genreArticle": "https://en.wikipedia.org/wiki/Ikaruga",
-    "cover": "https://store.steampowered.com/app/253750/"
+    "cover": "https://store.steampowered.com/app/253750/",
+    "rating": "https://store.steampowered.com/app/253750/"
    },
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/253750/header.jpg",
-   "coverSource": "https://store.steampowered.com/app/253750/"
+   "coverSource": "https://store.steampowered.com/app/253750/",
+   "rating": {
+    "value": 8.4,
+    "source": "Metacritic",
+    "original": "84/100",
+    "platform": "ПК",
+    "url": "https://www.metacritic.com/game/pc/ikaruga"
+   }
   },
   {
    "id": "wd-q907226",
@@ -21701,8 +21733,8 @@
   },
   {
    "id": "princ-persii-peski-vremeni-remejk",
-   "name": "Принц Персии: Пески времени (ремейк)",
-   "subscribers": 1,
+   "name": "Принц Персии: Пески времени",
+   "subscribers": 0,
    "releaseDate": "2003-10-28",
    "datePrecision": "day",
    "year": 2003,
@@ -21719,19 +21751,24 @@
    ],
    "wikidata": "Q715292",
    "sources": {
-    "name": "Кибер, список тегов",
+    "name": "https://www.wikidata.org/wiki/Q715292",
     "releaseDate": "https://www.wikidata.org/wiki/Q715292#P577",
     "platforms": "https://www.wikidata.org/wiki/Q715292#P400",
     "genres": "https://www.wikidata.org/wiki/Q715292#P136",
     "candidate": "https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best",
     "genreArticle": "https://en.wikipedia.org/wiki/Prince_of_Persia:_The_Sands_of_Time",
-    "url": "Кибер, список тегов",
-    "subscribers": "Кибер, список тегов",
-    "cover": "https://store.steampowered.com/app/13600/"
+    "cover": "https://store.steampowered.com/app/13600/",
+    "rating": "https://store.steampowered.com/app/13600/"
    },
-   "url": "https://cyber.sports.ru/games/princ-persii-peski-vremeni-remejk/",
    "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/13600/header.jpg",
-   "coverSource": "https://store.steampowered.com/app/13600/"
+   "coverSource": "https://store.steampowered.com/app/13600/",
+   "rating": {
+    "value": 8.9,
+    "source": "Metacritic",
+    "original": "89/100",
+    "platform": "ПК",
+    "url": "https://www.metacritic.com/game/pc/prince-of-persia-the-sands-of-time"
+   }
   },
   {
    "id": "star-wars-knights-of-the-old-republic",
