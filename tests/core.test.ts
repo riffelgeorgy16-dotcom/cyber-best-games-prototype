@@ -64,12 +64,25 @@ describe('каталог', () => {
     expect(page('/games/best/?page=9').sl!.outOfRange).toBe(true);
   });
   it('сортировка по оценке', () => {
-    const vals = GAMES.map((g) => g.rating.value);
+    const vals = GAMES.map((g) => g.rating!.value);
     expect([...vals].sort((a, b) => b - a)).toEqual(vals);
   });
   it('счетчики фильтров учитывают остальные выбранные параметры', () => {
     const c = optionCounts(GAMES, { page: 1, genre: 'horror-igry' }, 'platform', ['pc', 'playstation-5']);
     expect(c).toEqual({ pc: 0, 'playstation-5': 2 });
+  });
+  it('игра без тега и оценки доступна в каталоге, но не в диапазоне оценок', () => {
+    const tagged = mk(1);
+    const unrated = mk(2, { url: undefined, rating: undefined });
+    const games = [unrated, tagged];
+    expect(sortGames(games, 'rating-desc')).toEqual([tagged, unrated]);
+    expect(sortGames(games, 'rating-asc')).toEqual([tagged, unrated]);
+    expect(filterGames(games, { rating: '8-10' })).toEqual([tagged]);
+    const slice = paginate([unrated], 1);
+    const seo = computeSeo({ page: 1 }, slice, D);
+    expect(JSON.parse(JSON.stringify(seo.itemList)).itemListElement).toEqual([
+      { '@type': 'ListItem', position: 1, name: unrated.name },
+    ]);
   });
 });
 

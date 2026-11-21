@@ -79,7 +79,7 @@ export function validate(
   // 9. Количество игр
   const expCount = Math.max(0, Math.min(CONFIG.perPage, slice.total - slice.offset));
   if (renderedCount !== expCount) err('count', 'Ошибка количества карточек на странице', String(expCount), String(renderedCount));
-  const il = seo.itemList as { numberOfItems: number; itemListElement: { position: number; name: string; url: string }[]; url: string; description: string };
+  const il = seo.itemList as { numberOfItems: number; itemListElement: { position: number; name: string; url?: string }[]; url: string; description: string };
   if (il.numberOfItems !== slice.total) err('itemlist-total', 'ItemList.numberOfItems должен равняться числу игр в категории', String(slice.total), String(il.numberOfItems));
   if (il.itemListElement.length !== renderedCount) err('itemlist-count', 'В ItemList не те игры, что показаны на странице', String(renderedCount), String(il.itemListElement.length));
   il.itemListElement.forEach((e, i) => {

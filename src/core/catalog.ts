@@ -2,25 +2,30 @@ import { CONFIG } from './config';
 import type { CatalogState, Game, RatingBand, SortKey } from './types';
 
 const byName = (a: Game, b: Game) => a.name.localeCompare(b.name, 'ru');
+const descendingScore = (a: Game, b: Game) =>
+  (b.rating?.value ?? -1) - (a.rating?.value ?? -1);
+const ascendingScore = (a: Game, b: Game) =>
+  (a.rating?.value ?? 11) - (b.rating?.value ?? 11);
 /**
  * Сортировки. По умолчанию - оценка по убыванию.
  * При равенстве: подписчики тега Кибера, затем название.
  */
 export function sortGames(games: Game[], key: SortKey = 'rating-desc'): Game[] {
   const cmp: Record<SortKey, (a: Game, b: Game) => number> = {
-    'rating-desc': (a, b) => b.rating.value - a.rating.value || b.subscribers - a.subscribers || byName(a, b),
-    'rating-asc': (a, b) => a.rating.value - b.rating.value || b.subscribers - a.subscribers || byName(a, b),
-    popular: (a, b) => b.subscribers - a.subscribers || b.rating.value - a.rating.value || byName(a, b),
+    'rating-desc': (a, b) => descendingScore(a, b) || b.subscribers - a.subscribers || byName(a, b),
+    'rating-asc': (a, b) => ascendingScore(a, b) || b.subscribers - a.subscribers || byName(a, b),
+    popular: (a, b) => b.subscribers - a.subscribers || descendingScore(a, b) || byName(a, b),
     alpha: byName,
-    new: (a, b) => b.releaseDate.localeCompare(a.releaseDate) || b.rating.value - a.rating.value || byName(a, b),
-    old: (a, b) => a.releaseDate.localeCompare(b.releaseDate) || b.rating.value - a.rating.value || byName(a, b),
+    new: (a, b) => b.releaseDate.localeCompare(a.releaseDate) || descendingScore(a, b) || byName(a, b),
+    old: (a, b) => a.releaseDate.localeCompare(b.releaseDate) || descendingScore(a, b) || byName(a, b),
   };
   return [...games].sort(cmp[key]);
 }
 
 export function inBand(g: Game, band: RatingBand) {
   const b = CONFIG.ratingBands.find((x) => x.key === band)!;
-  return g.rating.value >= b.min && g.rating.value < b.max;
+  const score = g.rating?.value;
+  return score !== undefined && score >= b.min && score < b.max;
 }
 
 /** Показ оценки: 10-балльная шкала, один знак после запятой (10 без дробной части) */
@@ -80,6 +85,6 @@ export function suggest(games: Game[], query: string, limit = 8): Game[] {
   if (q.length < 2) return [];
   const hits = games.filter((g) => normalize(g.name).includes(q));
   return hits
-    .sort((a, b) => Number(normalize(b.name).startsWith(q)) - Number(normalize(a.name).startsWith(q)) || b.rating.value - a.rating.value)
+    .sort((a, b) => Number(normalize(b.name).startsWith(q)) - Number(normalize(a.name).startsWith(q)) || descendingScore(a, b))
     .slice(0, limit);
 }

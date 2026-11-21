@@ -4,19 +4,23 @@ export interface Rating {
   value: number;        // оценка по 10-балльной шкале (Metacritic 94/100 -> 9.4)
   source: 'IGN' | 'Metacritic' | 'OpenCritic' | 'GameRankings'; // только для данных и инспектора, на сайте не показывается
   original: string;     // исходная оценка источника: "9/10", "94/100"
+  platform?: string;
+  url?: string;
 }
 
 export interface Game {
-  id: string;           // слаг тега Кибера
-  name: string;         // название как в теге Кибера
-  url: string;          // URL тега на Кибере
+  id: string;           // стабильный идентификатор игры
+  name: string;
+  url?: string;         // URL тега Кибера, если такой тег есть
   subscribers: number;  // подписчики тега (из списка тегов Кибера)
   releaseDate: string;  // ISO, дата первого выхода
-  datePrecision: 'day' | 'year';
+  datePrecision: 'day' | 'month' | 'year';
   year: number;
   platforms: string[];  // слаги платформ из справочника
   genres: string[];     // слаги жанров из справочника
-  rating: Rating;
+  rating?: Rating;
+  developers?: string[];
+  publishers?: string[];
   cover?: string;       // URL обложки
   coverSource?: string;
   wikidata: string;

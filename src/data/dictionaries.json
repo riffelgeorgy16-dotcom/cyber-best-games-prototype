@@ -244,6 +244,94 @@
    "description": "🔥 Топ лучших игр для Steam VR. ⭐ Самый свежий рейтинг хитов — во что поиграть. 🎮 Обзоры, геймплей, оценки.",
    "h1": "Лучшие VR игры на Steam VR",
    "var": ""
+  },
+  "android": {
+   "slug": "android",
+   "name": "Android",
+   "var": "Android",
+   "title": "Лучшие игры на Android — топ игр",
+   "description": "Лучшие игры на Android с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на Android"
+  },
+  "ios": {
+   "slug": "ios",
+   "name": "iOS",
+   "var": "iOS",
+   "title": "Лучшие игры на iOS — топ игр",
+   "description": "Лучшие игры на iOS с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на iOS"
+  },
+  "arcade": {
+   "slug": "arcade",
+   "name": "Аркадные автоматы",
+   "var": "аркадных автоматах",
+   "title": "Лучшие игры на аркадных автоматах — топ игр",
+   "description": "Лучшие игры на аркадных автоматах с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на аркадных автоматах"
+  },
+  "nintendo-nes": {
+   "slug": "nintendo-nes",
+   "name": "NES",
+   "var": "NES",
+   "title": "Лучшие игры на NES — топ игр",
+   "description": "Лучшие игры на NES с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на NES"
+  },
+  "nintendo-snes": {
+   "slug": "nintendo-snes",
+   "name": "SNES",
+   "var": "SNES",
+   "title": "Лучшие игры на SNES — топ игр",
+   "description": "Лучшие игры на SNES с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на SNES"
+  },
+  "commodore-64": {
+   "slug": "commodore-64",
+   "name": "Commodore 64",
+   "var": "Commodore 64",
+   "title": "Лучшие игры на Commodore 64 — топ игр",
+   "description": "Лучшие игры на Commodore 64 с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на Commodore 64"
+  },
+  "amiga": {
+   "slug": "amiga",
+   "name": "Amiga",
+   "var": "Amiga",
+   "title": "Лучшие игры на Amiga — топ игр",
+   "description": "Лучшие игры на Amiga с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на Amiga"
+  },
+  "zx-spectrum": {
+   "slug": "zx-spectrum",
+   "name": "ZX Spectrum",
+   "var": "ZX Spectrum",
+   "title": "Лучшие игры на ZX Spectrum — топ игр",
+   "description": "Лучшие игры на ZX Spectrum с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на ZX Spectrum"
+  },
+  "atari-2600": {
+   "slug": "atari-2600",
+   "name": "Atari 2600",
+   "var": "Atari 2600",
+   "title": "Лучшие игры на Atari 2600 — топ игр",
+   "description": "Лучшие игры на Atari 2600 с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на Atari 2600"
+  },
+  "pc-engine": {
+   "slug": "pc-engine",
+   "name": "PC Engine",
+   "var": "PC Engine",
+   "title": "Лучшие игры на PC Engine — топ игр",
+   "description": "Лучшие игры на PC Engine с оценками, жанрами и датами выхода.",
+   "h1": "Лучшие игры на PC Engine"
+  },
+  "apple-ii": {
+   "slug": "apple-ii",
+   "name": "Apple II",
+   "var": "Apple II",
+   "title": "Лучшие игры на Apple II — топ игр",
+   "description": "Лучшие игры на Apple II с оценками и датами выхода.",
+   "h1": "Лучшие игры на Apple II"
   }
  },
  "genres": {
@@ -624,6 +712,13 @@
    "title": "Лучшие экшен игры, крутые экшен игры с сюжетом, топ экшен игр",
    "description": "🔥 Топ лучших игр в жанре экшен. ⭐ Самый свежий рейтинг хитов — во что поиграть. 🎮 Обзоры, геймплей, оценки.",
    "h1": "Топ экшен игр"
+  },
+  "ritm-igry": {
+   "slug": "ritm-igry",
+   "name": "Ритм-игры",
+   "title": "Лучшие ритм-игры — топ игр",
+   "description": "Лучшие ритм-игры с оценками, платформами и датами выхода.",
+   "h1": "Лучшие ритм-игры"
   }
  },
  "years": {
@@ -875,7 +970,18 @@
    "Sega Mega Drive 2",
    "Sega Dreamcast",
    "Oculus Quest 3",
-   "VR"
+   "VR",
+   "android",
+   "ios",
+   "arcade",
+   "nintendo-nes",
+   "nintendo-snes",
+   "commodore-64",
+   "amiga",
+   "zx-spectrum",
+   "atari-2600",
+   "pc-engine",
+   "apple-ii"
   ],
   "years": [
    "2026",
@@ -914,7 +1020,22 @@
    "1993",
    "1992",
    "1991",
-   "1990"
+   "1990",
+   "1989",
+   "1988",
+   "1987",
+   "1986",
+   "1985",
+   "1984",
+   "1983",
+   "1982",
+   "1981",
+   "1980",
+   "1979",
+   "1978",
+   "1977",
+   "1972",
+   "1971"
   ],
   "genres": [
    "Beat-em-Up",
@@ -970,7 +1091,8 @@
    "Фэнтези",
    "Хорроры",
    "Шутеры",
-   "Экшен"
+   "Экшен",
+   "ritm-igry"
   ]
  },
  "templates": [

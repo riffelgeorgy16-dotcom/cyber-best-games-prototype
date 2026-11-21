@@ -8,15 +8,24 @@ export function SearchBar({ games, state, onSubmit }: { games: Game[]; state: Ca
   const [hi, setHi] = useState(-1);
   useEffect(() => setQ(state.q ?? ''), [state.q]);
   const sug = focus ? suggest(games, q) : [];
+  const showResults = (query: string) => {
+    setQ(query);
+    onSubmit(query);
+    setFocus(false);
+    setHi(-1);
+  };
 
   return (
     <form
       className="search" role="search"
       onSubmit={(e) => {
         e.preventDefault();
-        if (hi >= 0 && sug[hi]) { window.open(sug[hi].url, '_blank', 'noopener'); return; }
-        onSubmit(q.trim());
-        setFocus(false);
+        const selected = sug[hi];
+        if (selected?.url) {
+          window.open(selected.url, '_blank', 'noopener');
+          return;
+        }
+        showResults(selected?.name ?? q.trim());
       }}
     >
       <input
@@ -35,12 +44,18 @@ export function SearchBar({ games, state, onSubmit }: { games: Game[]; state: Ca
         <ul className="sug" role="listbox">
           {sug.map((g, i) => (
             <li key={g.id} className={i === hi ? 'hi' : ''} role="option" aria-selected={i === hi}>
-              <a href={g.url} target="_blank" rel="noopener">
-                <span>{g.name}</span><span className="muted">{g.year}</span>
-              </a>
+              {g.url ? (
+                <a href={g.url} target="_blank" rel="noopener">
+                  <span>{g.name}</span><span className="muted">{g.year}</span>
+                </a>
+              ) : (
+                <button type="button" className="sug-game" onClick={() => showResults(g.name)}>
+                  <span>{g.name}</span><span className="muted">{g.year}</span>
+                </button>
+              )}
             </li>
           ))}
-          <li className="sug-all"><button type="submit">Показать все результаты по «{q}»</button></li>
+          <li className="sug-all"><button type="button" onClick={() => showResults(q.trim())}>Показать все результаты по «{q}»</button></li>
         </ul>
       )}
     </form>

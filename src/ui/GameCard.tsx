@@ -7,9 +7,11 @@ import { onLinkClick } from './Chrome';
 import { readerScore, type ReaderRating } from './ReaderRating';
 
 const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+const MONTH_NAMES = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
 export function formatDate(g: Game) {
   if (g.datePrecision === 'year') return String(g.year);
   const [y, m, d] = g.releaseDate.split('-').map(Number);
+  if (g.datePrecision === 'month') return `${MONTH_NAMES[m - 1]} ${y}`;
   return `${d} ${MONTHS[m - 1]} ${y}`;
 }
 
@@ -96,9 +98,11 @@ export function GameCard({ game: g, position, dicts: d, onNav, readerRating, onR
       onBlur={onFocusGame && ((event) => {
         if (!event.currentTarget.contains(event.relatedTarget)) onFocusGame(null);
       })}>
-      <a className="cover-link" href={g.url} tabIndex={-1} aria-hidden>
-        <Cover g={g} />
-      </a>
+      {g.url ? (
+        <a className="cover-link" href={g.url} tabIndex={-1} aria-hidden>
+          <Cover g={g} />
+        </a>
+      ) : <div className="cover-link" aria-hidden><Cover g={g} /></div>}
       <div className="card-body">
         <div className="card-top reader-card-top" data-position={position}>
           <button type="button" className={readerRating ? 'reader-rate is-rated' : 'reader-rate'}
@@ -107,13 +111,22 @@ export function GameCard({ game: g, position, dicts: d, onNav, readerRating, onR
             <span aria-hidden="true">{readerRating ? '★' : '☆'}</span>
             {readerRating ? `Моя оценка ${readerScore(readerRating.score)}` : 'Оценить'}
           </button>
-          <span className={'rating r' + Math.floor(g.rating.value)} title="Оценка по 10-балльной шкале">
-            <b>{formatRating(g.rating.value)}</b>
-          </span>
+          {g.rating && (
+            <span className={'rating r' + Math.floor(g.rating.value)}
+              title={`${g.rating.source}${g.rating.platform ? ` · ${g.rating.platform}` : ''} · ${g.rating.original}`}>
+              <b>{formatRating(g.rating.value)}</b>
+            </span>
+          )}
         </div>
-        <h3 className="card-title"><a href={g.url}>{g.name}</a></h3>
+        <h3 className="card-title">{g.url ? <a href={g.url}>{g.name}</a> : g.name}</h3>
         <div className="card-row"><span className="lbl">Жанр:</span> <LinkList items={genres} max={2} onNav={onNav} /></div>
         <PlatformBadges slugs={g.platforms} d={d} onNav={onNav} />
+        {g.developers?.length ? (
+          <div className="card-row"><span className="lbl">Разработчик:</span> {g.developers.join(', ')}</div>
+        ) : null}
+        {g.publishers?.length ? (
+          <div className="card-row"><span className="lbl">Издатель:</span> {g.publishers.join(', ')}</div>
+        ) : null}
         <div className="card-date">{formatDate(g)}</div>
       </div>
     </article>

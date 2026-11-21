@@ -52,7 +52,12 @@ for (const s of states) {
   const editorial = copy ? renderToStaticMarkup(createElement(CatalogEditorial, copy)) : '';
   const body =
     `<div id="root"><h1>${esc(seo.h1)}</h1><ol>` +
-    slice.items.map((g) => `<li><a href="${g.url}">${esc(g.name)}</a> ${formatRating(g.rating.value)}</li>`).join('') +
+    slice.items.map((g) => {
+      const name = esc(g.name);
+      const title = g.url ? `<a href="${esc(g.url)}">${name}</a>` : name;
+      const score = g.rating ? ` ${formatRating(g.rating.value)}` : '';
+      return `<li>${title}${score}</li>`;
+    }).join('') +
     `</ol>${editorial}</div>`;
   const html = tpl
     .replace(/<title>.*?<\/title>/s, head)

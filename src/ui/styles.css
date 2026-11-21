@@ -111,8 +111,9 @@ main { padding: 18px 0 40px; }
 .search-input:focus { outline: 2px solid var(--blue); border-color: transparent; }
 .search-clear { background: none; border: 0; color: var(--blue); cursor: pointer; font: inherit; }
 .sug { position: absolute; top: 100%; left: 0; right: 0; margin: 4px 0 0; padding: 6px; list-style: none; background: #fff; border: 1px solid var(--line); border-radius: var(--r); box-shadow: 0 12px 32px rgba(20, 30, 50, .16); }
-.sug li a { display: flex; justify-content: space-between; padding: 8px 10px; border-radius: 6px; text-decoration: none; }
-.sug li.hi a, .sug li a:hover { background: #eef3ff; }
+.sug li :is(a, .sug-game) { display: flex; justify-content: space-between; padding: 8px 10px; border-radius: 6px; text-decoration: none; }
+.sug-game { width: 100%; gap: 10px; text-align: left; background: none; border: 0; color: inherit; font: inherit; cursor: pointer; }
+.sug li.hi :is(a, .sug-game), .sug li :is(a, .sug-game):hover { background: #eef3ff; }
 .sug-all button { background: none; border: 0; color: var(--blue); cursor: pointer; padding: 8px 10px; font: inherit; }
 
 .result-count { color: var(--ink2); font-size: 14px; margin-bottom: 10px; }
