@@ -14,6 +14,7 @@ import { Filters, Collections } from './Filters';
 import { AddGameButton } from './AddGame';
 import { SearchBar } from './SearchBar';
 import { GameCard } from './GameCard';
+import { RatingDialog, readerScore, type ReaderRating } from './ReaderRating';
 import { Pagination } from './Pagination';
 import { Inspector, type RouteEvent } from './Inspector';
 
@@ -26,6 +27,16 @@ export function App() {
   const url = useSyncExternalStore(subscribe, currentUrl);
   const [routeEvent, setRouteEvent] = useState<RouteEvent | null>(null);
   const [emptyNotice, setEmptyNotice] = useState<string | null>(null);
+  const [demoSignedIn, setDemoSignedIn] = useState(false);
+  const [ratingGame, setRatingGame] = useState<Game | null>(null);
+  const [ratings, setRatings] = useState<Map<Game, ReaderRating>>(() => new Map());
+  const [showRatings, setShowRatings] = useState(false);
+  const [savedRating, setSavedRating] = useState<{ game: Game; score: number } | null>(null);
+  const myRatingsHeading = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    if (showRatings) myRatingsHeading.current?.focus();
+  }, [showRatings]);
 
   const [path, search = ''] = url.split('?');
   const route = useMemo(() => parseUrl(path, search ? '?' + search : '', D), [path, search]);
@@ -85,7 +96,25 @@ export function App() {
     ? [...issues, { level: 'info' as const, code: 'more', what: `«Показать еще»: на экране страницы ${start}-${state?.page} (${shown.length} карточек). Метатеги и ItemList - по текущей странице ${state?.page}, как при прямом заходе` }]
     : issues;
 
-  const navigate = (to: string) => { setRouteEvent(null); go(to); };
+  const navigate = (to: string) => {
+    setShowRatings(false);
+    setSavedRating(null);
+    setRouteEvent(null);
+    go(to);
+  };
+  const openRating = (game: Game) => { setSavedRating(null); setRatingGame(game); };
+  const openMyRatings = () => { setSavedRating(null); setShowRatings(true); };
+  const saveRating = (rating: ReaderRating) => {
+    if (!ratingGame) return;
+    setRatings((previous) => {
+      const updated = new Map(previous);
+      updated.delete(ratingGame);
+      updated.set(ratingGame, rating);
+      return updated;
+    });
+    setSavedRating({ game: ratingGame, score: rating.score });
+    setRatingGame(null);
+  };
 
   return (
     <div className="page">
@@ -101,34 +130,66 @@ export function App() {
               <h1 className="h1">{seo.h1}</h1>
               <AddGameButton />
             </div>
-            <Collections />
-            {state.q && <p className="search-note">Результаты поиска по запросу «{state.q}» с учетом выбранных фильтров</p>}
-            <Filters
-              games={ALL} dicts={D} state={state} onNav={navigate}
-              onEmpty={(label) => setEmptyNotice(label)}
-              onReset={() => navigate(CONFIG.base)}
-            />
-            <SearchBar games={ALL} state={state} onSubmit={(q) => navigate(buildUrl({ ...state, q: q || undefined, page: 1 }))} />
-            {emptyNotice || slice.total === 0 ? (
-              <EmptyState onReset={() => navigate(CONFIG.base)} detail={emptyNotice} />
-            ) : (
-              <>
-                <div className="result-count">Найдено игр: {slice.total}{slice.pages > 1 && `, страница ${start !== null ? `${start}-${slice.page}` : slice.page} из ${slice.pages}`}</div>
-                <div className="grid">
-                  {shown.map((g, i) => (
-                    <GameCard key={g.id} game={g} position={shownOffset + i + 1} dicts={D} onNav={navigate} />
-                  ))}
+            {showRatings ? (
+              <section aria-labelledby="my-ratings-title">
+                <div className="reader-view-bar">
+                  <h2 className="h2" id="my-ratings-title" tabIndex={-1} ref={myRatingsHeading}>Мои оценки <span>{ratings.size}</span></h2>
+                  <button className="reader-list-button" onClick={() => setShowRatings(false)}>Вернуться в каталог</button>
                 </div>
-                {state.page < slice.pages && (
-                  <div className="more-wrap">
-                    <button className="btn btn-more" onClick={showMore}>
-                      Показать еще {Math.min(CONFIG.perPage, slice.total - state.page * CONFIG.perPage)}
-                    </button>
+                {ratings.size ? (
+                  <div className="grid">
+                    {Array.from(ratings).reverse().map(([game, rating], index) => (
+                      <GameCard key={game.id} game={game} position={index + 1} dicts={D} onNav={navigate}
+                        readerRating={rating} onRate={() => openRating(game)} />
+                    ))}
+                  </div>
+                ) : (
+                  <div className="empty">
+                    <p className="empty-text">У тебя пока нет оценок</p>
+                    <p className="empty-detail">Выбери игру в каталоге и нажми «Оценить».</p>
+                    <button className="btn" onClick={() => setShowRatings(false)}>Перейти в каталог</button>
                   </div>
                 )}
-                <Pagination state={state} pages={slice.pages} onNav={navigate} />
-              </>
-            )}
+              </section>
+            ) : <>
+              <Collections />
+              {state.q && <p className="search-note">Результаты поиска по запросу «{state.q}» с учетом выбранных фильтров</p>}
+              <Filters
+                games={ALL} dicts={D} state={state} onNav={navigate}
+                onEmpty={(label) => setEmptyNotice(label)}
+                onReset={() => navigate(CONFIG.base)}
+              />
+              <SearchBar games={ALL} state={state} onSubmit={(q) => navigate(buildUrl({ ...state, q: q || undefined, page: 1 }))} />
+              <div className="reader-view-bar">
+                {!emptyNotice && slice.total > 0 && (
+                  <div className="result-count">Найдено игр: {slice.total}{slice.pages > 1 && `, страница ${start !== null ? `${start}-${slice.page}` : slice.page} из ${slice.pages}`}</div>
+                )}
+                <button className="reader-list-button" onClick={openMyRatings}>
+                  <span aria-hidden="true">☆</span> Мои оценки{ratings.size > 0 && <span className="reader-count">{ratings.size}</span>}
+                </button>
+              </div>
+              {emptyNotice || slice.total === 0 ? (
+                <EmptyState onReset={() => navigate(CONFIG.base)} detail={emptyNotice} />
+              ) : (
+                <>
+                  <Pagination state={state} pages={slice.pages} onNav={navigate} placement="top" />
+                  <div className="grid">
+                    {shown.map((g, i) => (
+                      <GameCard key={g.id} game={g} position={shownOffset + i + 1} dicts={D} onNav={navigate}
+                        readerRating={ratings.get(g)} onRate={() => openRating(g)} />
+                    ))}
+                  </div>
+                  {state.page < slice.pages && (
+                    <div className="more-wrap">
+                      <button className="btn btn-more" onClick={showMore}>
+                        Показать еще {Math.min(CONFIG.perPage, slice.total - state.page * CONFIG.perPage)}
+                      </button>
+                    </div>
+                  )}
+                  <Pagination state={state} pages={slice.pages} onNav={navigate} placement="bottom" />
+                </>
+              )}
+            </>}
             <NewsBlocks />
           </>
         )}
@@ -139,6 +200,18 @@ export function App() {
         notFound={notFound ? notFoundReason : null} routeEvent={routeEvent}
         emptyNotice={emptyNotice}
       />
+      {ratingGame && <RatingDialog game={ratingGame} signedIn={demoSignedIn} saved={ratings.get(ratingGame)}
+        onSignIn={() => setDemoSignedIn(true)} onSave={saveRating} onClose={() => setRatingGame(null)} />}
+      {savedRating && (
+        <aside className="reader-toast" aria-label="Подтверждение сохранения">
+          <div role="status">
+            <strong>Оценка сохранена</strong>
+            <span>{savedRating.game.name} · {readerScore(savedRating.score)} из 10</span>
+          </div>
+          {!showRatings && <button className="reader-list-button" onClick={openMyRatings}>Мои оценки</button>}
+          <button className="rating-close" aria-label="Закрыть уведомление" onClick={() => setSavedRating(null)}>×</button>
+        </aside>
+      )}
     </div>
   );
 }

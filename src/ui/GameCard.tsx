@@ -4,6 +4,7 @@ import { formatRating } from '../core/catalog';
 import type { Dictionaries, Game } from '../core/types';
 import { href } from './router';
 import { onLinkClick } from './Chrome';
+import { readerScore, type ReaderRating } from './ReaderRating';
 
 const MONTHS = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
 export function formatDate(g: Game) {
@@ -68,7 +69,16 @@ function PlatformBadges({ slugs, d, onNav }: { slugs: string[]; d: Dictionaries;
   );
 }
 
-export function GameCard({ game: g, position, dicts: d, onNav }: { game: Game; position: number; dicts: Dictionaries; onNav: (u: string) => void }) {
+type GameCardProps = {
+  game: Game;
+  position: number;
+  dicts: Dictionaries;
+  onNav: (url: string) => void;
+  readerRating?: ReaderRating;
+  onRate: () => void;
+};
+
+export function GameCard({ game: g, position, dicts: d, onNav, readerRating, onRate }: GameCardProps) {
   const genres = g.genres.map((s) => ({ t: d.genres[s].name, u: buildUrl({ genre: s, page: 1 }) }));
   return (
     <article className="card">
@@ -76,7 +86,13 @@ export function GameCard({ game: g, position, dicts: d, onNav }: { game: Game; p
         <Cover g={g} />
       </a>
       <div className="card-body">
-        <div className="card-top" data-position={position}>
+        <div className="card-top reader-card-top" data-position={position}>
+          <button type="button" className={readerRating ? 'reader-rate is-rated' : 'reader-rate'}
+            aria-label={readerRating ? `Изменить оценку: ${g.name}, ${readerScore(readerRating.score)} из 10` : `Оценить: ${g.name}`}
+            onClick={onRate}>
+            <span aria-hidden="true">{readerRating ? '★' : '☆'}</span>
+            {readerRating ? `Моя оценка ${readerScore(readerRating.score)}` : 'Оценить'}
+          </button>
           <span className={'rating r' + Math.floor(g.rating.value)} title="Оценка по 10-балльной шкале">
             <b>{formatRating(g.rating.value)}</b>
           </span>

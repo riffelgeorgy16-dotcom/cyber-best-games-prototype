@@ -11,14 +11,19 @@ export function pageList(cur: number, total: number): (number | '…')[] {
   return out;
 }
 
-export function Pagination({ state, pages, onNav }: { state: CatalogState; pages: number; onNav: (u: string) => void }) {
+export function Pagination({ state, pages, onNav, placement }: {
+  state: CatalogState;
+  pages: number;
+  onNav: (url: string) => void;
+  placement: 'top' | 'bottom';
+}) {
   if (pages <= 1) return null;
   const to = (p: number) => buildUrl({ ...state, page: p });
   const L = (p: number, text: string, cls = '', rel?: string) => (
     <a className={'pg ' + cls} href={href(to(p))} rel={rel} onClick={(e) => onLinkClick(e, to(p), onNav)}>{text}</a>
   );
   return (
-    <nav className="pager" aria-label="Страницы">
+    <nav className={`pager pager-${placement}`} aria-label={placement === 'top' ? 'Страницы над карточками' : 'Страницы под карточками'}>
       {state.page > 1 ? L(state.page - 1, '← Предыдущая', 'pg-nav', 'prev') : <span className="pg pg-nav off">← Предыдущая</span>}
       {pageList(state.page, pages).map((p, i) =>
         p === '…' ? <span key={'e' + i} className="pg dots">…</span> : p === state.page ? (
