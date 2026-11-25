@@ -2,7 +2,7 @@
 
 export interface Rating {
   value: number;        // оценка по 10-балльной шкале (Metacritic 94/100 -> 9.4)
-  source: 'IGN' | 'Metacritic' | 'OpenCritic' | 'GameRankings'; // только для данных и инспектора, на сайте не показывается
+  source: 'IGN' | 'Metacritic' | 'OpenCritic' | 'GameRankings' | 'Редакция';
   original: string;     // исходная оценка источника: "9/10", "94/100"
   platform?: string;
   url?: string;
@@ -23,6 +23,16 @@ export interface Game {
   coverSource?: string;
   wikidata: string;
   sources: Record<string, string>; // поле -> источник
+  status?: 'released' | 'upcoming' | 'unconfirmed';
+  excluded?: boolean;
+  priority?: number;
+  tagId?: string;
+  nameRu?: string;
+  aliases?: string[];
+  description?: string;
+  coverAlt?: string;
+  backdropLeft?: string;
+  backdropRight?: string;
 }
 
 export interface MetaTemplate {
@@ -48,6 +58,11 @@ export interface Dictionaries {
   years: Record<string, { year: string; title: string; description: string; h1: string }>;
   templates: MetaTemplate[];
   filter_lists: { platforms: string[]; years: string[]; genres: string[] };
+  catalogYears?: string[];
+  defaultSort?: SortKey;
+  yearLabels?: Record<string, string>;
+  ratingChoices?: { id: string; label: string }[];
+  ratingLabels?: Record<string, string>;
 }
 
 /** Разобранное состояние страницы каталога */
@@ -64,6 +79,7 @@ export interface CatalogState {
   rating?: RatingBand;
   /** Сортировка: GET-параметр, по умолчанию rating-desc (в адрес не пишется) */
   sort?: SortKey;
+  defaultSort?: SortKey;
 }
 
 export type RouteResult =

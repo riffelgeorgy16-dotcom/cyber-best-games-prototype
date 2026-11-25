@@ -12,7 +12,7 @@ const ascendingScore = (a: Game, b: Game) =>
  */
 export function sortGames(games: Game[], key: SortKey = 'rating-desc'): Game[] {
   const cmp: Record<SortKey, (a: Game, b: Game) => number> = {
-    'rating-desc': (a, b) => descendingScore(a, b) || b.subscribers - a.subscribers || byName(a, b),
+    'rating-desc': (a, b) => descendingScore(a, b) || (b.priority ?? 0) - (a.priority ?? 0) || b.subscribers - a.subscribers || byName(a, b),
     'rating-asc': (a, b) => ascendingScore(a, b) || b.subscribers - a.subscribers || byName(a, b),
     popular: (a, b) => b.subscribers - a.subscribers || descendingScore(a, b) || byName(a, b),
     alpha: byName,
@@ -22,7 +22,7 @@ export function sortGames(games: Game[], key: SortKey = 'rating-desc'): Game[] {
   return [...games].sort(cmp[key]);
 }
 
-export function inBand(g: Game, band: RatingBand) {
+export function inBand(g: Pick<Game, 'rating'>, band: RatingBand) {
   const b = CONFIG.ratingBands.find((x) => x.key === band)!;
   const score = g.rating?.value;
   return score !== undefined && score >= b.min && score < b.max;
@@ -34,8 +34,11 @@ export const formatRating = (v: number) => (v >= 10 ? '10' : v.toFixed(1));
 export const normalize = (s: string) =>
   s.toLowerCase().replace(/ё/g, 'е').replace(/[’'`:\-–—.,!?()]/g, ' ').replace(/\s+/g, ' ').trim();
 
+export const matchesName = (g: Pick<Game, 'name' | 'nameRu' | 'aliases'>, query: string) =>
+  [g.name, g.nameRu ?? '', ...(g.aliases ?? [])].some(name => normalize(name).includes(query));
+
 /** Фильтрация по точному совпадению характеристик */
-export function filterGames(games: Game[], s: Pick<CatalogState, 'genre' | 'platform' | 'year' | 'q' | 'rating' | 'sort'>): Game[] {
+export function filterGames(games: Game[], s: Pick<CatalogState, 'genre' | 'platform' | 'year' | 'q' | 'rating' | 'sort' | 'defaultSort'>): Game[] {
   const q = s.q ? normalize(s.q) : '';
   const list = games.filter(
     (g) =>
@@ -43,9 +46,9 @@ export function filterGames(games: Game[], s: Pick<CatalogState, 'genre' | 'plat
       (!s.platform || g.platforms.includes(s.platform)) &&
       (!s.year || String(g.year) === s.year) &&
       (!s.rating || inBand(g, s.rating)) &&
-      (!q || normalize(g.name).includes(q)),
+      (!q || matchesName(g, q)),
   );
-  return sortGames(list, s.sort);
+  return sortGames(list, s.sort ?? s.defaultSort);
 }
 
 export interface PageSlice {
@@ -57,12 +60,12 @@ export interface PageSlice {
   outOfRange: boolean;
 }
 
-export function paginate(sorted: Game[], page: number): PageSlice {
+export function paginate(sorted: Game[], page: number, perPage = CONFIG.perPage): PageSlice {
   const total = sorted.length;
-  const pages = Math.max(1, Math.ceil(total / CONFIG.perPage));
+  const pages = Math.max(1, Math.ceil(total / perPage));
   const outOfRange = page > pages;
-  const offset = (page - 1) * CONFIG.perPage;
-  return { total, pages, page, offset, outOfRange, items: outOfRange ? [] : sorted.slice(offset, offset + CONFIG.perPage) };
+  const offset = (page - 1) * perPage;
+  return { total, pages, page, offset, outOfRange, items: outOfRange ? [] : sorted.slice(offset, offset + perPage) };
 }
 
 /** Сколько игр даст каждый вариант фильтра при сохранении остальных выбранных параметров */
@@ -83,7 +86,7 @@ export function optionCounts(games: Game[], s: CatalogState, kind: 'genre' | 'pl
 export function suggest(games: Game[], query: string, limit = 8): Game[] {
   const q = normalize(query);
   if (q.length < 2) return [];
-  const hits = games.filter((g) => normalize(g.name).includes(q));
+  const hits = games.filter(g => matchesName(g, q));
   return hits
     .sort((a, b) => Number(normalize(b.name).startsWith(q)) - Number(normalize(a.name).startsWith(q)) || descendingScore(a, b))
     .slice(0, limit);

@@ -16,6 +16,7 @@ export function validate(
   seo: PageSeo,
   renderedCount: number,
   d: Dictionaries,
+  settings: { perPage: number; minIndexable: number } = CONFIG,
 ): Issue[] {
   const out: Issue[] = [];
   const err = (code: string, what: string, expected?: string, actual?: string) => out.push({ level: 'error', code, what, expected, actual });
@@ -63,7 +64,7 @@ export function validate(
   if (CONFIG.canonicalMode === 'filter-base' && /[?&]page=/.test(seo.canonical)) err('canonical-page', 'Canonical содержит page', 'без ?page', seo.canonical);
 
   // 7. Robots по правилу существования страницы
-  const expRobots = slice.total >= CONFIG.minIndexable && !s.q && !s.sort && !s.rating ? 'index, follow' : 'noindex, follow';
+  const expRobots = slice.total >= settings.minIndexable && !s.q && !s.sort && !s.rating ? 'index, follow' : 'noindex, follow';
   if (seo.robots !== expRobots)
     err('robots', 'Нарушено правило индексации (минимум 3 игры; поиск, сортировка и фильтр оценки не индексируются)', expRobots, seo.robots);
   if (/[?&](sort|rating|q)=/.test(seo.canonical)) err('canonical-params', 'Canonical содержит параметры сортировки, оценки или поиска', 'без GET-параметров', seo.canonical);
@@ -77,7 +78,7 @@ export function validate(
     if (!l.startsWith(filterBase)) err('page-filters-lost', 'Потеря фильтров при пагинации', filterBase + '...', l);
 
   // 9. Количество игр
-  const expCount = Math.max(0, Math.min(CONFIG.perPage, slice.total - slice.offset));
+  const expCount = Math.max(0, Math.min(settings.perPage, slice.total - slice.offset));
   if (renderedCount !== expCount) err('count', 'Ошибка количества карточек на странице', String(expCount), String(renderedCount));
   const il = seo.itemList as { numberOfItems: number; itemListElement: { position: number; name: string; url?: string }[]; url: string; description: string };
   if (il.numberOfItems !== slice.total) err('itemlist-total', 'ItemList.numberOfItems должен равняться числу игр в категории', String(slice.total), String(il.numberOfItems));
@@ -111,6 +112,6 @@ export function validate(
   out.push({ level: 'limitation', code: 'csr', what: 'Метатеги и JSON-LD меняются в браузере. Поисковик увидит их только при серверной генерации HTML (требование ТЗ к серверу)' });
   out.push({ level: 'limitation', code: 'status', what: 'HTTP-коды (200, 301, 404) только имитируются: статический хостинг отдает их иначе' });
   if (seo.indexStatus === 'noindex-few')
-    out.push({ level: 'info', code: 'few', what: `Найдено ${slice.total} игр (меньше 3): страница показывается, но закрыта noindex (решение п.4)` });
+    out.push({ level: 'info', code: 'few', what: `Найдено ${slice.total} игр (меньше ${settings.minIndexable}): страница показывается, но закрыта noindex (решение п.4)` });
   return out;
 }

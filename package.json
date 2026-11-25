@@ -8,16 +8,21 @@
     "build": "vite build",
     "build:file": "VITE_ROUTER=hash vite build",
     "test": "vitest run",
-    "build:pages": "VITE_FORCE_NOINDEX=1 VITE_BASE=/cyber-best-games-prototype/ vite build && VITE_FORCE_NOINDEX=1 tsx scripts/prerender.ts dist && cp dist/index.html dist/404.html"
+    "build:pages": "tsx scripts/build-pages.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "exceljs": "^4.4.0",
+    "papaparse": "^5.7.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@types/node": "^26.6.10",
+    "@types/papaparse": "^5.5.2",
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.7.0",
@@ -28,5 +33,10 @@
     "vitest": "^2.1.9"
   },
   "private": true,
-  "type": "module"
+  "type": "module",
+  "overrides": {
+    "exceljs": {
+      "uuid": "11.1.1"
+    }
+  }
 }

@@ -1,71 +1,47 @@
-import media from '../data/news.json';
 import { CONFIG } from '../core/config';
-
-type Story = { title: string; url: string; blog: string; image: string };
+import { activeStories, media, type AdminState, type Story } from '../admin/model';
 
 function SectionLink({ label, path }: { label: string; path: string }) {
   return <a className="media-section-link" href={CONFIG.host + path}>{label} <span aria-hidden="true">→</span></a>;
 }
 
 function StoryLink({ story }: { story: Story }) {
-  return (
-    <a className="media-story" href={story.url}>
-      <span className="media-cover">
-        <img src={story.image} alt="" loading="lazy" decoding="async"
-          onError={(event) => { event.currentTarget.hidden = true; }} />
-      </span>
-      <span className="media-story-caption">
-        <strong>{story.title}</strong>
-        <span className="media-meta">{story.blog}</span>
-      </span>
-    </a>
-  );
+  return <a className="media-story" href={story.url}>
+    <span className="media-cover">{story.image && <img src={story.image} alt="" loading="lazy" decoding="async"
+      onError={event => { event.currentTarget.hidden = true; }} />}</span>
+    <span className="media-story-caption"><strong>{story.title}</strong><span className="media-meta">{story.blog}</span></span>
+  </a>;
 }
 
-export function CatalogMedia() {
-  const [featured, ...otherPosts] = media.blogs;
-  return (
-    <div className="catalog-media">
-      <div className="media-top">
-        <section className="media-panel media-news" aria-labelledby="catalog-news-heading">
-          <h2 className="h2" id="catalog-news-heading">Главные новости</h2>
-          <ul className="media-news-list">
-            {media.news.map((entry) => (
-              <li key={entry.url}>
-                <a href={entry.url}>
-                  <span>{entry.title}</span>
-                  <span className="media-meta">{entry.date}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-          <SectionLink label="Новости игровой индустрии" path="/games/news/" />
-        </section>
+export function CatalogMediaPanel({ kind, config }: { kind: 'news' | 'blogs' | 'collections'; config: AdminState }) {
+  const block = config.blocks[kind];
+  const source: Story[] = kind === 'collections' ? config.lower : block.mode === 'manual' ? block.stories ?? [] : media[kind];
+  const active = activeStories(source);
+  const byUrl = new Map(active.map(item => [item.url, item]));
+  const pinned = [...new Set(block.picks)].flatMap(url => byUrl.has(url) ? [byUrl.get(url)!] : []);
+  const rows = [...pinned, ...active.filter(item => !block.picks.includes(item.url))].slice(0, block.limit);
+  const id = 'catalog-' + kind + '-heading';
+  const heading = <h2 className="h2" id={id}>{block.title}</h2>;
 
-        <section className="media-panel media-blogs" aria-labelledby="catalog-blogs-heading">
-          <div className="media-heading">
-            <h2 className="h2" id="catalog-blogs-heading">Материалы из блогов</h2>
-            <SectionLink label="Все популярные материалы" path="/games/blogs/" />
-          </div>
-          <div className="media-blog-layout">
-            <div className="media-feature"><StoryLink story={featured} /></div>
-            <ul className="media-blog-list">
-              {otherPosts.map((story) => <li key={story.url}><StoryLink story={story} /></li>)}
-            </ul>
-          </div>
-        </section>
-      </div>
+  if (kind === 'news') return <section className="media-panel media-news" aria-labelledby={id}>
+    {heading}
+    {rows.length ? <ul className="media-news-list">{rows.map(entry => <li key={entry.url}>
+      <a href={entry.url}><span>{entry.title}</span><span className="media-meta">{entry.date}</span></a>
+    </li>)}</ul> : <p>Нет опубликованных новостей.</p>}
+    <SectionLink label="Новости игровой индустрии" path="/games/news/" />
+  </section>;
 
-      <section className="media-panel media-collections" aria-labelledby="catalog-collections-heading">
-        <div className="media-heading">
-          <h2 className="h2" id="catalog-collections-heading">Подборки</h2>
-          <SectionLink label="Все подборки" path="/other/podborki/" />
-        </div>
-        <ul className="media-collection-list">
-          {media.collections.map((story) => <li key={story.url}><StoryLink story={story} /></li>)}
-        </ul>
-      </section>
-      <p className="media-meta media-snapshot">Снимок лент Кибера на {media.snapshot}. В рабочей версии блоки заполняются из CMS.</p>
-    </div>
-  );
+  if (kind === 'collections') return <section className="media-panel media-collections" aria-labelledby={id}>
+    <div className="media-heading">{heading}<SectionLink label="Все подборки" path="/other/podborki/" /></div>
+    {rows.length ? <ul className="media-collection-list">{rows.map(story => <li key={story.url}><StoryLink story={story} /></li>)}</ul>
+      : <p>Нет опубликованных подборок.</p>}
+  </section>;
+
+  const [featured, ...rest] = rows;
+  return <section className="media-panel media-blogs" aria-labelledby={id}>
+    <div className="media-heading">{heading}<SectionLink label="Все популярные материалы" path="/games/blogs/" /></div>
+    {featured ? <div className="media-blog-layout"><div className="media-feature"><StoryLink story={featured} /></div>
+      {rest.length > 0 && <ul className="media-blog-list">{rest.map(story => <li key={story.url}><StoryLink story={story} /></li>)}</ul>}
+    </div> : <p>Нет опубликованных материалов.</p>}
+  </section>;
 }

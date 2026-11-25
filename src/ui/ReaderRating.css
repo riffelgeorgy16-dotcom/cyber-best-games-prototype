@@ -185,8 +185,9 @@ body:has(.rating-dialog[open]) { overflow: hidden; }
   display: inline-flex;
   flex-direction: column;
   gap: 3px;
-  width: 92px;
-  flex: 0 0 92px;
+  width: min(92px, 100%);
+  min-width: 0;
+  flex: 0 1 92px;
   color: #626b77;
 }
 .catalog-score.score-high { color: #087a43; }
@@ -196,4 +197,4 @@ body:has(.rating-dialog[open]) { overflow: hidden; }
 .catalog-score-number small { font-size: 10px; color: var(--ink2); }
 .catalog-score-track { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 2px; padding-inline: 1px; }
 .catalog-score-segment { height: 5px; transform: skewX(-18deg); border-radius: 1px; }
-.card-top.reader-card-top .reader-rate { margin-left: auto; max-width: 100%; white-space: normal; text-align: left; }
+.card-top.reader-card-top .reader-rate { margin-left: auto; max-width: 100%; white-space: normal; overflow-wrap: anywhere; text-align: left; }

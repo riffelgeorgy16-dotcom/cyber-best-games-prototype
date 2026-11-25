@@ -1,4 +1,3 @@
-import type { Game } from '../core/types';
 import type { ReaderRating } from './ReaderRating';
 
 export const READER_RATINGS_KEY = 'cyber-best-games.reader-ratings.v1';
@@ -13,15 +12,14 @@ function isReaderRating(value: unknown): value is ReaderRating {
     && Object.values(criteria).every((mark) => Number.isInteger(mark) && mark >= 1 && mark <= 10);
 }
 
-export function readReaderRatings(gamesById: ReadonlyMap<string, Game>) {
+export function readReaderRatings() {
   try {
     const entries: unknown = JSON.parse(window.localStorage.getItem(READER_RATINGS_KEY) ?? '[]');
-    const ratings = new Map<Game, ReaderRating>();
+    const ratings = new Map<string, ReaderRating>();
     if (Array.isArray(entries)) {
       for (const entry of entries) {
         if (!Array.isArray(entry) || typeof entry[0] !== 'string' || !isReaderRating(entry[1])) continue;
-        const game = gamesById.get(entry[0]);
-        if (game) ratings.set(game, entry[1]);
+        ratings.set(entry[0], entry[1]);
       }
     }
     return ratings;
@@ -30,9 +28,9 @@ export function readReaderRatings(gamesById: ReadonlyMap<string, Game>) {
   }
 }
 
-export function writeReaderRatings(ratings: ReadonlyMap<Game, ReaderRating>) {
+export function writeReaderRatings(ratings: ReadonlyMap<string, ReaderRating>) {
   try {
-    const entries = Array.from(ratings, ([game, rating]) => [game.id, rating]);
+    const entries = Array.from(ratings);
     window.localStorage.setItem(READER_RATINGS_KEY, JSON.stringify(entries));
   } catch {
     // Keep the current tab usable when the browser blocks local storage.

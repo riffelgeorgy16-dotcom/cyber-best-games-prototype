@@ -132,7 +132,7 @@ main { padding: 18px 0 40px; }
 .rating.r9, .rating.r10 { background: #dff3e7; color: var(--ok); }
 .rating.r8 { background: #e7f3dc; color: #3e7d12; }
 .rating.r7 { background: #fbf1d9; color: #8a5a00; }
-.card-title { margin: 2px 0 2px; font-size: 16px; line-height: 1.2; }
+.card-title { margin: 2px 0 2px; font-size: 16px; line-height: 1.2; overflow-wrap: anywhere; }
 .card-title a { text-decoration: none; }
 .card-title a:hover { color: var(--blue); }
 .card-row a { color: var(--blue); text-decoration: none; }
@@ -247,6 +247,9 @@ main { padding: 18px 0 40px; }
 }
 @media (max-width: 860px) { .grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 620px) {
+  .hdr-row { gap: 14px; }
+  .hdr-row .logo { flex: none; }
+  .topnav { min-width: 0; overflow-x: auto; gap: 14px; white-space: nowrap; }
   .media-blog-layout, .media-collection-list { grid-template-columns: minmax(0, 1fr); }
 }
 
@@ -317,6 +320,23 @@ main { padding: 18px 0 40px; }
 .release-score.low { color: #626b77; }
 .release-empty { color: var(--ink2); font-size: 14px; line-height: 1.5; margin: 8px 0; }
 .release-blocks + .catalog-media { margin-top: 16px; }
+.catalog-sections { margin-top: 32px; display: grid; gap: 16px; }
+.catalog-sections .release-blocks, .catalog-sections .media-collections, .catalog-sections .catalog-editorial { margin-top: 0; }
+.catalog-sections .media-top[data-count="1"], .catalog-sections .release-blocks[data-count="1"] { grid-template-columns: minmax(0, 1fr); }
+.catalog-section-item { min-width: 0; }
+@media (min-width: 901px) {
+  .catalog-sections .media-top[data-first="blogs"][data-count="2"] { grid-template-columns: minmax(0, 2.25fr) minmax(0, 1fr); }
+}
+.catalog-section-item > .media-panel { height: 100%; }
+.editorial-columns.columns-1, .editorial-rich.columns-1 { grid-template-columns: minmax(0, 1fr); }
+.editorial-columns.columns-2, .editorial-rich.columns-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.editorial-rich { display: grid; gap: 14px 22px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.editorial-rich-item { min-width: 0; overflow-wrap: anywhere; line-height: 1.65; }
+.editorial-rich-item p, .editorial-rich-item h3 { margin: 0 0 7px; }
+.editorial-rich-item a { color: var(--blue); }
+@media (max-width: 760px) {
+  .editorial-columns.columns-2, .editorial-rich.columns-2, .editorial-rich { grid-template-columns: minmax(0, 1fr); }
+}
 @media (max-width: 960px) {
   .release-blocks { grid-template-columns: minmax(0, 1fr); }
 }

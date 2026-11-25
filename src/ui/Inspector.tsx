@@ -8,8 +8,8 @@ import { MODE } from './router';
 export interface RouteEvent { type: '301'; from: string; to: string; reason: string }
 
 const STATUS: Record<PageSeo['indexStatus'], string> = {
-  index: 'Индексируется (3 и более игр)',
-  'noindex-few': 'noindex: меньше 3 игр (страница не продвигается)',
+  index: 'Соответствует правилам индексации каталога',
+  'noindex-few': 'noindex: меньше установленного числа игр',
   'noindex-search': 'noindex: результаты поиска',
   'noindex-params': 'noindex: сортировка или фильтр оценки (GET-параметры)',
   'noindex-empty': 'noindex: игр не найдено, canonical на главную каталога',
@@ -88,7 +88,7 @@ export function Inspector(p: {
                 <Row k="Подходящих игр" v={slice.total} />
                 <Row k="Игр на странице" v={`${slice.items.length} (позиции ${slice.items.length ? slice.offset + 1 : 0}-${slice.offset + slice.items.length}), страниц: ${slice.pages}`} />
                 <Row k="Статус индексации" v={STATUS[seo.indexStatus]} />
-                <Row k="Шаблон мета" v={seo.template.source === 'exact' ? `индивидуальный${seo.template.row ? ', строка ' + seo.template.row : ''}` : seo.template.source === 'pattern' ? `шаблон с переменными, строка ${seo.template.row}` : 'нет в таблице, резервный'} />
+                <Row k="Шаблон мета" v={seo.template.source === 'exact' ? `индивидуальный${seo.template.row ? ', строка ' + seo.template.row : ''}` : seo.template.source === 'pattern' ? `шаблон с переменными${seo.template.row ? ', строка ' + seo.template.row : ''}` : 'нет в таблице, резервный'} />
                 <Row k="Маршрутизация" v={MODE === 'hash' ? 'артефакт: адрес через якорь' : 'настоящие пути'} />
               </>
             ) : seo && tab === 'checks' ? (

@@ -1,9 +1,6 @@
-import feedRaw from '../data/releases.json';
-import { selectReleaseBlocks, validScore, type ReleaseEntry } from '../core/releases';
+import { validScore, type ReleaseEntry } from '../core/releases';
 import { formatRating } from '../core/catalog';
-import type { CatalogState, Game } from '../core/types';
 
-const FEED = feedRaw.releases as ReleaseEntry[];
 const dateFormat = new Intl.DateTimeFormat('ru-RU', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 function ReleaseRow({ entry, upcoming }: { entry: ReleaseEntry; upcoming: boolean }) {
   return <li className="release-row">
@@ -18,18 +15,11 @@ function ReleaseRow({ entry, upcoming }: { entry: ReleaseEntry; upcoming: boolea
     </div>
   </li>;
 }
-function ReleasePanel({ entries, upcoming }: { entries: ReleaseEntry[]; upcoming: boolean }) {
+export function ReleasePanel({ entries, upcoming, title }: { entries: ReleaseEntry[]; upcoming: boolean; title: string }) {
   const id = upcoming ? 'upcoming-releases-heading' : 'recent-releases-heading';
   return <section className="media-panel release-panel" aria-labelledby={id}>
-    <h2 className="h2" id={id}>{upcoming ? 'Скоро выйдут' : 'Недавно вышли'}</h2>
+    <h2 className="h2" id={id}>{title}</h2>
     {entries.length > 0 ? <ul className="release-list">{entries.map(entry => <ReleaseRow key={entry.id} entry={entry} upcoming={upcoming} />)}</ul> :
       <p className="release-empty">{upcoming ? 'Нет подтвержденных ближайших релизов по выбранным фильтрам.' : 'Нет недавних релизов по выбранным фильтрам.'}</p>}
   </section>;
-}
-export function ReleaseBlocks({ games, state }: { games: Game[]; state: CatalogState }) {
-  const { recent, upcoming } = selectReleaseBlocks(games, FEED, state);
-  return <div className="release-blocks">
-    <ReleasePanel entries={recent} upcoming={false} />
-    <ReleasePanel entries={upcoming} upcoming />
-  </div>;
 }

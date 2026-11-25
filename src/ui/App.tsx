@@ -1,18 +1,15 @@
 import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import dictsRaw from '../data/dictionaries.json';
-import gamesRaw from '../data/games.json';
+import { activeStories, defaultAdmin, effectiveDictionaries, effectiveGames, orderedGames, type AdminState } from '../admin/model';
 import { CONFIG } from '../core/config';
-import { parseUrl, buildUrl } from '../core/route';
-import { filterGames, paginate, sortGames } from '../core/catalog';
-import { catalogEditorial } from '../core/editorial';
-import { computeSeo } from '../core/seo';
+import { parseUrl, buildUrl, buildPath } from '../core/route';
+import { paginate } from '../core/catalog';
+import { computeSeo, pageType } from '../core/seo';
 import { validate } from '../core/validate';
-import type { CatalogState, Dictionaries, Game } from '../core/types';
+import type { CatalogState, Game } from '../core/types';
 import { currentUrl, go, subscribe, MODE } from './router';
 import { applyHead } from './head';
 import { Header, AddressBar, Breadcrumbs, Footer } from './Chrome';
-import { CatalogMedia } from './CatalogMedia';
-import { ReleaseBlocks } from './ReleaseBlocks';
+import { CatalogSections } from './CatalogSections';
 import { catalogEligibleGames } from '../core/releases';
 import { Filters, Collections } from './Filters';
 import { AddGameButton } from './AddGame';
@@ -22,23 +19,23 @@ import { GameBackdrop } from './GameBackdrop';
 import { RatingDialog, readerScore, type ReaderRating } from './ReaderRating';
 import { readReaderRatings, READER_RATINGS_KEY, writeReaderRatings } from './readerRatingStorage';
 import { Pagination } from './Pagination';
-import { CatalogEditorial } from './CatalogEditorial';
 import { Inspector, type RouteEvent } from './Inspector';
-
-const D = dictsRaw as unknown as Dictionaries;
-const RAW: Game[] = (gamesRaw as { games: Game[] }).games;
-const ALL: Game[] = sortGames(catalogEligibleGames(RAW));
-const GAMES_BY_ID = new Map(RAW.map((game) => [game.id, game]));
 
 export const EMPTY_TEXT = 'По вашим фильтрам ничего не найдено. Попробуйте изменить или очистить все фильтры';
 
-export function App() {
+export function App({ config = defaultAdmin }: { config?: AdminState }) {
+  const D = useMemo(() => effectiveDictionaries(config), [config]);
+  const RAW = useMemo(() => effectiveGames(config), [config]);
+  const ALL = useMemo(() => catalogEligibleGames(RAW), [RAW]);
+  const byId = useMemo(() => new Map(RAW.map(game => [game.id, game])), [RAW]);
+  const perPage = config.settings.perPage;
   const url = useSyncExternalStore(subscribe, currentUrl);
   const [routeEvent, setRouteEvent] = useState<RouteEvent | null>(null);
   const [emptyNotice, setEmptyNotice] = useState<string | null>(null);
+  const [emptyFilter, setEmptyFilter] = useState<CatalogState>();
   const [demoSignedIn, setDemoSignedIn] = useState(false);
   const [ratingGame, setRatingGame] = useState<Game | null>(null);
-  const [ratings, setRatings] = useState(() => readReaderRatings(GAMES_BY_ID) ?? new Map<Game, ReaderRating>());
+  const [ratings, setRatings] = useState(() => readReaderRatings() ?? new Map<string, ReaderRating>());
   const [showRatings, setShowRatings] = useState(false);
   const [hoverGame, setHoverGame] = useState<string | null>(null);
   const [focusGame, setFocusGame] = useState<string | null>(null);
@@ -52,7 +49,7 @@ export function App() {
   useEffect(() => {
     function reloadRatings(event: StorageEvent) {
       if (event.key !== READER_RATINGS_KEY && event.key !== null) return;
-      const stored = readReaderRatings(GAMES_BY_ID);
+      const stored = readReaderRatings();
       if (stored) setRatings(stored);
     }
     window.addEventListener('storage', reloadRatings);
@@ -60,7 +57,7 @@ export function App() {
   }, []);
 
   const [path, search = ''] = url.split('?');
-  const route = useMemo(() => parseUrl(path, search ? '?' + search : '', D), [path, search]);
+  const route = useMemo(() => parseUrl(path, search ? '?' + search : '', D), [path, search, D]);
 
   // Редиректы на правильный адрес (301 на сервере)
   useEffect(() => {
@@ -78,6 +75,7 @@ export function App() {
   // Сообщение о пустом результате живет только до следующей навигации
   useEffect(() => {
     setEmptyNotice(null);
+    setEmptyFilter(undefined);
     setHoverGame(null);
     setFocusGame(null);
     if (appending.current) appending.current = false;
@@ -85,17 +83,16 @@ export function App() {
   }, [url]);
 
   const state: CatalogState | null = route.kind === 'ok' ? route.state : null;
-  const editorial = state && !showRatings && !emptyNotice ? catalogEditorial(state) : undefined;
-  const sorted = useMemo(() => (state ? filterGames(ALL, state) : []), [state]);
-  const slice = useMemo(() => paginate(sorted, state?.page ?? 1), [sorted, state]);
+  const sorted = useMemo(() => (state ? orderedGames(ALL, state, config) : []), [ALL, state, config]);
+  const slice = useMemo(() => paginate(sorted, state?.page ?? 1, perPage), [sorted, state, perPage]);
   const notFound = route.kind === 'not_found' || (state !== null && slice.outOfRange && slice.total > 0);
   const notFoundReason =
     route.kind === 'not_found' ? route.reason : notFound ? `Страницы ${state?.page} нет: всего страниц ${slice.pages}` : '';
 
-  const seo = useMemo(() => (state && !notFound ? computeSeo(state, slice, D) : null), [state, slice, notFound]);
+  const seo = useMemo(() => (state && !notFound ? computeSeo(state, slice, D, { minIndexable: config.settings.minIndexable, page: config.pages[buildPath(state)], template: config.templates[pageType(state) as keyof AdminState['templates']] }) : null), [state, slice, notFound, D, config]);
   const issues = useMemo(
-    () => (state && seo ? validate(path, search ? '?' + search : '', state, slice, seo, slice.items.length, D) : []),
-    [state, seo, slice, path, search],
+    () => (state && seo ? validate(path, search ? '?' + search : '', state, slice, seo, slice.items.length, D, config.settings) : []),
+    [state, seo, slice, path, search, D, config.settings],
   );
 
   useEffect(() => { applyHead(seo, notFound); }, [seo, notFound]);
@@ -103,7 +100,7 @@ export function App() {
   useEffect(() => {
     if (route.kind === 'ok' && scrollRef.current) window.scrollTo({ top: 0 });
     scrollRef.current = true;
-  }, [path, search]);
+  }, [path, search, D]);
 
   const showMore = () => {
     if (!state) return;
@@ -114,8 +111,8 @@ export function App() {
     go(buildUrl({ ...state, page: state.page + 1 }));
   };
   const start = appendFrom !== null && state && appendFrom < state.page ? appendFrom : null;
-  const shown = start !== null && state ? sorted.slice((start - 1) * CONFIG.perPage, state.page * CONFIG.perPage) : slice.items;
-  const shownOffset = start !== null ? (start - 1) * CONFIG.perPage : slice.offset;
+  const shown = start !== null && state ? sorted.slice((start - 1) * perPage, state.page * perPage) : slice.items;
+  const shownOffset = start !== null ? (start - 1) * perPage : slice.offset;
   const allIssues = start !== null
     ? [...issues, { level: 'info' as const, code: 'more', what: `«Показать еще»: на экране страницы ${start}-${state?.page} (${shown.length} карточек). Метатеги и ItemList - по текущей странице ${state?.page}, как при прямом заходе` }]
     : issues;
@@ -131,17 +128,22 @@ export function App() {
   const saveRating = (rating: ReaderRating) => {
     if (!ratingGame) return;
     const updated = new Map(ratings);
-    updated.delete(ratingGame);
-    updated.set(ratingGame, rating);
+    updated.delete(ratingGame.id);
+    updated.set(ratingGame.id, rating);
     writeReaderRatings(updated);
     setRatings(updated);
     setSavedRating({ game: ratingGame, score: rating.score });
     setRatingGame(null);
   };
 
+  const backdrop = byId.get(hoverGame ?? focusGame ?? '');
+  const myRatings = Array.from(ratings).flatMap(([id, rating]) => {
+    const game = byId.get(id);
+    return game ? [{ game, rating }] : [];
+  });
   return (
     <div className="page">
-      <GameBackdrop gameId={showRatings || ratingGame || emptyNotice || notFound ? null : hoverGame ?? focusGame} />
+      <GameBackdrop gameId={showRatings || ratingGame || emptyNotice || notFound ? null : backdrop?.id ?? null} left={backdrop?.backdropLeft} right={backdrop?.backdropRight} />
       <AddressBar url={url} onGo={(u) => navigate(u)} mode={MODE} />
       <Header />
       <main className="container">
@@ -157,12 +159,12 @@ export function App() {
             {showRatings ? (
               <section aria-labelledby="my-ratings-title">
                 <div className="reader-view-bar">
-                  <h2 className="h2" id="my-ratings-title" tabIndex={-1} ref={myRatingsHeading}>Мои оценки <span>{ratings.size}</span></h2>
+                  <h2 className="h2" id="my-ratings-title" tabIndex={-1} ref={myRatingsHeading}>Мои оценки <span>{myRatings.length}</span></h2>
                   <button className="reader-list-button" onClick={() => setShowRatings(false)}>Вернуться в каталог</button>
                 </div>
-                {ratings.size ? (
+                {myRatings.length ? (
                   <div className="grid">
-                    {Array.from(ratings).reverse().map(([game, rating], index) => (
+                    {myRatings.reverse().map(({ game, rating }, index) => (
                       <GameCard key={game.id} game={game} position={index + 1} dicts={D} onNav={navigate}
                         readerRating={rating} onRate={() => openRating(game)} />
                     ))}
@@ -176,11 +178,11 @@ export function App() {
                 )}
               </section>
             ) : <>
-              <Collections />
+              <Collections items={activeStories(config.upper)} />
               {state.q && <p className="search-note">Результаты поиска по запросу «{state.q}» с учетом выбранных фильтров</p>}
               <Filters
                 games={ALL} dicts={D} state={state} onNav={navigate}
-                onEmpty={(label) => setEmptyNotice(label)}
+                onEmpty={(label, attempted) => { setEmptyNotice(label); setEmptyFilter(attempted); }}
                 onReset={() => navigate(CONFIG.base)}
               />
               <SearchBar games={ALL} state={state} onSubmit={(q) => navigate(buildUrl({ ...state, q: q || undefined, page: 1 }))} />
@@ -189,7 +191,7 @@ export function App() {
                   <div className="result-count">Найдено игр: {slice.total}{slice.pages > 1 && `, страница ${start !== null ? `${start}-${slice.page}` : slice.page} из ${slice.pages}`}</div>
                 )}
                 <button className="reader-list-button" onClick={openMyRatings}>
-                  <span aria-hidden="true">☆</span> Мои оценки{ratings.size > 0 && <span className="reader-count">{ratings.size}</span>}
+                  <span aria-hidden="true">☆</span> Мои оценки{myRatings.length > 0 && <span className="reader-count">{myRatings.length}</span>}
                 </button>
               </div>
               {emptyNotice || slice.total === 0 ? (
@@ -201,13 +203,13 @@ export function App() {
                     {shown.map((g, i) => (
                       <GameCard key={g.id} game={g} position={shownOffset + i + 1} dicts={D} onNav={navigate}
                         onHoverGame={setHoverGame} onFocusGame={setFocusGame}
-                        readerRating={ratings.get(g)} onRate={() => openRating(g)} />
+                        readerRating={ratings.get(g.id)} onRate={() => openRating(g)} />
                     ))}
                   </div>
                   {state.page < slice.pages && (
                     <div className="more-wrap">
                       <button className="btn btn-more" onClick={showMore}>
-                        Показать еще {Math.min(CONFIG.perPage, slice.total - state.page * CONFIG.perPage)}
+                        Показать еще {Math.min(perPage, slice.total - state.page * perPage)}
                       </button>
                     </div>
                   )}
@@ -215,9 +217,7 @@ export function App() {
                 </>
               )}
             </>}
-            {!showRatings && !emptyNotice && <ReleaseBlocks games={RAW} state={state} />}
-            <CatalogMedia />
-            {editorial && <CatalogEditorial {...editorial} />}
+            <CatalogSections config={config} games={RAW} state={emptyFilter ?? state} dict={D} catalogOnly={showRatings} hideEditorial={!!emptyNotice} />
           </>
         )}
       </main>
@@ -227,7 +227,7 @@ export function App() {
         notFound={notFound ? notFoundReason : null} routeEvent={routeEvent}
         emptyNotice={emptyNotice}
       />
-      {ratingGame && <RatingDialog game={ratingGame} signedIn={demoSignedIn} saved={ratings.get(ratingGame)}
+      {ratingGame && <RatingDialog game={ratingGame} signedIn={demoSignedIn} saved={ratings.get(ratingGame.id)}
         onSignIn={() => setDemoSignedIn(true)} onSave={saveRating} onClose={() => setRatingGame(null)} />}
       {savedRating && (
         <aside className="reader-toast" aria-label="Подтверждение сохранения">

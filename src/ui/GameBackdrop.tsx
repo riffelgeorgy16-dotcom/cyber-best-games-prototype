@@ -13,17 +13,17 @@ async function decodeImage(src: string) {
   await image.decode();
 }
 
-export function GameBackdrop({ gameId }: { gameId: string | null }) {
+export function GameBackdrop({ gameId, left: customLeft, right: customRight }: { gameId: string | null; left?: string; right?: string }) {
   const [loaded, setLoaded] = useState<Backdrop | null>(null);
 
   useEffect(() => {
-    const left = art[`../assets/game-backdrops/${gameId}-left.webp`];
-    const right = art[`../assets/game-backdrops/${gameId}-right.webp`];
-    if (!gameId || !left || !right || !window.matchMedia(ART_VIEWPORT).matches) return;
+    const left = customLeft || art[`../assets/game-backdrops/${gameId}-left.webp`];
+    const right = customRight || art[`../assets/game-backdrops/${gameId}-right.webp`];
+    if (!gameId || (!left && !right) || !window.matchMedia(ART_VIEWPORT).matches) return;
     let cancelled = false;
     const timer = window.setTimeout(async () => {
       try {
-        await Promise.all([decodeImage(left), decodeImage(right)]);
+        await Promise.all([left, right].filter(Boolean).map(decodeImage));
         if (!cancelled) setLoaded({ gameId, left, right });
       } catch {
         // Decorative art is optional if either image fails to load.
@@ -33,13 +33,13 @@ export function GameBackdrop({ gameId }: { gameId: string | null }) {
       cancelled = true;
       window.clearTimeout(timer);
     };
-  }, [gameId]);
+  }, [gameId, customLeft, customRight]);
 
   return (
     <div className="game-backdrop" aria-hidden="true" data-visible={!!loaded && loaded.gameId === gameId}>
       {loaded && <>
-        <img className="game-backdrop-left" src={loaded.left} alt="" draggable={false} />
-        <img className="game-backdrop-right" src={loaded.right} alt="" draggable={false} />
+        {loaded.left && <img className="game-backdrop-left" src={loaded.left} alt="" draggable={false} />}
+        {loaded.right && <img className="game-backdrop-right" src={loaded.right} alt="" draggable={false} />}
       </>}
     </div>
   );

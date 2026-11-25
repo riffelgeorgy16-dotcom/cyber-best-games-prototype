@@ -42,9 +42,10 @@ export function findTemplate(s: CatalogState, d: Dictionaries): { tpl?: MetaTemp
   return { source: 'fallback' };
 }
 
-function fill(text: string, s: CatalogState, d: Dictionaries) {
+export function fillMeta(text: string, s: CatalogState, d: Dictionaries) {
   const p = s.platform ? d.platforms[s.platform] : undefined;
   return text
+    .split('[[жанр]]').join(s.genre ? d.genres[s.genre].name : '')
     .split('[[платформа]]').join(p ? p.var || p.name : '')
     .split('[[год]]').join(s.year ?? '');
 }
@@ -81,14 +82,19 @@ export function crumbs(s: CatalogState, d: Dictionaries): Crumb[] {
   return list;
 }
 
-export function computeSeo(s: CatalogState, slice: PageSlice, d: Dictionaries): PageSeo {
+type MetaFields = Partial<Pick<PageSeo, 'title' | 'description' | 'h1'>>;
+export function computeSeo(s: CatalogState, slice: PageSlice, d: Dictionaries,
+  options: { minIndexable?: number; page?: MetaFields; template?: MetaFields } = {}): PageSeo {
   const type = pageType(s);
   const found = findTemplate(s, d);
   let base: { title: string; description: string; h1: string };
   if (type === 'main') base = d.main;
-  else if (found.tpl) base = { title: fill(found.tpl.title, s, d), description: fill(found.tpl.description, s, d), h1: fill(found.tpl.h1, s, d) };
+  else if (found.tpl) base = { title: fillMeta(found.tpl.title, s, d), description: fillMeta(found.tpl.description, s, d), h1: fillMeta(found.tpl.h1, s, d) };
   else base = fallbackMeta(s, d);
 
+  const valueFor = (field: keyof MetaFields) =>
+    fillMeta(options.page?.[field] || options.template?.[field] || base[field], s, d);
+  base = { title: valueFor('title'), description: valueFor('description'), h1: valueFor('h1') };
   let { title, description, h1 } = base;
   if (s.page > 1) {
     const tail = ` - Страница ${s.page}`;
@@ -108,7 +114,7 @@ export function computeSeo(s: CatalogState, slice: PageSlice, d: Dictionaries): 
   if (total === 0) indexStatus = 'noindex-empty';
   else if (s.q) indexStatus = 'noindex-search';
   else if (s.sort || s.rating) indexStatus = 'noindex-params';
-  else if (total < CONFIG.minIndexable) indexStatus = 'noindex-few';
+  else if (total < (options.minIndexable ?? CONFIG.minIndexable)) indexStatus = 'noindex-few';
 
   const filterBase = absolute(buildPath(s));
   let canonical =
@@ -128,7 +134,7 @@ export function computeSeo(s: CatalogState, slice: PageSlice, d: Dictionaries): 
     url,
     description,
     numberOfItems: total,
-    itemListOrder: ['rating-asc', 'alpha', 'old'].includes(s.sort ?? '') ? 'https://schema.org/ItemListOrderAscending' : 'https://schema.org/ItemListOrderDescending',
+    itemListOrder: ['rating-asc', 'alpha', 'old'].includes(s.sort ?? s.defaultSort ?? '') ? 'https://schema.org/ItemListOrderAscending' : 'https://schema.org/ItemListOrderDescending',
     itemListElement: slice.items.map((g: Game, i) => ({
       '@type': 'ListItem',
       position: slice.offset + i + 1,
@@ -144,7 +150,7 @@ export function computeSeo(s: CatalogState, slice: PageSlice, d: Dictionaries): 
 
   return {
     pageType: type,
-    template: { source: type === 'main' ? 'exact' : found.source, row: found.tpl?.row },
+    template: { source: options.page || type === 'main' ? 'exact' : options.template ? 'pattern' : found.source, row: found.tpl?.row },
     title, description, h1, h1Base: base.h1,
     canonical, robots, prev, next,
     indexStatus, breadcrumbs: bc, itemList, breadcrumbList, url,

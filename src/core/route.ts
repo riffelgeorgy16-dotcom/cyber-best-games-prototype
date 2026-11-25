@@ -8,9 +8,9 @@ const BANDS = CONFIG.ratingBands.map((b) => b.key) as readonly string[];
 type SegKind = 'genre' | 'platform' | 'year';
 
 export function classifySegment(seg: string, d: Dictionaries): SegKind | null {
-  if (d.genres[seg]) return 'genre';
-  if (d.platforms[seg]) return 'platform';
-  if (/^\d{4}$/.test(seg) && d.filter_lists.years.includes(seg)) return 'year';
+  if (Object.prototype.hasOwnProperty.call(d.genres, seg)) return 'genre';
+  if (Object.prototype.hasOwnProperty.call(d.platforms, seg)) return 'platform';
+  if (/^\d{4}$/.test(seg) && (d.catalogYears ?? d.filter_lists.years).includes(seg)) return 'year';
   return null;
 }
 
@@ -29,7 +29,7 @@ export function buildUrl(s: CatalogState, opts: { withPage?: boolean; withQuery?
   const params: string[] = [];
   if (withQuery && s.q) params.push('q=' + encodeURIComponent(s.q));
   if (withQuery && s.rating) params.push('rating=' + s.rating);
-  if (withQuery && s.sort && s.sort !== DEFAULT_SORT) params.push('sort=' + s.sort);
+  if (withQuery && s.sort && s.sort !== (s.defaultSort ?? DEFAULT_SORT)) params.push('sort=' + s.sort);
   if (withPage && s.page > 1) params.push('page=' + s.page);
   return buildPath(s) + (params.length ? '?' + params.join('&') : '');
 }
@@ -47,7 +47,9 @@ export function parseUrl(pathname: string, search: string, d: Dictionaries): Rou
   const segs = rest.split('/').filter(Boolean);
   if (segs.length > 3) return { kind: 'not_found', reason: 'Больше трех сегментов фильтра' };
 
+  const defaultSort = d.defaultSort ?? DEFAULT_SORT;
   const state: CatalogState = { page: 1 };
+  if (defaultSort !== DEFAULT_SORT) state.defaultSort = defaultSort;
   const seen: SegKind[] = [];
   for (const seg of segs) {
     const k = classifySegment(seg.toLowerCase(), d);
@@ -70,7 +72,7 @@ export function parseUrl(pathname: string, search: string, d: Dictionaries): Rou
   let badParam = '';
   if (rating !== null) { if (BANDS.includes(rating)) state.rating = rating as RatingBand; else badParam = `неизвестная оценка "${rating}"`; }
   if (sort !== null) {
-    if (sort === DEFAULT_SORT) badParam = 'сортировка по умолчанию не пишется в адрес';
+    if (sort === defaultSort) badParam = 'сортировка по умолчанию не пишется в адрес';
     else if (SORTS.includes(sort)) state.sort = sort as SortKey;
     else badParam = `неизвестная сортировка "${sort}"`;
   }

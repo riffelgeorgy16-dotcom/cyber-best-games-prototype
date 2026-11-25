@@ -23,7 +23,7 @@ function Cover({ g }: { g: Game }) {
         <span>{g.name}</span>
       </div>
     );
-  return <img className="cover" src={g.cover} alt={g.name} loading="lazy" onError={() => setFailed(true)} />;
+  return <img className="cover" src={g.cover} alt={g.coverAlt ?? g.name} loading="lazy" onError={() => setFailed(true)} />;
 }
 
 function LinkList({ items, max, onNav }: { items: { t: string; u: string }[]; max: number; onNav: (u: string) => void }) {

@@ -2,13 +2,14 @@ import { it, expect } from 'vitest';
 import dictsRaw from '../src/data/dictionaries.json';
 import gamesRaw from '../src/data/games.json';
 import { filterGames, paginate, sortGames } from '../src/core/catalog';
+import { catalogEligibleGames } from '../src/core/releases';
 import { computeSeo } from '../src/core/seo';
 import { buildUrl } from '../src/core/route';
 import { validate } from '../src/core/validate';
 import type { Dictionaries, Game, CatalogState } from '../src/core/types';
 
 const D = dictsRaw as unknown as Dictionaries;
-const G = sortGames((gamesRaw as { games: Game[] }).games);
+const G = sortGames(catalogEligibleGames((gamesRaw as { games: Game[] }).games));
 
 it('все страницы фильтров (одиночные, пары, тройки с играми) без ошибок инспектора', () => {
   const genres = Object.keys(D.genres), plats = Object.keys(D.platforms), years = D.filter_lists.years;
