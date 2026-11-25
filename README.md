@@ -9,11 +9,14 @@ npm run dev            # http://localhost:5173/games/best/
 npm test               # модульные тесты ядра
 ```
 Сборка одним файлом (адреса через якорь, открывается двойным кликом): `VITE_ROUTER=hash npx vite build` -> `dist-artifact/index.html`.
-Сборка для GitHub Pages (настоящие пути): `VITE_BASE=/<repo>/ npx vite build && cp dist/index.html dist/404.html`.
+Локальная сборка GitHub Pages с пререндером: `npm run build:pages`. Результат сохраняется в `dist/`.
+
+Админка открывается по `/admin/catalog/` на том же локальном адресе. Для сборки из административного экспорта задайте `CATALOG_ADMIN_STATE` с путём к JSON. Подробнее в `handoff/README.md`.
 
 ## Структура
 - `src/core/` - логика без привязки к интерфейсу: маршруты (`route.ts`), фильтрация и пагинация (`catalog.ts`), SEO и JSON-LD (`seo.ts`), проверки инспектора (`validate.ts`), настройки (`config.ts`).
-- `src/ui/` - интерфейс на React.
+- `src/ui/` - интерфейс каталога на React.
+- `src/admin/` - административная панель, общая модель настроек, IndexedDB и табличный обмен.
 - `src/data/` - `games.json` (игры с источником каждого поля), `dictionaries.json` (таблица мета и списки фильтров), `news.json` (снимок блоков).
 - `data-pipeline/` - скрипты сбора данных и диагностика исключенных тегов.
 - `STATUS.md` - утвержденные решения и открытые вопросы.
