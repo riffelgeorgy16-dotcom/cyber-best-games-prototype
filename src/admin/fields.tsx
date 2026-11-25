@@ -1,4 +1,5 @@
-import { useState, type ReactNode } from 'react';
+import { useMemo, useState, type ReactNode } from 'react';
+import { matchesName, normalize } from '../core/catalog';
 import type { CatalogState, Dictionaries, Game } from '../core/types';
 
 export function Field({ label, children }: { label: string; children: ReactNode }) {
@@ -29,6 +30,24 @@ export function Choice({ label, value, change, options, empty }: {
 export const dictionaryOptions = (dict: object) => Object.values(dict).map((item: { slug: string; name: string }) =>
   ({ id: item.slug, label: item.name }));
 
+export function ChoiceChecks({ label, options, values, change }: {
+  label: string; options: { id: string; label: string }[]; values: string[]; change: (v: string[]) => void;
+}) {
+  const [search, setSearch] = useState('');
+  const query = normalize(search);
+  const visible = options.filter(option => normalize(option.label).includes(query));
+  return <fieldset className="adm-choice-checks">
+    <legend>{label} · выбрано {values.length}</legend>
+    <Input label={'Поиск: ' + label.toLowerCase()} type="search" value={search} change={setSearch} />
+    <div className="adm-choice-list">
+      {visible.map(option => <Toggle key={option.id} label={option.label}
+        checked={values.includes(option.id)}
+        change={checked => change(checked ? [...values, option.id] : values.filter(id => id !== option.id))} />)}
+      {!visible.length && <small>Совпадений нет.</small>}
+    </div>
+  </fieldset>;
+}
+
 export function PagePicker({ page, change, dict }: {
   page: CatalogState; change: (v: CatalogState) => void; dict: Dictionaries;
 }) {
@@ -39,9 +58,20 @@ export function PagePicker({ page, change, dict }: {
   </div>;
 }
 
-export function GameChoices({ games, value, change }: { games: Game[]; value: string; change: (v: string) => void }) {
-  return <Choice label="Игра" value={value} change={change} empty="Выберите игру"
-    options={[...games].sort((a, b) => a.name.localeCompare(b.name, 'ru')).map(g => ({ id: g.id, label: g.name + ' · ' + g.id }))} />;
+export function GameChoices({ games, value, change, searchLabel }: {
+  games: Game[]; value: string; change: (v: string) => void; searchLabel: string;
+}) {
+  const [search, setSearch] = useState('');
+  const sorted = useMemo(() => [...games].sort((a, b) => a.name.localeCompare(b.name, 'ru')), [games]);
+  const query = normalize(search);
+  const matches = sorted.filter(g => matchesName(g, query) || g.id.includes(search.trim().toLowerCase()));
+  const selected = sorted.find(g => g.id === value);
+  const options = selected && !matches.includes(selected) ? [selected, ...matches] : matches;
+  return <div className="adm-row">
+    <Input label={searchLabel} type="search" value={search} change={setSearch} />
+    <Choice label="Игра" value={value} change={change} empty={matches.length ? 'Выберите игру' : 'Совпадений нет'}
+      options={options.map(g => ({ id: g.id, label: g.name + ' · ' + g.id }))} />
+  </div>;
 }
 
 export function Move({ index, count, change }: { index: number; count: number; change: (v: number) => void }) {

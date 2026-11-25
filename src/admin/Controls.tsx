@@ -63,7 +63,7 @@ export function GameOrder({ draft, games, dict, change, apply }: {
   const update = (patch: Partial<Pin>) => setPin({ ...pin, ...patch });
   return <div className="adm-form">
     <h2>Приоритет при одинаковой оценке</h2>
-    <GameChoices games={games} value={selected} change={select} />
+    <GameChoices games={games} value={selected} change={select} searchLabel="Поиск игры для приоритета" />
     {game && <>
       <Input label="Приоритет" type="number" value={game.priority ?? 0} change={v => apply({ ...game, priority: +v })} />
       <p>{same.length} игр с такой оценкой. Текущая позиция в группе: {same.findIndex(g => g.id === game.id) + 1 || '—'}.</p>
@@ -81,7 +81,7 @@ export function GameOrder({ draft, games, dict, change, apply }: {
           <button onClick={() => setPin(p)}>Редактировать</button>
           <button className="adm-danger" onClick={() => { if (confirm('Удалить закрепление?')) change({ ...draft, pins: draft.pins.filter(v => v.id !== p.id) }); }}>Удалить</button>
         </td></tr>)}</tbody></table></div>
-    <GameChoices games={games} value={pin.gameId} change={gameId => update({ gameId })} />
+    <GameChoices games={games} value={pin.gameId} change={gameId => update({ gameId })} searchLabel="Поиск игры для закрепления" />
     <div className="adm-row">
       <Input label="Позиция" type="number" value={pin.position} change={v => update({ position: +v })} />
       <Input label="Начало" type="date" value={pin.start} change={start => update({ start })} />

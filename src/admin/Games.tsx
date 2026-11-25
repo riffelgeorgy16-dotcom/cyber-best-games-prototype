@@ -4,7 +4,7 @@ import { matchesName, normalize } from '../core/catalog';
 import { catalogEligibleGames } from '../core/releases';
 import type { Dictionaries, Game } from '../core/types';
 import { gameStatus, statusLabels, statuses, validateGame } from './model';
-import { Choice, Field, ImageField, Input, Toggle, dictionaryOptions } from './fields';
+import { Choice, ChoiceChecks, Field, ImageField, Input, Toggle, dictionaryOptions } from './fields';
 
 export const statusOptions = statuses.map(id => ({ id, label: statusLabels[id] }));
 export const missing = (g: Game) => !g.releaseDate || !g.platforms.length || !g.genres.length;
@@ -21,7 +21,6 @@ function GameForm({ initial, existing, games, dict, onApply, onCancel }: {
   const [game, set] = useState<Game>({ ...initial, cover: initial.cover || undefined, url: initial.url || undefined,
     status: gameStatus(initial) });
   const [score, setScore] = useState(initial.rating?.value.toString() ?? '');
-  const [ratingUrl, setRatingUrl] = useState(initial.rating?.url ?? '');
   const [errors, setErrors] = useState<string[]>([]);
   const update = (patch: Partial<Game>) => set(previous => ({ ...previous, ...patch }));
   const sameName = games.find(g => g.id !== existing && normalize(g.name) === normalize(game.name));
@@ -29,8 +28,8 @@ function GameForm({ initial, existing, games, dict, onApply, onCancel }: {
     const value = score.trim() ? Number(score.replace(',', '.')) : undefined;
     const changed = value !== initial.rating?.value;
     const rating = value === undefined ? undefined : changed || !initial.rating
-      ? { value, source: 'Редакция' as const, original: value + '/10', url: ratingUrl.trim() && ratingUrl !== initial.rating?.url ? ratingUrl.trim() : undefined }
-      : { ...initial.rating, url: ratingUrl.trim() || undefined };
+      ? { value, source: 'Редакция' as const, original: value + '/10' }
+      : initial.rating;
     const sources = { ...game.sources };
     if (changed) {
       if (rating) sources.rating = 'Ручное изменение редакции';
@@ -69,24 +68,15 @@ function GameForm({ initial, existing, games, dict, onApply, onCancel }: {
           <Input label="Год выхода" type="number" value={game.year || ''} change={v => update({ year: +v })} />
           <Choice label="Статус релиза" value={game.status ?? 'unconfirmed'} options={statusOptions} change={v => update({ status: v as Game['status'] })} />
         </div>
-        <div className="adm-row">
-          <Field label="Жанры"><select multiple size={6} value={game.genres} onChange={e => update({ genres: Array.from(e.target.selectedOptions, o => o.value) })}>
-            {dictionaryOptions(dict.genres).map(o => <option key={o.id} value={o.id}>{o.label}</option>)}
-          </select></Field>
-          <Field label="Платформы"><select multiple size={6} value={game.platforms} onChange={e => update({ platforms: Array.from(e.target.selectedOptions, o => o.value) })}>
-            {dictionaryOptions(dict.platforms).map(o => <option key={o.id} value={o.id}>{o.label}</option>)}
-          </select></Field>
+        <div className="adm-row adm-taxonomy">
+          <ChoiceChecks label="Жанры" options={dictionaryOptions(dict.genres)} values={game.genres} change={genres => update({ genres })} />
+          <ChoiceChecks label="Платформы" options={dictionaryOptions(dict.platforms)} values={game.platforms} change={platforms => update({ platforms })} />
         </div>
-        <div className="adm-row">
-          <Input label="Рейтинг от 0 до 10" value={score} change={setScore} />
-          <Input label="Источник рейтинга" value={score ? Number(score.replace(',', '.')) === initial.rating?.value ? initial.rating.source : 'Редакция' : ''} readOnly />
-          <Input label="Ссылка на источник рейтинга" value={ratingUrl} change={setRatingUrl} />
-        </div>
+        <Input label="Рейтинг от 0 до 10" value={score} change={setScore} />
         <div className="adm-row">
           <Input label="Подписчики тега" type="number" value={game.subscribers} change={v => update({ subscribers: +v })} />
           <Input label="Приоритет при равных баллах" type="number" value={game.priority ?? 0} change={v => update({ priority: +v })} />
         </div>
-        <Input label="Происхождение данных" value={game.sources.record} change={v => update({ sources: { ...game.sources, record: v } })} />
         <Toggle label="Исключить из каталога" checked={!!game.excluded} change={excluded => update({ excluded })} />
         {sameName && <p className="adm-note">В базе уже есть «{sameName.name}» с ID {sameName.id}. Проверьте издание.</p>}
         {errors.length > 0 && <ul className="adm-error" role="alert">{errors.map((e, i) => <li key={i}>{e}</li>)}</ul>}
