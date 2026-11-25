@@ -9,6 +9,7 @@ import dictsRaw from '../src/data/dictionaries.json';
 import gamesRaw from '../src/data/games.json';
 import { CONFIG } from '../src/core/config';
 import { filterGames, paginate, formatRating } from '../src/core/catalog';
+import { catalogEligibleGames } from '../src/core/releases';
 import { catalogEditorial } from '../src/core/editorial';
 import { computeSeo } from '../src/core/seo';
 import { buildPath } from '../src/core/route';
@@ -16,7 +17,7 @@ import type { CatalogState, Dictionaries, Game } from '../src/core/types';
 import { CatalogEditorial } from '../src/ui/CatalogEditorial';
 
 const D = dictsRaw as unknown as Dictionaries;
-const G = (gamesRaw as unknown as { games: Game[] }).games;
+const G = catalogEligibleGames((gamesRaw as unknown as { games: Game[] }).games);
 const OUT = process.argv[2] || 'dist';
 const FORCE_NOINDEX = process.env.VITE_FORCE_NOINDEX === '1';
 const tpl = readFileSync(join(OUT, 'index.html'), 'utf8');

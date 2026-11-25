@@ -12,6 +12,8 @@ import { currentUrl, go, subscribe, MODE } from './router';
 import { applyHead } from './head';
 import { Header, AddressBar, Breadcrumbs, Footer } from './Chrome';
 import { CatalogMedia } from './CatalogMedia';
+import { ReleaseBlocks } from './ReleaseBlocks';
+import { catalogEligibleGames } from '../core/releases';
 import { Filters, Collections } from './Filters';
 import { AddGameButton } from './AddGame';
 import { SearchBar } from './SearchBar';
@@ -24,8 +26,9 @@ import { CatalogEditorial } from './CatalogEditorial';
 import { Inspector, type RouteEvent } from './Inspector';
 
 const D = dictsRaw as unknown as Dictionaries;
-const ALL: Game[] = sortGames((gamesRaw as { games: Game[] }).games);
-const GAMES_BY_ID = new Map(ALL.map((game) => [game.id, game]));
+const RAW: Game[] = (gamesRaw as { games: Game[] }).games;
+const ALL: Game[] = sortGames(catalogEligibleGames(RAW));
+const GAMES_BY_ID = new Map(RAW.map((game) => [game.id, game]));
 
 export const EMPTY_TEXT = 'По вашим фильтрам ничего не найдено. Попробуйте изменить или очистить все фильтры';
 
@@ -212,6 +215,7 @@ export function App() {
                 </>
               )}
             </>}
+            {!showRatings && !emptyNotice && <ReleaseBlocks games={RAW} state={state} />}
             <CatalogMedia />
             {editorial && <CatalogEditorial {...editorial} />}
           </>

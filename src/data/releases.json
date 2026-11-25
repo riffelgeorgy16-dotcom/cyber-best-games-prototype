@@ -1,0 +1,163 @@
+{
+  "snapshot": "2026-11-25",
+  "note": "Temporary release feed; dates and platforms checked against Steam store pages and VGC release calendar; genre mapping is provisional. No invented Cyber tag URLs or ratings. Refresh statuses manually or via future CMS integration.",
+  "calendarSource": "https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/",
+  "releases": [
+    {
+      "id": "hela-of-mice-magic",
+      "name": "Hela: of Mice & Magic",
+      "releaseDate": "2026-12-01",
+      "datePrecision": "day",
+      "year": 2026,
+      "platforms": [
+        "pc",
+        "playstation-5",
+        "xbox-series",
+        "nintendo-switch-2"
+      ],
+      "genres": [
+        "adventure",
+        "kooperativnyie-igry",
+        "igry-s-otkrytym-mirom"
+      ],
+      "status": "upcoming",
+      "source": "https://store.steampowered.com/app/3161310/",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3161310/header.jpg"
+    },
+    {
+      "id": "aeterna-lucis",
+      "name": "Aeterna Lucis",
+      "releaseDate": "2026-12-03",
+      "datePrecision": "day",
+      "year": 2026,
+      "platforms": [
+        "pc",
+        "playstation-5",
+        "xbox-series",
+        "nintendo-switch"
+      ],
+      "genres": [
+        "metroidvaniya",
+        "platformery",
+        "ekshen-igry"
+      ],
+      "status": "upcoming",
+      "source": "https://store.steampowered.com/app/2710920/",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2710920/header.jpg"
+    },
+    {
+      "id": "dawn-of-war-iv",
+      "name": "Warhammer 40,000: Dawn of War IV",
+      "releaseDate": "2026-12-03",
+      "datePrecision": "day",
+      "year": 2026,
+      "platforms": [
+        "pc"
+      ],
+      "genres": [
+        "strategii",
+        "rts"
+      ],
+      "status": "upcoming",
+      "source": "https://store.steampowered.com/app/2272360/",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2272360/header.jpg"
+    },
+    {
+      "id": "rayman-legends-retold",
+      "name": "Rayman Legends Retold",
+      "releaseDate": "2026-12-03",
+      "datePrecision": "day",
+      "year": 2026,
+      "platforms": [
+        "pc",
+        "playstation-5",
+        "xbox-series",
+        "nintendo-switch-2"
+      ],
+      "genres": [
+        "platformery",
+        "ekshen-igry"
+      ],
+      "status": "upcoming",
+      "source": "https://store.steampowered.com/app/4084710/",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4084710/header.jpg"
+    },
+    {
+      "id": "edge-of-memories",
+      "name": "Edge of Memories",
+      "releaseDate": "2026-12-03",
+      "datePrecision": "day",
+      "year": 2026,
+      "platforms": [
+        "pc",
+        "playstation-5",
+        "xbox-series"
+      ],
+      "genres": [
+        "rpg",
+        "ekshen-igry",
+        "adventure"
+      ],
+      "status": "upcoming",
+      "source": "https://store.steampowered.com/app/2738170/",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2738170/header.jpg"
+    },
+    {
+      "id": "volvys-adventure-reslimed",
+      "name": "Volvy’s Adventure: Reslimed",
+      "releaseDate": "2026-11-19",
+      "datePrecision": "day",
+      "year": 2026,
+      "platforms": [
+        "pc"
+      ],
+      "genres": [
+        "platformery",
+        "ekshen-igry",
+        "adventure"
+      ],
+      "status": "released",
+      "source": "https://store.steampowered.com/app/4523120/",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4523120/header.jpg"
+    },
+    {
+      "id": "milki-delivery",
+      "name": "Milki Delivery",
+      "releaseDate": "2026-11-17",
+      "datePrecision": "day",
+      "year": 2026,
+      "platforms": [
+        "pc"
+      ],
+      "genres": [
+        "simulyatory",
+        "kazualnyy"
+      ],
+      "status": "released",
+      "source": "https://store.steampowered.com/app/4259360/",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4259360/header.jpg"
+    },
+    {
+      "id": "sonic-pico-park",
+      "name": "SONIC PICO PARK",
+      "releaseDate": "2026-11-12",
+      "datePrecision": "day",
+      "year": 2026,
+      "platforms": [
+        "pc",
+        "playstation-5",
+        "xbox-series",
+        "nintendo-switch",
+        "nintendo-switch-2"
+      ],
+      "genres": [
+        "golovolomki",
+        "kooperativnyie-igry",
+        "platformery"
+      ],
+      "status": "released",
+      "source": "https://store.steampowered.com/app/4304060/",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4304060/header.jpg"
+    }
+  ]
+}
