@@ -22,7 +22,7 @@
       ],
       "status": "upcoming",
       "source": "https://store.steampowered.com/app/3161310/",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/3161310/header.jpg"
+      "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3161310/868b1938e4540924707c8db978d494322757e28d/header.jpg?t=1795541601"
     },
     {
       "id": "aeterna-lucis",
@@ -43,7 +43,7 @@
       ],
       "status": "upcoming",
       "source": "https://store.steampowered.com/app/2710920/",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2710920/header.jpg"
+      "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2710920/3ae36b3a33ff9071e57b1af4ed224c8caacadba8/header.jpg?t=1793913486"
     },
     {
       "id": "dawn-of-war-iv",
@@ -60,7 +60,7 @@
       ],
       "status": "upcoming",
       "source": "https://store.steampowered.com/app/2272360/",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2272360/header.jpg"
+      "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2272360/f50a309da98ef75cbdae400a7d492e36314ce415/header.jpg?t=1795450089"
     },
     {
       "id": "rayman-legends-retold",
@@ -80,7 +80,7 @@
       ],
       "status": "upcoming",
       "source": "https://store.steampowered.com/app/4084710/",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4084710/header.jpg"
+      "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4084710/4fc23980ce04f33d7dc91bf38d74591ec00015cb/header.jpg?t=1795183629"
     },
     {
       "id": "edge-of-memories",
@@ -100,7 +100,7 @@
       ],
       "status": "upcoming",
       "source": "https://store.steampowered.com/app/2738170/",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/2738170/header.jpg"
+      "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2738170/d812bbb6afc42d5c3158ec8847adff93de021709/header_alt_assets_0.jpg?t=1795026177"
     },
     {
       "id": "volvys-adventure-reslimed",
@@ -118,7 +118,7 @@
       ],
       "status": "released",
       "source": "https://store.steampowered.com/app/4523120/",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4523120/header.jpg"
+      "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4523120/bd01ad0f41f47272b6f1459de015d2494b24a422/header.jpg?t=1795112316"
     },
     {
       "id": "milki-delivery",
@@ -135,7 +135,7 @@
       ],
       "status": "released",
       "source": "https://store.steampowered.com/app/4259360/",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4259360/header.jpg"
+      "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4259360/505a9c5e2d1366f1dced34c661218a16e321c13f/header.jpg?t=1794927593"
     },
     {
       "id": "sonic-pico-park",
@@ -157,7 +157,7 @@
       ],
       "status": "released",
       "source": "https://store.steampowered.com/app/4304060/",
-      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/4304060/header.jpg"
+      "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4304060/193353d185ee1af3d51068346d9d1a32e81e8ec5/header.jpg?t=1794470411"
     }
   ]
 }
