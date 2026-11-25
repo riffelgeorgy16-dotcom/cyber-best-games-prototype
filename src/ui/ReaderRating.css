@@ -176,3 +176,24 @@ body:has(.rating-dialog[open]) { overflow: hidden; }
 }
 .reader-toast > div { display: grid; gap: 3px; font-size: 14px; }
 .reader-toast > div span { color: var(--ink2); font-size: 13px; }
+
+
+/* Segmented catalog score — separate from the personal reader rating. */
+.card-top.reader-card-top { flex-wrap: wrap; align-items: center; }
+.catalog-score {
+  order: -1;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 92px;
+  flex: 0 0 92px;
+  color: #626b77;
+}
+.catalog-score.score-high { color: #087a43; }
+.catalog-score.score-mid { color: #876010; }
+.catalog-score-number { display: flex; align-items: baseline; gap: 3px; line-height: 1; }
+.catalog-score-number b { font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; }
+.catalog-score-number small { font-size: 10px; color: var(--ink2); }
+.catalog-score-track { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 2px; padding-inline: 1px; }
+.catalog-score-segment { height: 5px; transform: skewX(-18deg); border-radius: 1px; }
+.card-top.reader-card-top .reader-rate { margin-left: auto; max-width: 100%; white-space: normal; text-align: left; }

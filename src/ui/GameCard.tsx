@@ -112,9 +112,18 @@ export function GameCard({ game: g, position, dicts: d, onNav, readerRating, onR
             {readerRating ? `Моя оценка ${readerScore(readerRating.score)}` : 'Оценить'}
           </button>
           {g.rating && (
-            <span className={'rating r' + Math.floor(g.rating.value)}
+            <span className={'catalog-score ' + (g.rating.value >= 8 ? 'score-high' : g.rating.value >= 7 ? 'score-mid' : 'score-low')}
+              role="img" aria-label={`Рейтинг игры: ${formatRating(g.rating.value)} из 10`}
               title={`${g.rating.source}${g.rating.platform ? ` · ${g.rating.platform}` : ''} · ${g.rating.original}`}>
-              <b>{formatRating(g.rating.value)}</b>
+              <span className="catalog-score-number" aria-hidden="true">
+                <b>{formatRating(g.rating.value)}</b><small>/10</small>
+              </span>
+              <span className="catalog-score-track" aria-hidden="true">
+                {Array.from({ length: 10 }, (_, index) => (
+                  <span key={index} className="catalog-score-segment"
+                    style={{ backgroundImage: `linear-gradient(to right, currentColor ${Math.round(Math.max(0, Math.min(1, g.rating!.value - index)) * 100)}%, #e1e5ea 0)` }} />
+                ))}
+              </span>
             </span>
           )}
         </div>
