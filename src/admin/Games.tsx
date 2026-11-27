@@ -1,19 +1,14 @@
 import { useState } from 'react';
-import localTagsRaw from '../../data-pipeline/raw/tags_all.txt?raw';
 import { matchesName, normalize } from '../core/catalog';
 import { catalogEligibleGames } from '../core/releases';
 import type { Dictionaries, Game } from '../core/types';
 import { gameStatus, statusLabels, statuses, validateGame } from './model';
-import { Choice, ChoiceChecks, Field, ImageField, Input, Toggle, dictionaryOptions } from './fields';
+import { Choice, ChoiceChecks, ImageField, Input, Toggle, dictionaryOptions } from './fields';
 
 export const statusOptions = statuses.map(id => ({ id, label: statusLabels[id] }));
 export const missing = (g: Game) => !g.releaseDate || !g.platforms.length || !g.genres.length;
 const emptyGame: Game = { id: '', name: '', subscribers: 0, year: 0, releaseDate: '', datePrecision: 'day',
   genres: [], platforms: [], status: 'unconfirmed', wikidata: '', sources: { record: 'Ручной ввод' } };
-const tags = localTagsRaw.split(/\r?\n/).flatMap(line => {
-  const [name, id, count] = line.split('|');
-  return name && id && /^[a-z0-9-]+$/.test(id) ? [{ name, id, subscribers: Number(count) || 0 }] : [];
-});
 
 function GameForm({ initial, existing, games, dict, onApply, onCancel }: {
   initial: Game; existing?: string; games: Game[]; dict: Dictionaries; onApply: (game: Game) => void; onCancel: () => void;
@@ -58,9 +53,7 @@ function GameForm({ initial, existing, games, dict, onApply, onCancel }: {
         <div className="adm-row">
           <Input label="ID тега Кибера" value={game.tagId} change={tagId => update({ tagId })} />
           <Input label="URL тега Кибера" value={game.url} change={url => update({ url })} />
-          <Input label="Wikidata ID" value={game.wikidata} change={wikidata => update({ wikidata })} />
         </div>
-        <Field label="Описание"><textarea rows={4} value={game.description ?? ''} onChange={e => update({ description: e.target.value })} /></Field>
         <div className="adm-row">
           <Input label="Дата первого релиза" type="date" value={game.releaseDate} change={releaseDate => update({ releaseDate, year: releaseDate ? +releaseDate.slice(0, 4) : game.year })} />
           <Choice label="Точность даты" value={game.datePrecision} change={v => update({ datePrecision: v as Game['datePrecision'] })}
@@ -100,9 +93,6 @@ export function Games({ games, dict, selected, setSelected, apply }: { games: Ga
   const [filter, setFilter] = useState({ platform: '', genre: '', status: '', noScore: false, noCover: false, incomplete: false, excluded: false });
   const [sort, setSort] = useState('name');
   const [page, setPage] = useState(1);
-  const [tag, setTag] = useState('');
-  const [tagging, startTag] = useState(false);
-  const [tagQuery, setTagQuery] = useState('');
   const [message, setMessage] = useState('');
   const set = (patch: Partial<typeof filter>) => { setFilter({ ...filter, ...patch }); setPage(1); };
   if (form) return <GameForm initial={form.game} existing={form.existing} games={games} dict={dict}
@@ -122,25 +112,10 @@ export function Games({ games, dict, selected, setSelected, apply }: { games: Ga
     ids.forEach(id => { if (include) next.add(id); else next.delete(id); });
     setSelected(next);
   };
-  const findTag = () => {
-    const source = tags.find(t => t.id === tag);
-    if (source) {
-      const known = games.find(g => g.id === source.id || g.tagId === source.id || g.url?.replace(/\/$/, '').endsWith('/games/' + source.id));
-      if (known) edit({ game: known, existing: known.id });
-      else edit({ game: { ...emptyGame, ...source, tagId: source.id, url: 'https://cyber.sports.ru/games/' + source.id + '/',
-        sources: { record: 'Локальный список тегов Кибера' } } });
-    } else edit({ game: { ...emptyGame, tagId: tag, id: tag, sources: { record: 'Ручной ввод тега' } } });
-  };
   return <>
     <h2>Игры</h2>
     <p>Всего {games.length} · в основном каталоге {catalogEligibleGames(games).length} · без оценки {games.filter(g => !g.rating).length} · без обложки {games.filter(g => !g.cover).length} · неполные {games.filter(missing).length}</p>
-    <div className="adm-actions"><button className="adm-primary" onClick={() => edit({ game: emptyGame })}>Добавить игру вручную</button>
-      <button className="adm-extra" onClick={() => startTag(!tagging)}>Добавить по тегу Кибера</button></div>
-    {tagging && <div className="adm-row">
-      <Input label="Поиск в локальных тегах" value={tagQuery} change={setTagQuery} />
-      <Choice label="Локальный тег" value={tag} change={setTag} empty="Выберите из списка" options={tags.filter(t => !tagQuery || normalize(t.name).includes(normalize(tagQuery)) || t.id.includes(tagQuery)).slice(0, 100).map(t => ({ id: t.id, label: t.name }))} />
-      <Input label="Или укажите ID тега вручную" value={tag} change={setTag} /><button onClick={findTag}>Открыть карточку тега</button>
-    </div>}
+    <div className="adm-actions"><button className="adm-primary" onClick={() => edit({ game: emptyGame })}>Добавить игру вручную</button></div>
     {message && <p role="status">{message}</p>}
     <div className="adm-row">
       <Input label="Название или ID" value={q} change={v => { search(v); setPage(1); }} />

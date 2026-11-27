@@ -11,7 +11,7 @@ npm test               # модульные тесты ядра
 Сборка одним файлом (адреса через якорь, открывается двойным кликом): `VITE_ROUTER=hash npx vite build` -> `dist-artifact/index.html`.
 Локальная сборка GitHub Pages с пререндером: `npm run build:pages`. Результат сохраняется в `dist/`.
 
-Админка открывается по `/admin/catalog/` на том же локальном адресе. Для сборки из административного экспорта задайте `CATALOG_ADMIN_STATE` с путём к JSON. Подробнее в `handoff/README.md`.
+Админка открывается по `/admin/catalog/` на том же локальном адресе. Для сборки с сохранённым снимком настроек задайте `CATALOG_ADMIN_STATE` с путём к JSON. Подробнее в `handoff/README.md`.
 
 ## Структура
 - `src/core/` - логика без привязки к интерфейсу: маршруты (`route.ts`), фильтрация и пагинация (`catalog.ts`), SEO и JSON-LD (`seo.ts`), проверки инспектора (`validate.ts`), настройки (`config.ts`).

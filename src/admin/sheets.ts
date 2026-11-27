@@ -124,17 +124,16 @@ export function exportRows(games: Game[]) {
   }));
 }
 
-export function download(name: string, data: BlobPart, type: string) {
+function download(name: string, data: BlobPart, type: string) {
   const url = URL.createObjectURL(new Blob([data], { type }));
   const link = document.createElement('a');
   link.href = url; link.download = name; link.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-export async function exportSheet(games: Game[], type: 'csv' | 'xlsx', template = false) {
-  const rows = template ? [columns.map(c => c === 'id' ? 'example' : c === 'name' ? 'Название игры' : '')] : exportRows(games);
-  const data = [[...columns], ...rows];
-  const filename = template ? 'catalog-template' : 'catalog-games';
+export async function exportSheet(games: Game[], type: 'csv' | 'xlsx') {
+  const data = [[...columns], ...exportRows(games)];
+  const filename = 'catalog-games';
   if (type === 'csv') {
     download(filename + '.csv', '\uFEFF' + Papa.unparse(data, { escapeFormulae: /^[\s\uFEFF]*[=+\-@]|^[\t\r\n]/ }), 'text/csv;charset=utf-8');
     return;

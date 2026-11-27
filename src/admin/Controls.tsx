@@ -4,7 +4,7 @@ import { buildPath, parseUrl } from '../core/route';
 import { sortGames } from '../core/catalog';
 import type { CatalogState, Dictionaries, Game } from '../core/types';
 import { blockKeys, blockTitles, media, originalChoices, type AdminState, type BlockKey, type FilterKind, type Pin, type Story } from './model';
-import { Choice, Field, GameChoices, Input, Move, PagePicker, Toggle, move } from './fields';
+import { Choice, GameChoices, Input, Move, PagePicker, Toggle, move } from './fields';
 
 type Change = (state: AdminState) => void;
 
@@ -131,22 +131,32 @@ export function CollectionsEditor({ draft, change }: { draft: AdminState; change
   </div>;
 }
 
+const configurableBlocks = blockKeys.filter(id => id !== 'editorial');
+type ConfigurableBlock = Exclude<BlockKey, 'editorial'>;
+
 export function Blocks({ draft, games, change }: { draft: AdminState; games: Game[]; change: Change }) {
-  const [key, select] = useState<BlockKey>('recent');
+  const [key, select] = useState<ConfigurableBlock>('recent');
   const [pick, setPick] = useState('');
   const block = draft.blocks[key];
   const update = (patch: Partial<typeof block>) => change({ ...draft, blocks: { ...draft.blocks, [key]: { ...block, ...patch } } });
-  const index = draft.blockOrder.indexOf(key);
+  const orderedBlocks = draft.blockOrder.filter(id => id !== 'editorial');
+  const index = orderedBlocks.indexOf(key);
+  const moveBlock = (to: number) => {
+    const reordered = move(orderedBlocks, index, to);
+    let position = 0;
+    const blockOrder = draft.blockOrder.map(id => id === 'editorial' ? id : reordered[position++]);
+    change({ ...draft, blockOrder });
+  };
   const isRelease = key === 'recent' || key === 'upcoming';
   const isMedia = key === 'news' || key === 'blogs';
   const options = isMedia ? (block.mode === 'manual' ? block.stories ?? [] : media[key]).filter(v => v.url).map(v => ({ id: v.url, label: v.title })) :
     games.map(g => ({ id: g.id, label: g.name })).sort((a, b) => a.label.localeCompare(b.label));
   return <div className="adm-form">
     <h2>Блоки страницы</h2>
-    <ol>{draft.blockOrder.map(id => <li key={id}>{draft.blocks[id].title}{!draft.blocks[id].visible && ' (скрыт)'}</li>)}</ol>
-    <div className="adm-row"><Choice label="Блок" value={key} change={v => { select(v as BlockKey); setPick(''); }}
-      options={blockKeys.map(id => ({ id, label: blockTitles[id] }))} />
-      <Move index={index} count={blockKeys.length} change={to => change({ ...draft, blockOrder: move(draft.blockOrder, index, to) })} /></div>
+    <ol>{orderedBlocks.map(id => <li key={id}>{draft.blocks[id].title}{!draft.blocks[id].visible && ' (скрыт)'}</li>)}</ol>
+    <div className="adm-row"><Choice label="Блок" value={key} change={v => { select(v as ConfigurableBlock); setPick(''); }}
+      options={configurableBlocks.map(id => ({ id, label: blockTitles[id] }))} />
+      <Move index={index} count={orderedBlocks.length} change={moveBlock} /></div>
     <div className="adm-row">
       <Input label="Заголовок блока" value={block.title} change={title => update({ title })} />
       <Input label="Количество элементов" type="number" value={block.limit} change={v => update({ limit: +v })} />
@@ -169,6 +179,5 @@ export function Blocks({ draft, games, change }: { draft: AdminState; games: Gam
         <Move index={i} count={block.picks.length} change={to => update({ picks: move(block.picks, i, to) })} />
         <button className="adm-danger" onClick={() => update({ picks: block.picks.filter(v => v !== id) })}>Убрать закрепление</button></li>)}</ol>
     </>}
-    {key === 'editorial' && <Field label="Редактирование"><span>Содержание и колонки настраиваются во вкладке «SEO-тексты».</span></Field>}
   </div>;
 }

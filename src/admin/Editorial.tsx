@@ -55,7 +55,6 @@ export function Editorial({ draft, dict, change, onlyText = false }: {
             onChange={e => set({ ...entry, [field]: e.target.value || undefined })} />
         </Field>
         {field !== 'h1' && <small>{(entry[field] ?? preview[field]).length} симв.</small>}
-        <button type="button" disabled={entry[field] === undefined} onClick={() => set({ ...entry, [field]: undefined })}>Сбросить {field}</button>
       </div>)}
       <dl className="adm-preview">
         <dt>Итоговый URL</dt><dd>{preview.url}</dd>
@@ -71,7 +70,6 @@ export function Editorial({ draft, dict, change, onlyText = false }: {
       <Toggle label="Показывать SEO-текст" checked={entry.copy?.visible ?? effective?.visible ?? true} change={visible => changeCopy({ visible })} />
       <Choice label="Количество колонок" value={String(entry.copy?.columns ?? effective?.columns ?? 3)}
         change={v => changeCopy({ columns: +v })} options={[1, 2, 3].map(n => ({ id: String(n), label: String(n) }))} />
-      <button type="button" disabled={!entry.copy} onClick={() => set({ ...entry, copy: undefined })}>Сбросить SEO-текст</button>
     </div>
     {copy && <CatalogEditorial {...copy} />}
     {path !== CONFIG.base && <small>{path}</small>}

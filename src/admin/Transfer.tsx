@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import type { Dictionaries, Game } from '../core/types';
-import { parseAdmin, type AdminState } from './model';
+import type { AdminState } from './model';
 import { Choice, Field, Toggle, dictionaryOptions } from './fields';
 import { statusOptions } from './Games';
-import { columns, download, exportSheet, previewSheet, readSheet, type Sheet, type SheetMapping } from './sheets';
+import { columns, exportSheet, previewSheet, readSheet, type Sheet, type SheetMapping } from './sheets';
 
 export function Transfer({ draft, dict, games, selected, change }: {
   draft: AdminState; dict: Dictionaries; games: Game[]; selected: Set<string>; change: (next: AdminState) => void;
@@ -91,26 +91,11 @@ export function Transfer({ draft, dict, games, selected, change }: {
       }}>Подтвердить импорт ({valid.length})</button>
     </>}
     <h3>Экспорт</h3>
-    <p>В таблицах XLSX длинные встроенные изображения пропускаются. Полный архив с изображениями доступен в JSON.</p>
+    <p>В таблицах XLSX длинные встроенные изображения пропускаются.</p>
     <div className="adm-actions">
       <button onClick={() => void handle(() => exportSheet(games, 'csv'))}>Все игры CSV</button>
       <button onClick={() => void handle(() => exportSheet(games, 'xlsx'))}>Все игры XLSX</button>
-      <button disabled={!chosen.length} onClick={() => void handle(() => exportSheet(chosen, 'csv'))}>Выбранные CSV</button>
-      <button disabled={!chosen.length} onClick={() => void handle(() => exportSheet(chosen, 'xlsx'))}>Выбранные XLSX</button>
-      <button onClick={() => void handle(() => exportSheet([], 'xlsx', true))}>Шаблон XLSX</button>
-      <button onClick={() => void handle(() => exportSheet([], 'csv', true))}>Шаблон CSV</button>
-      <button onClick={() => download('catalog-admin.json', JSON.stringify(draft, null, 2), 'application/json')}>Экспорт настроек JSON</button>
     </div>
-    <Field label="Восстановление настроек из JSON"><input type="file" accept=".json,application/json" onChange={e => {
-      const input = e.target;
-      const file = input.files?.[0];
-      input.value = '';
-      if (!file) return;
-      void handle(async () => {
-        const checked = parseAdmin(JSON.parse(await file.text()));
-        if (confirm('Заменить текущий черновик содержимым JSON?')) { change(checked); report('Настройки восстановлены в черновик.'); }
-      });
-    }} /></Field>
     {error && <p className="adm-error" role="alert">{error}</p>}
     {message && <p role="status">{message} Нажмите «Сохранить» для применения.</p>}
   </div>;

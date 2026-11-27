@@ -8,7 +8,7 @@ import { Blocks, CollectionsEditor, FilterEditor, GameOrder } from './Controls';
 import { Editorial } from './Editorial';
 import { Games } from './Games';
 import { Transfer } from './Transfer';
-import { Choice, Input } from './fields';
+import { Input } from './fields';
 import './admin.css';
 
 const tabs = ['SEO', 'Игры', 'Порядок игр', 'Фильтры', 'Подборки', 'Блоки страницы', 'SEO-тексты', 'Импорт и экспорт', 'Настройки', 'История изменений'] as const;
@@ -97,8 +97,6 @@ export function Admin({ initial, warning, onSave, onPreview }: {
       <Input label="Ожидаемых релизов в блоке" type="number" value={draft.blocks.upcoming.limit} change={v => updateBlock('upcoming', +v)} />
       <Input label="Период недавних релизов (1–365 дней)" type="number" value={draft.settings.recentDays}
         change={v => change({ ...draft, settings: { ...draft.settings, recentDays: +v } })} />
-      <Choice label="Сортировка по умолчанию" value={draft.settings.defaultSort} options={CONFIG.sorts.map(s => ({ id: s.key, label: s.label }))}
-        change={v => change({ ...draft, settings: { ...draft.settings, defaultSort: v as AdminState['settings']['defaultSort'] } })} />
       <button className="adm-danger" onClick={() => {
         if (confirm('Восстановить исходные игры и настройки в черновике?')) { resetChild(resetKey + 1); change(defaultAdmin); }
       }}>Восстановить исходные данные</button>
